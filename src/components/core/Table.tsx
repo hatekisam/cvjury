@@ -28,7 +28,7 @@ const Table: React.FC<Props> = ({ tabs, data }) => {
                 {data.map((rowData, rowIndex) => (
                     <tr key={rowIndex} className='text-right border border-[#E2DFDF]'>
                         {tabs.map((tab, colIndex) => (
-                            <td key={colIndex} className='border border-[#E2DFDF] px-4 py-2'>{rowData[tab.title]}</td>
+                            <td key={colIndex} className='border border-[#E2DFDF] px-4 py-2'>{rowData[tab.title] ? rowData[tab.title] : "10"}</td>
                         ))}
                     </tr>
                 ))}

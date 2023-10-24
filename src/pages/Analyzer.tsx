@@ -1,6 +1,6 @@
 import React from 'react'
 import Table from '../components/core/Table';
-import { DesirableIcon, JobIcon, ResumeIcon } from '../components/core/icons';
+import { DesirableIcon, JobIcon, ResumeIcon, SkillGapIcon } from '../components/core/icons';
 
 const Analyzer: React.FC = () => {
     const dummyTabs = [
@@ -10,6 +10,16 @@ const Analyzer: React.FC = () => {
     const dummyTabs2 = [
         { title: 'SoftSkills', width: 80 },
         { title: 'Frequency', width: 20 },
+    ];
+    const dummyTabs3 = [
+        { title: 'Desirable Skills', width: 30 },
+        { title: 'Explanatory Notes', width: 70 },
+    ];
+    const dummyTabs4 = [
+        { title: 'Desirable Skills', width: 15 },
+        { title: 'Desirable Skills', width: 25 },
+        { title: 'Desirable Skills', width: 30 },
+        { title: 'Desirable Skills', width: 30 },
     ];
 
     const dummyData = [
@@ -57,11 +67,26 @@ const Analyzer: React.FC = () => {
                 <div className='my-10'>
                     <div className="flex justify-between">
                         <div></div>
-                        <p className='uppercase text-3xl'>Table 2 </p>
+                        <p className='uppercase text-3xl'>Table 3 </p>
                     </div>
-                    <Table tabs={dummyTabs} data={dummyData} />
-                    <div className="h-[40px]"></div>
-                    <Table tabs={dummyTabs2} data={dummyData} />
+                    <Table tabs={dummyTabs3} data={dummyData} />
+                </div>
+            </div>
+            <div className="my-10">
+                <div className="flex gap-3 items-center">
+                    <p className='uppercase text-[26px]'>Job Description and Resume Compared: </p>
+                    <div style={{ boxShadow: '0px 13px 50px 0px rgba(0, 0, 0, 0.15)' }} className=" bg-white border border-[#E06B42] text-[#E06B42] w-fit flex items-center gap-3 p-2 rounded-full">
+                        <SkillGapIcon />
+                        <p className='text-[26px] pr-5'>SKILLS GAP IDENTIFIED</p>
+                    </div>
+                </div>
+                <p className='text-[20px] my-5'>Let's compare the hard skills from the resume and the job description to identify the skill gaps:</p>
+                <div className='my-10'>
+                    <div className="flex justify-between">
+                        <div></div>
+                        <p className='uppercase text-3xl'>Table 4 </p>
+                    </div>
+                    <Table tabs={dummyTabs4} data={dummyData} />
                 </div>
             </div>
         </div>
