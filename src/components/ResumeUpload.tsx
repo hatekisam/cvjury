@@ -1,10 +1,11 @@
 import React from 'react'
 import FileDropZone from './FileDrop'
+import { DeleteIcon } from './core/icons';
 
-const ResumeUpload:React.FC = () => {
+const ResumeUpload: React.FC = () => {
     const handleFiles = (files: File[]) => {
         console.log(files);
-      };
+    };
     return (
         <div className='w-full sm:w-[50%] flex justify-between'>
             <div className='md:w-[20%] lg:w-[35%]'></div>
@@ -13,7 +14,11 @@ const ResumeUpload:React.FC = () => {
                 <div className="p-5 border-dashed border-2 border-black rounded-3xl ">
                     <FileDropZone onFilesSelected={handleFiles} />
                     <div className="mt-5">
-                        <textarea  className='border-[#BCBCBC] border rounded-lg p-3 text-[13px] w-full resize-none outline-none h-[200px]' placeholder='Or paste your resume here'></textarea>
+                        <textarea className='border-[#BCBCBC] border rounded-lg p-3 text-[13px] w-full resize-none outline-none h-[200px]' placeholder='Or paste your resume here'></textarea>
+                    </div>
+                    <div className="flex mt-1 justify-between">
+                        <div></div>
+                        <DeleteIcon />
                     </div>
                 </div>
             </div>

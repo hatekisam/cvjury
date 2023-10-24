@@ -1,4 +1,5 @@
 import React from 'react'
+import { DeleteIcon } from './core/icons'
 
 const JobDesc = () => {
     return (
@@ -9,6 +10,10 @@ const JobDesc = () => {
                     <input type="text" placeholder='Enter Job Title' className='border-[#BCBCBC] border rounded-lg p-3 text-[13px] w-full  outline-none ' />
                     <div className="mt-5">
                         <textarea className='border-[#BCBCBC] border rounded-lg p-3 text-[13px] w-full resize-none outline-none h-[200px]' placeholder='Or paste your resume here'></textarea>
+                    </div>
+                    <div className="flex mt-1 justify-between">
+                        <div></div>
+                        <DeleteIcon />
                     </div>
                 </div>
             </div>
