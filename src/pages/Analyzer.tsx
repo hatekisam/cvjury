@@ -49,7 +49,23 @@ const Analyzer: React.FC = () => {
          (Skills Missing from Resume)`, width: 30
         },
     ];
+    const dummyTabs6 = [
+        { title: 'Skills', width: 15, background: "rgba(41,171,130,0.10)" },
+        {
+            title: `Found in Resume
+         (Frequency)`, width: 25
+        },
+        {
+            title: `Found in Job Description 
+        (Frequency)`, width: 30
+        },
+        {
+            title: `Skills Gap 
+         (Skills Missing from Resume)`, width: 30
+        },
+    ];
 
+    
     const dummyData = [
         { HardSkills: "Typing Fast", Frequency: 20 },
         { HardSkills: "Typing Fast", Frequency: 20 },
@@ -216,7 +232,7 @@ const Analyzer: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="my-10">
+            <div className="my-20">
                 <div className="flex justify-between">
                     <p className='text-4xl text-[#6A6A6A] font-semibold my-4'>ATS Best Practices Match (ATS)</p>
                     <div className='w-[30%]'>
@@ -235,7 +251,24 @@ const Analyzer: React.FC = () => {
                     <ColouredTable tabs={dummyTabs5} data={dummyData} />
                 </div>
             </div>
-            <div className="my-10">
+            <div className="my-20">
+                <div className="flex justify-between">
+                    <p className='text-4xl text-[#6A6A6A] font-semibold my-4'>Sales Index Match (SIM)</p>
+                    <div className='w-[30%]'>
+                        <p className="text-right  text-xl">15/30</p>
+                        <LinearProgressBar score={60} />
+                    </div>
+                </div>
+                <p className='text-[24px] my-5'>We use this to assess your resume word count, measurable results present, active verbs present, and the presence of clichés and buzzwords.</p>
+                <div className='my-10'>
+                    <div className="flex justify-between">
+                        <div></div>
+                        <p className='uppercase text-3xl'>Table 3 </p>
+                    </div>
+                    <ColouredTable tabs={dummyTabs6} data={dummyData} />
+                </div>
+            </div>
+            <div className="my-20">
                 <div className="flex justify-between">
                     <p className='text-4xl text-[#6A6A6A] font-semibold my-4'>Hard Skills Match (HSM)</p>
                     <div className='w-[30%]'>
@@ -246,11 +279,11 @@ const Analyzer: React.FC = () => {
                 <p className='text-[24px] my-5'>Most resumes include only 60% of the necessary hard skills compared to the target job description.
                     Examples of hard skills are Excel, NodeJS, SQL, JavaScript, accounting, engineering, medicine, teaching, etc.
                     They are generally technical, software mastery, and professional skills learned to qualify for a job. They determine whether you should apply for the role in the first place.</p>
-                <div className='my-10'>
+                <div className='my-20'>
                     <Table tabs={dummyTabs5} data={dummyData} headBg='#E1ECF6' />
                 </div>
             </div>
-            <div className="my-10">
+            <div className="my-20">
                 <div className="flex justify-between">
                     <p className='text-4xl text-[#6A6A6A] font-semibold my-4'>Soft Skills Match (SSM)</p>
                     <div className='w-[30%]'>
@@ -265,11 +298,11 @@ const Analyzer: React.FC = () => {
                     ))}
                 </ul>
                 <p className='text-lg'>And CVJury's 24 <span className='underline'>soft skill</span> classifications</p>
-                <div className='my-10'>
+                <div className='my-20'>
                     <Table tabs={dummyTabs5} data={dummyData} headBg='#EBEBEB' />
                 </div>
             </div>
-            <div className="flex items-center justify-center my-5">
+            <div className="flex items-center justify-center my-10">
                 <button className='flex gap-2 items-center text-[#E06B42] text-2xl'>
                     <p>Edit Resume on our Resume Editor</p>
                     <UploadRescan />
