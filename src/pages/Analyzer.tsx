@@ -1,6 +1,6 @@
 import React from 'react'
 import Table from '../components/core/Table';
-import { DesirableIcon, JobIcon, PrintIcon, ResumeIcon, ShareIcon, SkillGapIcon } from '../components/core/icons';
+import { DesirableIcon, JobIcon, PrintIcon, ResumeIcon, ShareIcon, SkillGapIcon, UploadRescan } from '../components/core/icons';
 import SimilarityBar from '../components/Similarity';
 
 const Analyzer: React.FC = () => {
@@ -118,12 +118,12 @@ const Analyzer: React.FC = () => {
                     </div>
                 </div>
                 <p className='text-4xl text-[#6A6A6A] font-semibold my-4'>Similarity Score</p>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between my-10">
                     <div className='w-[50%] flex items-center gap-5'>
                         <SimilarityBar score={20} />
-                        <button className='flex gap-2 items-center'>
+                        <button className='flex gap-2 items-center text-[#E06B42] text-3xl'>
                             <p>Upload and Rescan</p>
-                            
+                            <UploadRescan />
                         </button>
                     </div>
                     <div className='w-[50%] flex items-center gap-5'>

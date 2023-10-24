@@ -17,7 +17,7 @@ const SimilarityBar: React.FC<Props> = ({ score }) => {
         }, 50);
     }, [percentage]);
     return (
-        <div className='w-[200px] h-[200px]'>
+        <div className='w-[300px] h-[300px]'>
             <CircularProgressbar background value={percentage} text={`${percentage}%`} styles={{
                 root: {},
                 path: {
