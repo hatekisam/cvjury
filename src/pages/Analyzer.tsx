@@ -1,6 +1,7 @@
 import React from 'react'
 import Table from '../components/core/Table';
 import { DesirableIcon, JobIcon, ResumeIcon, SkillGapIcon } from '../components/core/icons';
+import SimilarityBar from '../components/Similarity';
 
 const Analyzer: React.FC = () => {
     const dummyTabs = [
@@ -17,12 +18,18 @@ const Analyzer: React.FC = () => {
     ];
     const dummyTabs4 = [
         { title: 'Skills', width: 15 },
-        { title: `Found in Resume
-         (Frequency)`, width: 25 },
-        { title: `Found in Job Description 
-        (Frequency)`, width: 30 },
-        { title: `Skills Gap 
-         (Skills Missing from Resume)`, width: 30 },
+        {
+            title: `Found in Resume
+         (Frequency)`, width: 25
+        },
+        {
+            title: `Found in Job Description 
+        (Frequency)`, width: 30
+        },
+        {
+            title: `Skills Gap 
+         (Skills Missing from Resume)`, width: 30
+        },
     ];
 
     const dummyData = [
@@ -91,6 +98,17 @@ const Analyzer: React.FC = () => {
                     </div>
                     <Table tabs={dummyTabs4} data={dummyData} />
                 </div>
+            </div>
+            <div className="my-10">
+                <div className="flex justify-between items-center">
+                    <div></div>
+                    <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-2">
+
+                        </div>
+                    </div>
+                </div>
+                <SimilarityBar score={20} />
             </div>
         </div>
     )
