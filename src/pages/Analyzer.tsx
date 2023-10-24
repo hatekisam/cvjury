@@ -258,16 +258,22 @@ const Analyzer: React.FC = () => {
                         <LinearProgressBar score={16} />
                     </div>
                 </div>
-                <p className='text-[24px] my-5'>Only 28% of resumes contain the necessary soft skills. These are essential soft skills everyone needs to succeed at work. Here are the top ten in-demand soft skills:</p>
-                <ul className='list-disc'>
+                <p className='text-lg mt-5'>Only 28% of resumes contain the necessary soft skills. These are essential soft skills everyone needs to succeed at work. Here are the top ten in-demand soft skills:</p>
+                <ul className='list-disc text-base pl-10 my-3'>
                     {ssmList.map((el, i) => (
                         <li key={i}>{el}</li>
                     ))}
                 </ul>
-                <p>And CVJury's 24 <span className='underline'>soft skill</span> classifications</p>
+                <p className='text-lg'>And CVJury's 24 <span className='underline'>soft skill</span> classifications</p>
                 <div className='my-10'>
                     <Table tabs={dummyTabs5} data={dummyData} headBg='#EBEBEB' />
                 </div>
+            </div>
+            <div className="flex items-center justify-center my-5">
+                <button className='flex gap-2 items-center text-[#E06B42] text-2xl'>
+                    <p>Edit Resume on our Resume Editor</p>
+                    <UploadRescan />
+                </button>
             </div>
         </div>
     )
