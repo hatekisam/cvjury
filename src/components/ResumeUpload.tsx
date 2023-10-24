@@ -18,7 +18,7 @@ const ResumeUpload: React.FC = () => {
                     </div>
                     <div className="flex mt-1 justify-between">
                         <div></div>
-                        <DeleteIcon />
+                        <button><DeleteIcon /></button>
                     </div>
                 </div>
             </div>

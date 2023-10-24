@@ -13,11 +13,13 @@ const JobDesc = () => {
                     </div>
                     <div className="flex mt-1 justify-between">
                         <div></div>
-                        <DeleteIcon />
+                        <button><DeleteIcon /></button>
                     </div>
                 </div>
             </div>
-            <div className='md:w-[20%] lg:w-[35%]'></div>
+            <div className='md:w-[20%] lg:w-[35%] flex items-center justify-center text-xs'>
+                <button className='text-white bg-[#E06B42] px-4 py-2 rounded-full  border-[#C7CCD2] border'>Scan for free</button>
+            </div>
         </div>
     )
 }
