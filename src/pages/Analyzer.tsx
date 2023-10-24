@@ -16,10 +16,13 @@ const Analyzer: React.FC = () => {
         { title: 'Explanatory Notes', width: 70 },
     ];
     const dummyTabs4 = [
-        { title: 'Desirable Skills', width: 15 },
-        { title: 'Desirable Skills', width: 25 },
-        { title: 'Desirable Skills', width: 30 },
-        { title: 'Desirable Skills', width: 30 },
+        { title: 'Skills', width: 15 },
+        { title: `Found in Resume
+         (Frequency)`, width: 25 },
+        { title: `Found in Job Description 
+        (Frequency)`, width: 30 },
+        { title: `Skills Gap 
+         (Skills Missing from Resume)`, width: 30 },
     ];
 
     const dummyData = [
