@@ -65,7 +65,7 @@ const Analyzer: React.FC = () => {
         },
     ];
 
-    
+
     const dummyData = [
         { HardSkills: "Typing Fast", Frequency: 20 },
         { HardSkills: "Typing Fast", Frequency: 20 },
@@ -244,10 +244,6 @@ const Analyzer: React.FC = () => {
                     To stand a better chance, your resume must score 80% or higher and include crucial elements such as biodata, job title, contact information, a LinkedIn profile, relevant subheadings, and an optimized file type.
                     Make the process simple and efficient using our LIVE editor dashboard to revise your resume based on the scanner’s recommendations.</p>
                 <div className='my-10'>
-                    <div className="flex justify-between">
-                        <div></div>
-                        <p className='uppercase text-3xl'>Table 3 </p>
-                    </div>
                     <ColouredTable tabs={dummyTabs5} data={dummyData} />
                 </div>
             </div>
@@ -261,10 +257,6 @@ const Analyzer: React.FC = () => {
                 </div>
                 <p className='text-[24px] my-5'>We use this to assess your resume word count, measurable results present, active verbs present, and the presence of clichés and buzzwords.</p>
                 <div className='my-10'>
-                    <div className="flex justify-between">
-                        <div></div>
-                        <p className='uppercase text-3xl'>Table 3 </p>
-                    </div>
                     <ColouredTable tabs={dummyTabs6} data={dummyData} />
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { DeleteIcon } from './core/icons'
 
-const JobDesc = () => {
+const JobDesc: React.FC = () => {
     return (
         <div className='w-full  sm:w-[50%] flex justify-between'>
             <div className='w-full md:w-[80%] lg:w-[65%] text-center' >
