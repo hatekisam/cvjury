@@ -21,7 +21,7 @@ const FileDropZone: FC<{
     const { getRootProps, getInputProps, isDragActive } = useDropzone({
         onDrop,
         accept: {
-            'image/png': ['.png', '.PNG', '.jpg', '.JPG', '.jpeg', '.JPEG'],
+            'pdf/docs': ['.pdf', '.PDF', '.doc', '.DOC', '.docx', '.DOCX'],
         },
     });
 
