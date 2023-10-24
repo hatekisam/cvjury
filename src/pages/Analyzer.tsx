@@ -78,6 +78,12 @@ const Analyzer: React.FC = () => {
             score: 19
         },
     ]
+    const ssmList = [
+        "FASdfasdfadf",
+        "FASdfasdfadf",
+        "FASdfasdfadf",
+        "FASdfasdfadf",
+    ]
     return (
         <div className='w-screen bg-[#F1F1F1] px-5 md:px-12 lg:px-24 py-20 h-full overflow-y-auto'>
             <p className='text-[40px] my-2'>Hard and Soft Skills (Frequencies)</p>
@@ -240,15 +246,18 @@ const Analyzer: React.FC = () => {
             </div>
             <div className="my-10">
                 <div className="flex justify-between">
-                    <p className='text-4xl text-[#6A6A6A] font-semibold my-4'>Hard Skills Match (HSM)</p>
+                    <p className='text-4xl text-[#6A6A6A] font-semibold my-4'>Soft Skills Match (SSM)</p>
                     <div className='w-[30%]'>
-                        <p className="text-right  text-xl">28/30</p>
-                        <LinearProgressBar score={70} />
+                        <p className="text-right  text-xl">5/30</p>
+                        <LinearProgressBar score={16} />
                     </div>
                 </div>
-                <p className='text-[24px] my-5'>Most resumes include only 60% of the necessary hard skills compared to the target job description.
-                    Examples of hard skills are Excel, NodeJS, SQL, JavaScript, accounting, engineering, medicine, teaching, etc.
-                    They are generally technical, software mastery, and professional skills learned to qualify for a job. They determine whether you should apply for the role in the first place.</p>
+                <p className='text-[24px] my-5'>Only 28% of resumes contain the necessary soft skills. These are essential soft skills everyone needs to succeed at work. Here are the top ten in-demand soft skills:</p>
+                <ul className='list-disc'>
+                    {ssmList.map((el,i)=>(
+                        <li key={i}>{el}</li>
+                    ))}
+                </ul>
                 <div className='my-10'>
                     <Table tabs={dummyTabs5} data={dummyData} headBg='#E1ECF6' />
                 </div>
