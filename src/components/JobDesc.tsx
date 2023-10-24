@@ -3,7 +3,7 @@ import { DeleteIcon } from './core/icons'
 
 const JobDesc: React.FC = () => {
     return (
-        <div className='w-full  sm:w-[50%] flex justify-between'>
+        <div className='w-full  sm:w-[50%] flex flex-col md:flex-row justify-between'>
             <div className='w-full md:w-[80%] lg:w-[65%] text-center' >
                 <p className='text-[#6A6A6A] text-3xl'>Job Description</p>
                 <div className="p-5 border-dashed border-2 border-black rounded-3xl ">
@@ -17,7 +17,7 @@ const JobDesc: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='md:w-[20%] lg:w-[35%] flex items-center justify-center text-xs'>
+            <div className='my-5 md:my-0 w-full md:w-[20%] lg:w-[35%] flex items-center justify-center text-xs'>
                 <button className='text-white bg-[#E06B42] px-4 py-2 rounded-full  border-[#C7CCD2] border'>Scan for free</button>
             </div>
         </div>
