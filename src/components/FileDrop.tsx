@@ -27,23 +27,23 @@ const FileDropZone: FC<{
     return (
         <div
             {...getRootProps()}
-            className={`dropzone ${isDragActive ? 'active bg-[rgba(42,10,82,0.1)]' : ''}`}
+            className={`dropzone ${isDragActive ? 'active ' : ''}`}
         >
             <input {...getInputProps()} />
             {selectedImage !== null ? (
-                <div className="bg-[rgba(67,67,67,0.03)] h-[300px] rounded-md border-[2px] border-[rgba(67,67,67,0.09)] flex flex-col gap-5 justify-center items-center">
+                <div className="bg-[rgba(67,67,67,0.03)] h-[300px] rounded-md border-dashed border-2 flex flex-col gap-5 justify-center items-center">
                     <img src={selectedImage as string} alt="Selected" className="w-full h-full rounded-lg" />
                 </div>
             ) : (
                 <div>
                     {isDragActive ? (
-                        <div className="bg-[rgba(67,67,67,0.03)] h-[300px] rounded-md border-[2px] border-[rgba(67,67,67,0.09)] flex flex-col gap-5 justify-center items-center p-2 ">
+                        <div className="bg-[rgba(67,67,67,0.03)] h-[300px] rounded-md border-dashed border-2 flex flex-col gap-5 justify-center items-center p-2 ">
                             <p className="text-[rgba(0,0,0,0.1)]  text-[28px] font-semibold">
                                 Drop the file here
                             </p>
                         </div>
                     ) : (
-                        <div className="bg-[rgba(67,67,67,0.03)] h-[300px] rounded-md border-[2px] border-[rgba(67,67,67,0.09)] flex flex-col gap-5 justify-center  items-center p-2">
+                        <div className=" flex items-center rounded-md border-dashed border-2  p-2">
                             <p className="text-[rgba(0,0,0,0.1)]  text-[28px] font-semibold">Drag & Drop</p>
                             <p className="text-[rgba(73,73,74,0.78)] text-sm font-medium"></p>
                         </div>
