@@ -5,7 +5,7 @@ import JobDesc from '../components/JobDesc'
 import { Logo } from '../components/core/icons'
 const Main: React.FC = () => {
 	return (
-		<div className='relative flex flex-col items-center py-16 w-screen h-screen overflow-hidden px-5 '>
+		<div className='relative flex flex-col items-center py-16 w-screen h-screen overflow-y-auto sm:overflow-hidden px-5 '>
 			<Helmet>
 				<title>CV Jury</title>
 			</Helmet>
