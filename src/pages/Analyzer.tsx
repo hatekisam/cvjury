@@ -3,6 +3,7 @@ import Table from '../components/core/Table';
 import { DesirableIcon, Done, Edit, JobIcon, PrintIcon, Rescan, ResultPresentationIcon, ResumeIcon, ShareIcon, SkillGapIcon, Upload, UploadRescan } from '../components/core/icons';
 import SimilarityBar from '../components/Similarity';
 import SimilarityLinearBar from '../components/SimilarityBars';
+import LinearProgressBar from '../components/core/LinearProgressBar';
 
 const Analyzer: React.FC = () => {
     const dummyTabs = [
@@ -185,6 +186,25 @@ const Analyzer: React.FC = () => {
                             <p className='text-lg'>Done!</p>
                         </button>
                     </div>
+                </div>
+            </div>
+            <div className="my-10">
+                <div className="flex justify-between">
+                    <p className='text-4xl text-[#6A6A6A] font-semibold my-4'>ATS Best Practices Match (ATS)</p>
+                    <div className='w-[30%]'>
+                        <p className="text-right  text-xl">25/30</p>
+                        <LinearProgressBar score={70} />
+                    </div>
+                </div>
+                <p className='text-[24px] my-5'>Maximize your chances of getting hired by ensuring your resume passes the 10 ATS best practices factors assessment.
+                    To stand a better chance, your resume must score 80% or higher and include crucial elements such as biodata, job title, contact information, a LinkedIn profile, relevant subheadings, and an optimized file type.
+                    Make the process simple and efficient using our LIVE editor dashboard to revise your resume based on the scanner’s recommendations.</p>
+                <div className='my-10'>
+                    <div className="flex justify-between">
+                        <div></div>
+                        <p className='uppercase text-3xl'>Table 3 </p>
+                    </div>
+                    <Table tabs={dummyTabs3} data={dummyData} />
                 </div>
             </div>
         </div>
