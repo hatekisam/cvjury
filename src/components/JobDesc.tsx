@@ -2,8 +2,8 @@ import React from 'react'
 
 const JobDesc = () => {
     return (
-        <div className='w-[50%] flex justify-between'>
-            <div className='w-[65%] text-center' >
+        <div className='w-full  sm:w-[50%] flex justify-between'>
+            <div className='w-full md:w-[80%] lg:w-[65%] text-center' >
                 <p className='text-[#6A6A6A] text-3xl'>Job Description</p>
                 <div className="p-5 border-dashed border-2 border-black rounded-3xl ">
                     <input type="text" placeholder='Enter Job Title' className='border-[#BCBCBC] border rounded-lg p-3 text-[13px] w-full  outline-none ' />
@@ -12,7 +12,7 @@ const JobDesc = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-[35%]'></div>
+            <div className='md:w-[20%] lg:w-[35%]'></div>
         </div>
     )
 }
