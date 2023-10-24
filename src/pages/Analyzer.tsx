@@ -35,7 +35,7 @@ const Analyzer: React.FC = () => {
         },
     ];
     const dummyTabs5 = [
-        { title: 'Skills', width: 15,background:"rgba(224,107,66,0.20)" },
+        { title: 'Skills', width: 15, background: "rgba(224,107,66,0.20)" },
         {
             title: `Found in Resume
          (Frequency)`, width: 25
@@ -223,6 +223,22 @@ const Analyzer: React.FC = () => {
                     <ColouredTable tabs={dummyTabs5} data={dummyData} />
                 </div>
             </div>
+            <div className="my-10">
+                <div className="flex justify-between">
+                    <p className='text-4xl text-[#6A6A6A] font-semibold my-4'>Hard Skills Match (HSM)</p>
+                    <div className='w-[30%]'>
+                        <p className="text-right  text-xl">28/30</p>
+                        <LinearProgressBar score={70} />
+                    </div>
+                </div>
+                <p className='text-[24px] my-5'>Most resumes include only 60% of the necessary hard skills compared to the target job description.
+                    Examples of hard skills are Excel, NodeJS, SQL, JavaScript, accounting, engineering, medicine, teaching, etc.
+                    They are generally technical, software mastery, and professional skills learned to qualify for a job. They determine whether you should apply for the role in the first place.</p>
+                <div className='my-10'>
+                    <Table tabs={dummyTabs5} data={dummyData}  headBg='#E1ECF6'/>
+                </div>
+            </div>
+            
         </div>
     )
 }

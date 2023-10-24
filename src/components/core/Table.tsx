@@ -12,12 +12,13 @@ interface DataToTabs {
 interface Props {
     tabs: Tab[];
     data: DataToTabs[];
+    headBg?: string
 }
 
-const Table: React.FC<Props> = ({ tabs, data }) => {
+const Table: React.FC<Props> = ({ tabs, data, headBg }) => {
     return (
         <table className='w-full bg-white rounded-3xl ' style={{ boxShadow: '0px 13px 50px 0px rgba(0, 0, 0, 0.15)' }}>
-            <thead >
+            <thead style={{ background: headBg }}>
                 <tr className='rounded-t-3xl'>
                     {tabs.map((tab, i) => (
                         <th key={i} style={{ width: `${tab.width}%` }} className={`text-left px-5 pt-12 pb-3  border border-[#E2DFDF] ${i == 0 && "rounded-tl-3xl"} ${i == tabs.length - 1 && "rounded-tr-3xl"}`}>{tab.title}</th>
@@ -33,7 +34,7 @@ const Table: React.FC<Props> = ({ tabs, data }) => {
                     </tr>
                 ))}
             </tbody>
-        </table>
+        </table >
     );
 }
 
