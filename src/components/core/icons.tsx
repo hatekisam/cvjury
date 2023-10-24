@@ -15,7 +15,7 @@ export const Logo = () => (
         </defs>
     </svg>
 )
-export const File = () => (
+export const FileIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
         <path d="M3.44958 10.4466H9.68768V9.21146H3.44958V10.4466Z" fill="black" />
         <path d="M9.68768 7.97632H3.44958V6.74117H9.68768V7.97632Z" fill="black" />

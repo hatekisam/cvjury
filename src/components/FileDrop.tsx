@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
+import { FileIcon } from './core/icons';
 
 const FileDropZone: FC<{
     onFilesSelected: (files: File[]) => void;
@@ -43,9 +44,10 @@ const FileDropZone: FC<{
                             </p>
                         </div>
                     ) : (
-                        <div className=" flex items-center rounded-md border-dashed border-2  p-2">
-                            <p className="text-[rgba(0,0,0,0.1)]  text-[28px] font-semibold">Drag & Drop</p>
-                            <p className="text-[rgba(73,73,74,0.78)] text-sm font-medium"></p>
+                        <div className=" flex items-center justify-between rounded-md border-dashed border-2  p-2 text-[#3D4D64] text-xs">
+                            <FileIcon />
+                            <p className="   ">Click or drag file to this area to upload.</p>
+                            <button className='px-4 py-1.5 bg-[#F9F9F9] border-2 border-[#C7CCD2] rounded-full '>Browse</button>
                         </div>
                     )}
                 </div>
