@@ -39,6 +39,28 @@ const Analyzer: React.FC = () => {
         { HardSkills: "Typing Fast", Frequency: 20 },
         { HardSkills: "Typing Fast", Frequency: 20 }
     ];
+    const similarityLinearData = [
+        {
+            title: "ATS Best Practices ",
+            issues: 1,
+            score: 80
+        },
+        {
+            title: "Sales Index Match ",
+            issues: 1,
+            score: 70
+        },
+        {
+            title: "Hard Skills Match ",
+            issues: 0,
+            score: 100
+        },
+        {
+            title: "Soft Skills Match ",
+            issues: 0,
+            score: 20
+        },
+    ]
     return (
         <div className='w-screen bg-[#F1F1F1] px-5 md:px-12 lg:px-24 py-20 h-full overflow-y-auto'>
             <p className='text-[40px] my-2'>Hard and Soft Skills (Frequencies)</p>
@@ -127,8 +149,12 @@ const Analyzer: React.FC = () => {
                             <UploadRescan />
                         </button>
                     </div>
-                    <div className='w-[40%] flex items-center gap-5'>
-                        <SimilarityLinearBar score={20/100}  issues={10} title='Hello' /> 
+                    <div className='w-[40%] flex flex-col items-center gap-5'>
+                        {similarityLinearData.map((info, i) => {
+                            return (
+                                <SimilarityLinearBar key={i} score={info.score} issues={info.issues} title={info.title} />
+                            )
+                        })}
                     </div>
                 </div>
             </div>

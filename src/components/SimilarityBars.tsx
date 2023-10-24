@@ -1,6 +1,4 @@
 import React from 'react'
-import LinearProgress from '@material/react-linear-progress';
-import '@material/react-linear-progress/dist/linear-progress.css';
 interface Props {
     title: string;
     issues: number;
@@ -14,11 +12,9 @@ const SimilarityBars: React.FC<Props> = ({ title, issues, score }) => {
                 <p>{title}</p>
                 <p>{issues} Issue{(issues === 0 || issues > 1) && "s"} to fix</p>
             </div>
-            <LinearProgress
-                buffer={1}
-                progress={score}
-                
-            />
+            <div className="w-full bg-[#D6D6D6] rounded-full my-3">
+                <div className={`w-full py-2  ${score < 20 ? "bg-red-500" : score < 30 ? "bg-[#a86750]" : "bg-[#E06B42]"} rounded-full`} style={{ width: `${score}%` }}></div>
+            </div>
         </div>
     )
 }
