@@ -79,10 +79,16 @@ const Analyzer: React.FC = () => {
         },
     ]
     const ssmList = [
-        "FASdfasdfadf",
-        "FASdfasdfadf",
-        "FASdfasdfadf",
-        "FASdfasdfadf",
+        "Excellent communication",
+        "Creativity",
+        "Critical thinking",
+        "Culture awareness",
+        "Emotional Intelligence",
+        "Focus mastery",
+        "Growth mindset",
+        "Innovation",
+        "Leadership",
+        "Storytelling",
     ]
     return (
         <div className='w-screen bg-[#F1F1F1] px-5 md:px-12 lg:px-24 py-20 h-full overflow-y-auto'>
@@ -254,12 +260,13 @@ const Analyzer: React.FC = () => {
                 </div>
                 <p className='text-[24px] my-5'>Only 28% of resumes contain the necessary soft skills. These are essential soft skills everyone needs to succeed at work. Here are the top ten in-demand soft skills:</p>
                 <ul className='list-disc'>
-                    {ssmList.map((el,i)=>(
+                    {ssmList.map((el, i) => (
                         <li key={i}>{el}</li>
                     ))}
                 </ul>
+                <p>And CVJury's 24 <span className='underline'>soft skill</span> classifications</p>
                 <div className='my-10'>
-                    <Table tabs={dummyTabs5} data={dummyData} headBg='#E1ECF6' />
+                    <Table tabs={dummyTabs5} data={dummyData} headBg='#EBEBEB' />
                 </div>
             </div>
         </div>
