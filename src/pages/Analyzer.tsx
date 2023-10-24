@@ -4,6 +4,7 @@ import { DesirableIcon, Done, Edit, JobIcon, PrintIcon, Rescan, ResultPresentati
 import SimilarityBar from '../components/Similarity';
 import SimilarityLinearBar from '../components/SimilarityBars';
 import LinearProgressBar from '../components/core/LinearProgressBar';
+import ColouredTable from '../components/core/ColouredTable';
 
 const Analyzer: React.FC = () => {
     const dummyTabs = [
@@ -20,6 +21,21 @@ const Analyzer: React.FC = () => {
     ];
     const dummyTabs4 = [
         { title: 'Skills', width: 15 },
+        {
+            title: `Found in Resume
+         (Frequency)`, width: 25
+        },
+        {
+            title: `Found in Job Description 
+        (Frequency)`, width: 30
+        },
+        {
+            title: `Skills Gap 
+         (Skills Missing from Resume)`, width: 30
+        },
+    ];
+    const dummyTabs5 = [
+        { title: 'Skills', width: 15,background:"rgba(224,107,66,0.20)" },
         {
             title: `Found in Resume
          (Frequency)`, width: 25
@@ -204,7 +220,7 @@ const Analyzer: React.FC = () => {
                         <div></div>
                         <p className='uppercase text-3xl'>Table 3 </p>
                     </div>
-                    <Table tabs={dummyTabs3} data={dummyData} />
+                    <ColouredTable tabs={dummyTabs5} data={dummyData} />
                 </div>
             </div>
         </div>
