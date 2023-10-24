@@ -1,6 +1,6 @@
 import React from 'react'
 import Table from '../components/core/Table';
-import { DesirableIcon, JobIcon, PrintIcon, ResumeIcon, ShareIcon, SkillGapIcon, UploadRescan } from '../components/core/icons';
+import { DesirableIcon, JobIcon, PrintIcon, ResultPresentationIcon, ResumeIcon, ShareIcon, SkillGapIcon, UploadRescan } from '../components/core/icons';
 import SimilarityBar from '../components/Similarity';
 import SimilarityLinearBar from '../components/SimilarityBars';
 
@@ -58,7 +58,7 @@ const Analyzer: React.FC = () => {
         {
             title: "Soft Skills Match ",
             issues: 0,
-            score: 20
+            score: 19
         },
     ]
     return (
@@ -155,6 +155,17 @@ const Analyzer: React.FC = () => {
                                 <SimilarityLinearBar key={i} score={info.score} issues={info.issues} title={info.title} />
                             )
                         })}
+                    </div>
+                </div>
+            </div>
+            <div className="my-36 relative mx-28 border-4 border-dashed h-[300px] rounded-3xl">
+                <div className="absolute bg-white rounded-3xl p-5 left-[10%] -top-[20%] w-full">
+                    <div className="flex gap-2 items-start">
+                        <ResultPresentationIcon />
+                        <div className='w-[70%]'>
+                            <p className='text-3xl mb-3'>Results Presentation</p>
+                            <p className='text-lg my-3'>Let's Scan Your Resume Now! Instructions: It's time to revamp your resume with our advanced recommendations scanner. The live editor makes the editing process quick, effortless, and seamless.</p>
+                        </div>
                     </div>
                 </div>
             </div>
