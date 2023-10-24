@@ -1,6 +1,6 @@
 import React from 'react'
 import Table from '../components/core/Table';
-import { DesirableIcon, JobIcon, PrintIcon, ResultPresentationIcon, ResumeIcon, ShareIcon, SkillGapIcon, UploadRescan } from '../components/core/icons';
+import { DesirableIcon, Done, Edit, JobIcon, PrintIcon, Rescan, ResultPresentationIcon, ResumeIcon, ShareIcon, SkillGapIcon, Upload, UploadRescan } from '../components/core/icons';
 import SimilarityBar from '../components/Similarity';
 import SimilarityLinearBar from '../components/SimilarityBars';
 
@@ -166,6 +166,24 @@ const Analyzer: React.FC = () => {
                             <p className='text-3xl mb-3'>Results Presentation</p>
                             <p className='text-lg my-3'>Let's Scan Your Resume Now! Instructions: It's time to revamp your resume with our advanced recommendations scanner. The live editor makes the editing process quick, effortless, and seamless.</p>
                         </div>
+                    </div>
+                    <div className="flex items-center justify-around my-5">
+                        <button className='flex items-center gap-2'>
+                            <Upload />
+                            <p className='text-lg'>Upload</p>
+                        </button>
+                        <button className='flex items-center gap-2'>
+                            <Edit />
+                            <p className='text-lg'>Edit</p>
+                        </button>
+                        <button className='flex items-center gap-2'>
+                            <Rescan />
+                            <p className='text-lg'>Rescan</p>
+                        </button>
+                        <button className='flex items-center gap-2'>
+                            <Done />
+                            <p className='text-lg'>Done!</p>
+                        </button>
                     </div>
                 </div>
             </div>
