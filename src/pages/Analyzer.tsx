@@ -1,6 +1,6 @@
 import React from 'react'
 import Table from '../components/core/Table';
-import { DesirableIcon, JobIcon, ResumeIcon, SkillGapIcon } from '../components/core/icons';
+import { DesirableIcon, JobIcon, PrintIcon, ResumeIcon, ShareIcon, SkillGapIcon } from '../components/core/icons';
 import SimilarityBar from '../components/Similarity';
 
 const Analyzer: React.FC = () => {
@@ -99,16 +99,37 @@ const Analyzer: React.FC = () => {
                     <Table tabs={dummyTabs4} data={dummyData} />
                 </div>
             </div>
-            <div className="my-10">
+            <div className="mt-28">
                 <div className="flex justify-between items-center">
                     <div></div>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-5">
                         <div className="flex items-center gap-2">
-
+                            <button className="bg-white p-2 rounded-xl">
+                                <ShareIcon />
+                            </button>
+                            <p className='text-[#444B54] text-[15px] font-medium'>Share</p>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <button className="bg-white p-2 rounded-xl">
+                                <PrintIcon />
+                            </button>
+                            <p className='text-[#444B54] text-[15px] font-medium'>Print</p>
                         </div>
                     </div>
                 </div>
-                <SimilarityBar score={20} />
+                <p className='text-4xl text-[#6A6A6A] font-semibold my-4'>Similarity Score</p>
+                <div className="flex items-center justify-between">
+                    <div className='w-[50%] flex items-center gap-5'>
+                        <SimilarityBar score={20} />
+                        <button className='flex gap-2 items-center'>
+                            <p>Upload and Rescan</p>
+                            
+                        </button>
+                    </div>
+                    <div className='w-[50%] flex items-center gap-5'>
+                        <SimilarityBar score={20} />
+                    </div>
+                </div>
             </div>
         </div>
     )
