@@ -177,14 +177,14 @@ const Analyzer: React.FC = () => {
       <div className="my-10 relative">
         <div className="flex justify-between">
           <div></div>
-          <p className="uppercase text-3xl">Table 2 </p>
+          <p className="uppercase transition-all duration-150  text-[18px]  md:text-[24px] lg:text-3xl">Table 2 </p>
         </div>
         <div
           style={{ boxShadow: "0px 13px 50px 0px rgba(0, 0, 0, 0.15)" }}
-          className="absolute left-3 top-2 bg-white border border-[#6A6A6A] text-[#6A6A6A] flex items-center gap-3 p-2 rounded-full"
+          className="absolute left-3 top-2 bg-white border border-[#6A6A6A] text-[#6A6A6A] flex items-center gap-3  py-0.5 md:py-2 p-2 rounded-full"
         >
           <JobIcon />
-          <p className="text-[30px] pr-5">JOB DESCRIPTION</p>
+          <p className="transition-all duration-150  text-[18px]  md:text-[24px] lg:text-[30px] pr-5">JOB DESCRIPTION</p>
         </div>
         <Table tabs={dummyTabs} data={dummyData} />
         <div className="h-[40px]"></div>
