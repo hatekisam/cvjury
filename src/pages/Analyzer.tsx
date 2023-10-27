@@ -23,6 +23,7 @@ import ColouredTable from "../components/core/ColouredTable";
 import ResumeSkills from "../components/ResumeSkills";
 import JobSkills from "../components/JobSkills";
 import DesirableSkills from "../components/DesirableSkills";
+import JobResumeComparison from "../components/JobResumeComparison";
 
 const Analyzer: React.FC = () => {
   const hardTitles = [
@@ -58,7 +59,7 @@ const Analyzer: React.FC = () => {
     { SoftSkills: "Hardworking", Frequency: 20 },
     { SoftSkills: "Hardworking", Frequency: 20 },
   ];
-  const dummyTabs4 = [
+  const jobResumeComparison = [
     { title: "Skills", width: 15 },
     {
       title: `Found in Resume
@@ -74,6 +75,50 @@ const Analyzer: React.FC = () => {
       title: `Skills Gap 
          (Skills Missing from Resume)`,
       width: 30,
+    },
+  ];
+  const jobResumeComparisonData = [
+    {
+      Skills: "Java",
+      "Found in Resume (Frequency)": "20",
+      "Found in Job Description (Frequency)": "20",
+      "Skills Gap (Skills Missing from Resume)": "10",
+    },
+    {
+      Skills: "Java",
+      "Found in Resume (Frequency)": "20",
+      "Found in Job Description (Frequency)": "20",
+      "Skills Gap (Skills Missing from Resume)": "10",
+    },
+    {
+      Skills: "Java",
+      "Found in Resume (Frequency)": "20",
+      "Found in Job Description (Frequency)": "20",
+      "Skills Gap (Skills Missing from Resume)": "10",
+    },
+    {
+      Skills: "Java",
+      "Found in Resume (Frequency)": "20",
+      "Found in Job Description (Frequency)": "20",
+      "Skills Gap (Skills Missing from Resume)": "10",
+    },
+    {
+      Skills: "Java",
+      "Found in Resume (Frequency)": "20",
+      "Found in Job Description (Frequency)": "20",
+      "Skills Gap (Skills Missing from Resume)": "10",
+    },
+    {
+      Skills: "Java",
+      "Found in Resume (Frequency)": "20",
+      "Found in Job Description (Frequency)": "20",
+      "Skills Gap (Skills Missing from Resume)": "10",
+    },
+    {
+      Skills: "Java",
+      "Found in Resume (Frequency)": "20",
+      "Found in Job Description (Frequency)": "20",
+      "Skills Gap (Skills Missing from Resume)": "10",
     },
   ];
   const dummyTabs5 = [
@@ -174,7 +219,10 @@ const Analyzer: React.FC = () => {
         softSkills={softSkills}
       />
       <DesirableSkills tableTitles={softTitles} tableData={softSkills} />
-      
+      <JobResumeComparison
+        tableTitles={jobResumeComparison}
+        tableData={jobResumeComparisonData}
+      />
       <div className="mt-28">
         <div className="flex justify-between items-center">
           <div></div>
