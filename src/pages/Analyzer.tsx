@@ -177,14 +177,18 @@ const Analyzer: React.FC = () => {
       <div className="my-10 relative">
         <div className="flex justify-between">
           <div></div>
-          <p className="uppercase transition-all duration-150  text-[18px]  md:text-[24px] lg:text-3xl">Table 2 </p>
+          <p className="uppercase transition-all duration-150  text-[18px]  md:text-[24px] lg:text-3xl">
+            Table 2{" "}
+          </p>
         </div>
         <div
           style={{ boxShadow: "0px 13px 50px 0px rgba(0, 0, 0, 0.15)" }}
           className="absolute left-3 top-2 bg-white border border-[#6A6A6A] text-[#6A6A6A] flex items-center gap-3  py-0.5 md:py-2 p-2 rounded-full"
         >
           <JobIcon />
-          <p className="transition-all duration-150  text-[18px]  md:text-[24px] lg:text-[30px] pr-5">JOB DESCRIPTION</p>
+          <p className="transition-all duration-150  text-[18px]  md:text-[24px] lg:text-[30px] pr-5">
+            JOB DESCRIPTION
+          </p>
         </div>
         <Table tabs={dummyTabs} data={dummyData} />
         <div className="h-[40px]"></div>
@@ -202,10 +206,12 @@ const Analyzer: React.FC = () => {
       <div className="my-10">
         <div
           style={{ boxShadow: "0px 13px 50px 0px rgba(0, 0, 0, 0.15)" }}
-          className=" bg-white border border-[#0078D4] text-[#0078D4] w-fit flex items-center gap-3 p-2 rounded-full"
+          className=" bg-white border border-[#0078D4] text-[#0078D4] w-fit flex items-center gap-3 py-0.5 md:py-2 p-2 rounded-full"
         >
           <DesirableIcon />
-          <p className="transition-all duration-150  text-[18px]  md:text-[24px] lg:text-[28px] pr-5">SEE DESIRABLE SKILLS</p>
+          <p className="transition-all duration-150  text-[18px]  md:text-[24px] lg:text-[28px] pr-5">
+            SEE DESIRABLE SKILLS
+          </p>
         </div>
         <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px] my-5">
           P.S.− While explicit mentions are a straightforward way to identify
@@ -220,7 +226,9 @@ const Analyzer: React.FC = () => {
         <div className="my-10">
           <div className="flex justify-between">
             <div></div>
-            <p className="uppercase text-3xl">Table 3 </p>
+            <p className="uppercase transition-all duration-150  text-[18px]  md:text-[24px] lg:text-3xl">
+              Table 3{" "}
+            </p>
           </div>
           <Table tabs={dummyTabs3} data={dummyData} />
         </div>
@@ -255,7 +263,9 @@ const Analyzer: React.FC = () => {
         <div className="my-10">
           <div className="flex justify-between">
             <div></div>
-            <p className="uppercase text-3xl">Table 4 </p>
+            <p className="uppercase transition-all duration-150  text-[18px]  md:text-[24px] lg:text-3xl">
+              Table 4{" "}
+            </p>
           </div>
           <Table tabs={dummyTabs4} data={dummyData} />
         </div>
@@ -329,13 +339,13 @@ const Analyzer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="my-36 relative mx-28 border-4 border-dashed h-[300px] rounded-3xl">
-        <div className="absolute bg-white rounded-3xl p-5 left-[10%] -top-[20%] w-full">
+      <div className="my-36 relative mx-5 md:mx-12 lg:mx-20 sm:border-4 border-dashed h-[300px] rounded-3xl">
+        <div className="sm:absolute bg-white rounded-3xl p-5 left-[10%] -top-[20%] w-full">
           <div className="flex gap-2 items-start">
             <ResultPresentationIcon />
             <div className="w-[70%]">
               <p className="text-3xl mb-3">Results Presentation</p>
-              <p className="text-lg my-3">
+              <p className="text-[13px] md:text-base lg:text-lg my-3">
                 Let's Scan Your Resume Now! Instructions: It's time to revamp
                 your resume with our advanced recommendations scanner. The live
                 editor makes the editing process quick, effortless, and
@@ -343,22 +353,22 @@ const Analyzer: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-around my-5">
-            <button className="flex items-center gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[13px] md:text-base lg:text-lg my-3">
+            <button className="w-[50%]  sm:w-full flex items-center gap-2">
               <Upload />
-              <p className="text-lg">Upload</p>
+              <p>Upload</p>
             </button>
-            <button className="flex items-center gap-2">
+            <button className="w-[50%]  sm:w-full flex items-center gap-2">
               <Edit />
-              <p className="text-lg">Edit</p>
+              <p>Edit</p>
             </button>
-            <button className="flex items-center gap-2">
+            <button className="w-[50%]  sm:w-full flex items-center gap-2">
               <Rescan />
-              <p className="text-lg">Rescan</p>
+              <p>Rescan</p>
             </button>
-            <button className="flex items-center gap-2">
+            <button className="w-[50%]  sm:w-full flex items-center gap-2">
               <Done />
-              <p className="text-lg">Done!</p>
+              <p>Done!</p>
             </button>
           </div>
         </div>

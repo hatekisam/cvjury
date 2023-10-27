@@ -140,6 +140,7 @@ export const DesirableIcon = () => (
     height="50"
     viewBox="0 0 64 64"
     fill="none"
+    className="w-[30px] md:w-[45px] transition-all duration-200 "
   >
     <circle cx="32" cy="32" r="32" fill="#E1ECF6" />
     <path
