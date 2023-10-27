@@ -260,7 +260,7 @@ const Analyzer: React.FC = () => {
           Let's compare the hard skills from the resume and the job description
           to identify the skill gaps:
         </p>
-        <div className="my-10">
+        <div className="my-10 overflow-x-scroll" >
           <div className="flex justify-between">
             <div></div>
             <p className="uppercase transition-all duration-150  text-[18px]  md:text-[24px] lg:text-3xl">
@@ -392,7 +392,7 @@ const Analyzer: React.FC = () => {
           process simple and efficient using our LIVE editor dashboard to revise
           your resume based on the scanner’s recommendations.
         </p>
-        <div className="my-10">
+        <div className="my-10 overflow-x-scroll">
           <ColouredTable tabs={dummyTabs5} data={dummyData} />
         </div>
       </div>
@@ -411,7 +411,7 @@ const Analyzer: React.FC = () => {
           present, active verbs present, and the presence of clichés and
           buzzwords.
         </p>
-        <div className="my-10">
+        <div className="my-10 overflow-x-scroll">
           <ColouredTable tabs={dummyTabs6} data={dummyData} />
         </div>
       </div>
@@ -433,7 +433,7 @@ const Analyzer: React.FC = () => {
           skills learned to qualify for a job. They determine whether you should
           apply for the role in the first place.
         </p>
-        <div className="my-20">
+        <div className="my-20 overflow-x-scroll">
           <Table tabs={dummyTabs5} data={dummyData} headBg="#E1ECF6" />
         </div>
       </div>
@@ -461,7 +461,7 @@ const Analyzer: React.FC = () => {
           And CVJury's 24 <span className="underline">soft skill</span>{" "}
           classifications
         </p>
-        <div className="my-20">
+        <div className="my-20 overflow-x-scroll">
           <Table tabs={dummyTabs5} data={dummyData} headBg="#EBEBEB" />
         </div>
       </div>
