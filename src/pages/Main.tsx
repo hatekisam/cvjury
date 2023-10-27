@@ -5,7 +5,7 @@ import JobDesc from "../components/JobDesc";
 import { Logo } from "../components/core/icons";
 const Main: React.FC = () => {
   return (
-    <div className="relative flex flex-col items-center py-16 w-screen h-screen overflow-y-auto  px-5 ">
+    <div className="relative flex flex-col items-center pt-16 w-screen h-screen overflow-y-auto  px-5 ">
       <Helmet>
         <title>CV Jury</title>
       </Helmet>
@@ -24,7 +24,7 @@ const Main: React.FC = () => {
       <button className="my-5  z-20 text-white bg-[#E06B42] px-4 py-2 rounded-full  border-[#C7CCD2] border">
         Scan for free
       </button>
-	  <div className="bg-white opacity-50 shadow-md w-[60vw] p-5 rounded-3xl">
+	  <div className="bg-white opacity-50 shadow-md w-[60vw] p-5 rounded-t-3xl">
 		<p className="text-black text-3xl">The 5 sets of results (from your resume and job description scan):</p>
 		<ul className="list-decimal pl-6 my-2">
 			<li>Table 1: Resume hard and soft skills (Frequencies)</li>
