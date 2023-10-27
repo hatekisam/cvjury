@@ -25,7 +25,7 @@ const Main: React.FC = () => {
       <div className="w-full h-full flex items-center justify-center bg-white">
         <div className="bg-[#D6D6D6] rounded-full w-[50vw]">
           <div
-            className="py-1 bg-[#E06B42]  rounded-full"
+            className="py-1 bg-[#E06B42]  rounded-full transition-all duration-700"
             style={{ width: `${load}%` }}
           ></div>
         </div>
