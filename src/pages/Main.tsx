@@ -1,9 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Helmet from "react-helmet";
 import ResumeUpload from "../components/ResumeUpload";
 import JobDesc from "../components/JobDesc";
 import { Logo } from "../components/core/icons";
+import { useNavigate } from "react-router-dom";
 const Main: React.FC = () => {
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+  const [load, setLoad] = useState(0);
+  useEffect(() => {
+    if (loading) {
+      const intervalId = setInterval(() => {
+        if (load < 100) setLoad(load + 10);
+        else {
+          clearInterval(intervalId); 
+          navigate("/analyzer");
+        }
+      }, 500);
+    }
+  }, [loading, load, navigate]);
+
+  if (loading) {
+    return (
+      <div className="w-full h-full flex items-center justify-center bg-white">
+        <div className="bg-[#D6D6D6] rounded-full w-[50vw]">
+          <div
+            className="py-1 bg-[#E06B42]  rounded-full"
+            style={{ width: `${load}%` }}
+          ></div>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="relative flex flex-col items-center pt-16 w-screen h-screen overflow-y-auto  px-5 ">
       <Helmet>
@@ -21,19 +49,26 @@ const Main: React.FC = () => {
         <ResumeUpload />
         <JobDesc />
       </div>
-      <button className="my-5  z-20 text-white bg-[#E06B42] px-4 py-2 rounded-full  border-[#C7CCD2] border">
+      <button
+        onClick={() => setLoading(true)}
+        className="my-5  z-20 text-white bg-[#E06B42] px-4 py-2 rounded-full  border-[#C7CCD2] border"
+      >
         Scan for free
       </button>
-	  <div className="bg-white opacity-50 shadow-md w-full mx-3 md:w-[80vw] lg:w-[60vw] p-5 rounded-t-3xl">
-		<p className="text-black text-xl md:text-2xl lg:text-3xl">The 5 sets of results (from your resume and job description scan):</p>
-		<ul className="list-decimal pl-6 my-2">
-			<li>Table 1: Resume hard and soft skills (Frequencies)</li>
-			<li>Table 2: Job description hard and soft skills (Frequencies)</li>
-			<li>Table 3: Suggested desirable skills</li>
-			<li>Table 4: Job description and resume compared — Skills Gap Identified</li>
-			<li>Similarity Score</li>
-		</ul>
-	  </div>
+      <div className="bg-white opacity-50 shadow-md w-full mx-3 md:w-[80vw] lg:w-[60vw] p-5 rounded-t-3xl">
+        <p className="text-black text-xl md:text-2xl lg:text-3xl">
+          The 5 sets of results (from your resume and job description scan):
+        </p>
+        <ul className="list-decimal pl-6 my-2">
+          <li>Table 1: Resume hard and soft skills (Frequencies)</li>
+          <li>Table 2: Job description hard and soft skills (Frequencies)</li>
+          <li>Table 3: Suggested desirable skills</li>
+          <li>
+            Table 4: Job description and resume compared — Skills Gap Identified
+          </li>
+          <li>Similarity Score</li>
+        </ul>
+      </div>
     </div>
   );
 };
