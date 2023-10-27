@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Table from "../components/core/Table";
 import {
   DesirableIcon,
@@ -115,6 +115,7 @@ const Analyzer: React.FC = () => {
       score: 19,
     },
   ];
+  const [showingShare, setShowingShare] = useState(false);
   const ssmList = [
     "Excellent communication",
     "Creativity",
@@ -128,7 +129,12 @@ const Analyzer: React.FC = () => {
     "Storytelling",
   ];
   return (
-    <div className="w-screen bg-[#F1F1F1] px-5 md:px-12 lg:px-24 py-20 h-full overflow-y-auto">
+    <div
+      className="w-screen bg-[#F1F1F1] px-5 md:px-12 lg:px-24 py-20 h-full overflow-y-auto"
+      onClick={() => {
+        if (showingShare) setShowingShare(false);
+      }}
+    >
       <p className="text-[40px] my-2">Hard and Soft Skills (Frequencies)</p>
       <p className="text-2xl my-2">
         Based on the resume and job description you uploaded, here are the hard
@@ -259,8 +265,18 @@ const Analyzer: React.FC = () => {
         <div className="flex justify-between items-center">
           <div></div>
           <div className="flex items-center gap-5">
-            <div className="flex items-center gap-2">
-              <button className="bg-white p-2 rounded-xl">
+            <div className="relative flex items-center gap-2">
+              <div
+                className={`${
+                  showingShare ? "block" : "hidden"
+                } absolute -left-1 top-[110%] bg-white rounded-xl p-2 duration-1000 transition-all`}
+              >
+                <p>By EMail</p>
+              </div>
+              <button
+                onClick={() => setShowingShare(true)}
+                className="bg-white p-2 rounded-xl"
+              >
                 <ShareIcon />
               </button>
               <p className="text-[#444B54] text-[15px] font-medium">Share</p>
