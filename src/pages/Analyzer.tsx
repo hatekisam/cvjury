@@ -226,11 +226,11 @@ const Analyzer: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col gap-2 items-center my-10">
-        <p className="text-black text-2xl text-center">
+        <p className="text-black transition-all duration-150  text-[16px]  md:text-[20px] lg:text-2xl text-center">
           More to come. Click to see the job description and resume compared —
           Skills Gap Identified:
         </p>
-        <button className="flex gap-2 items-center text-[#E06B42] text-2xl">
+        <button className="flex gap-2 items-center text-[#E06B42] transition-all duration-150  text-[16px]  md:text-[20px] lg:text-2xl">
           <p>See Skills Gap Identified</p>
           <UploadRescan />
         </button>
