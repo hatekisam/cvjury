@@ -406,7 +406,7 @@ const Analyzer: React.FC = () => {
             <LinearProgressBar score={60} />
           </div>
         </div>
-        <p className="text-[24px] my-5">
+        <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px] my-5">
           We use this to assess your resume word count, measurable results
           present, active verbs present, and the presence of clichés and
           buzzwords.
@@ -425,7 +425,7 @@ const Analyzer: React.FC = () => {
             <LinearProgressBar score={70} />
           </div>
         </div>
-        <p className="text-[24px] my-5">
+        <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px]my-5">
           Most resumes include only 60% of the necessary hard skills compared to
           the target job description. Examples of hard skills are Excel, NodeJS,
           SQL, JavaScript, accounting, engineering, medicine, teaching, etc.
