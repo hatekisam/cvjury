@@ -13,7 +13,7 @@ const Main: React.FC = () => {
       const intervalId = setInterval(() => {
         if (load < 100) setLoad(load + 10);
         else {
-          clearInterval(intervalId); 
+          clearInterval(intervalId);
           navigate("/analyzer");
         }
       }, 500);

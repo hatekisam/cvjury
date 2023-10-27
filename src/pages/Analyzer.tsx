@@ -137,8 +137,8 @@ const Analyzer: React.FC = () => {
         if (showingShare) setShowingShare(false);
       }}
     >
-      <p className="text-[40px] my-2">Hard and Soft Skills (Frequencies)</p>
-      <p className="text-2xl my-2">
+      <p className="transition-all duration-150  text-[22px]  md:text-[32px] lg:text-[40px] my-2">Hard and Soft Skills (Frequencies)</p>
+      <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-2xl my-2">
         Based on the resume and job description you uploaded, here are the hard
         and soft skills we extracted from them:
       </p>
@@ -301,15 +301,15 @@ const Analyzer: React.FC = () => {
         <p className="text-4xl text-[#6A6A6A] font-semibold my-4">
           Similarity Score
         </p>
-        <div className="flex items-center justify-between my-10">
-          <div className="w-[60%] flex items-center gap-5">
+        <div className="flex flex-col sm:flex-row items-center justify-between my-10">
+          <div className="w-full md:w-[60%] flex flex-col md:flex-row  items-center gap-5">
             <SimilarityBar score={20} />
             <button className="flex gap-2 items-center text-[#E06B42] text-2xl">
               <p>Upload and Rescan</p>
               <UploadRescan />
             </button>
           </div>
-          <div className="w-[40%] flex flex-col items-center gap-5">
+          <div className="w-full md:w-[40%] flex flex-col items-center gap-5">
             {similarityLinearData.map((info, i) => {
               return (
                 <SimilarityLinearBar
