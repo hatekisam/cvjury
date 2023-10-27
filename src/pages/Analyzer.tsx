@@ -132,7 +132,7 @@ const Analyzer: React.FC = () => {
   ];
   return (
     <div
-      className="w-screen bg-[#F1F1F1] px-5 md:px-12 lg:px-24 py-20 h-full overflow-y-auto"
+      className="w-screen bg-[#F1F1F1] px-5 md:px-12 lg:px-24 py-20 h-full overflow-y-auto overflow-x-hidden"
       onClick={() => {
         if (showingShare) setShowingShare(false);
       }}
@@ -175,9 +175,9 @@ const Analyzer: React.FC = () => {
         </button>
       </div>
       <div className="my-10 relative">
-        <div className="flex justify-between">
+        <div className="flex justify-between ">
           <div></div>
-          <p className="uppercase transition-all duration-150  text-[18px]  md:text-[24px] lg:text-3xl">
+          <p className="uppercase transition-all duration-150  text-[18px]  md:text-[24px] lg:text-3xl ">
             Table 2{" "}
           </p>
         </div>
@@ -374,11 +374,11 @@ const Analyzer: React.FC = () => {
         </div>
       </div>
       <div className="my-20">
-        <div className="flex justify-between">
-          <p className="text-4xl text-[#6A6A6A] font-semibold my-4">
+        <div className="flex flex-col md:flex-row justify-between">
+          <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
             ATS Best Practices Match (ATS)
           </p>
-          <div className="w-[30%]">
+          <div className="w-full md:w-[30%]">
             <p className="text-right  text-xl">25/30</p>
             <LinearProgressBar score={70} />
           </div>
@@ -397,11 +397,11 @@ const Analyzer: React.FC = () => {
         </div>
       </div>
       <div className="my-20">
-        <div className="flex justify-between">
-          <p className="text-4xl text-[#6A6A6A] font-semibold my-4">
+        <div className="flex flex-col md:flex-row justify-between">
+          <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
             Sales Index Match (SIM)
           </p>
-          <div className="w-[30%]">
+          <div className="w-full md:w-[30%]">
             <p className="text-right  text-xl">15/30</p>
             <LinearProgressBar score={60} />
           </div>
@@ -416,11 +416,11 @@ const Analyzer: React.FC = () => {
         </div>
       </div>
       <div className="my-20">
-        <div className="flex justify-between">
-          <p className="text-4xl text-[#6A6A6A] font-semibold my-4">
+        <div className="flex flex-col md:flex-row justify-between">
+          <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
             Hard Skills Match (HSM)
           </p>
-          <div className="w-[30%]">
+          <div className="w-full md:w-[30%]">
             <p className="text-right  text-xl">28/30</p>
             <LinearProgressBar score={70} />
           </div>
@@ -438,11 +438,11 @@ const Analyzer: React.FC = () => {
         </div>
       </div>
       <div className="my-20">
-        <div className="flex justify-between">
-          <p className="text-4xl text-[#6A6A6A] font-semibold my-4">
+        <div className="flex flex-col md:flex-row justify-between">
+          <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
             Soft Skills Match (SSM)
           </p>
-          <div className="w-[30%]">
+          <div className="w-full md:w-[30%]">
             <p className="text-right  text-xl">5/30</p>
             <LinearProgressBar score={16} />
           </div>

@@ -17,7 +17,7 @@ interface Props {
 
 const Table: React.FC<Props> = ({ tabs, data, headBg }) => {
     return (
-        <table className='w-full bg-white rounded-3xl ' style={{ boxShadow: '0px 13px 50px 0px rgba(0, 0, 0, 0.15)' }}>
+        <table className='w-full overflow-x-scroll bg-white rounded-3xl ' style={{ boxShadow: '0px 13px 50px 0px rgba(0, 0, 0, 0.15)' }}>
             <thead style={{ background: headBg }}>
                 <tr className='rounded-t-3xl'>
                     {tabs.map((tab, i) => (
