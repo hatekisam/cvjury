@@ -25,3 +25,8 @@ interface JobSkillsProps {
   hardSkills: DataToTabs[];
   softSkills: DataToTabs[];
 }
+
+interface DesirableSkills {
+  tableTitles: Tab[];
+  tableData: DataToTabs[];
+}
