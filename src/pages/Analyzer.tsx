@@ -165,11 +165,11 @@ const Analyzer: React.FC = () => {
         <Table tabs={dummyTabs2} data={dummyData} />
       </div>
       <div className="flex flex-col gap-2 items-center my-10">
-        <p className="text-black text-2xl text-center">
+        <p className="text-black transition-all duration-150  text-[16px]  md:text-[20px] lg:text-2xl text-center">
           Still, more to come. Click to see the extracted job description’s hard
           and soft skills (their frequencies):
         </p>
-        <button className="flex gap-2 items-center text-[#E06B42] text-2xl">
+        <button className="flex gap-2 items-center text-[#E06B42] transition-all duration-150  text-[16px]  md:text-[20px] lg:text-2xl">
           <p>See Hard & Soft Skills Job Description</p>
           <UploadRescan />
         </button>
@@ -191,10 +191,10 @@ const Analyzer: React.FC = () => {
         <Table tabs={dummyTabs2} data={dummyData} />
       </div>
       <div className="flex flex-col gap-2 items-center my-10">
-        <p className="text-black text-2xl text-center">
+        <p className="text-black transition-all duration-150  text-[16px]  md:text-[20px] lg:text-2xl text-center">
           Still, more to come. Click to see the suggested desirable skills:
         </p>
-        <button className="flex gap-2 items-center text-[#E06B42] text-2xl">
+        <button className="flex gap-2 items-center text-[#E06B42] transition-all duration-150  text-[16px]  md:text-[20px] lg:text-2xl">
           <p>See Desirable Skills</p>
           <UploadRescan />
         </button>
@@ -205,9 +205,9 @@ const Analyzer: React.FC = () => {
           className=" bg-white border border-[#0078D4] text-[#0078D4] w-fit flex items-center gap-3 p-2 rounded-full"
         >
           <DesirableIcon />
-          <p className="text-[30px] pr-5">SEE DESIRABLE SKILLS</p>
+          <p className="transition-all duration-150  text-[18px]  md:text-[24px] lg:text-[28px] pr-5">SEE DESIRABLE SKILLS</p>
         </div>
-        <p className="text-[24px] my-5">
+        <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px] my-5">
           P.S.− While explicit mentions are a straightforward way to identify
           skills, there are often implied or contextual skills that
           professionals might possess based on the nature of their work, even if
