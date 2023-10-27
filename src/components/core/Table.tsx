@@ -1,19 +1,6 @@
 import React from 'react';
 
-interface Tab {
-    title: string;
-    width: number;
-}
 
-interface DataToTabs {
-    [key: string]: string | number;
-}
-
-interface Props {
-    tabs: Tab[];
-    data: DataToTabs[];
-    headBg?: string
-}
 
 const Table: React.FC<Props> = ({ tabs, data, headBg }) => {
     return (
