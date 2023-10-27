@@ -2,7 +2,7 @@ import React from "react";
 import { ResumeIcon, UploadRescan } from "./core/icons";
 import Table from "./core/Table";
 
-const ResumeSkills: React.FC<ResumeSkillsProps> = ({
+const JobSkills: React.FC<JobSkillsProps> = ({
   hardSkills,
   softSkills,
   hardTitles,
@@ -51,4 +51,4 @@ const ResumeSkills: React.FC<ResumeSkillsProps> = ({
   );
 };
 
-export default ResumeSkills;
+export default JobSkills;

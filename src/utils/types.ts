@@ -1,14 +1,21 @@
 interface Tab {
-    title: string;
-    width: number;
+  title: string;
+  width: number;
 }
 
 interface DataToTabs {
-    [key: string]: string | number;
+  [key: string]: string | number;
 }
 
-interface Props {
-    tabs: Tab[];
-    data: DataToTabs[];
-    headBg?: string
+interface TableProps {
+  tabs: Tab[];
+  data: DataToTabs[];
+  headBg?: string;
+}
+
+interface ResumeSkillsProps {
+  hardTitles: Tab[];
+  softTitles: Tab[];
+  hardSkills: DataToTabs[];
+  softSkills: DataToTabs[];
 }

@@ -20,19 +20,41 @@ import SimilarityBar from "../components/Similarity";
 import SimilarityLinearBar from "../components/SimilarityBars";
 import LinearProgressBar from "../components/core/LinearProgressBar";
 import ColouredTable from "../components/core/ColouredTable";
+import ResumeSkills from "../components/ResumeSkills";
 
 const Analyzer: React.FC = () => {
-  const dummyTabs = [
+  const hardTitles = [
     { title: "HardSkills", width: 80 },
     { title: "Frequency", width: 20 },
   ];
-  const dummyTabs2 = [
+  const softTitles = [
     { title: "SoftSkills", width: 80 },
     { title: "Frequency", width: 20 },
   ];
   const dummyTabs3 = [
     { title: "Desirable Skills", width: 30 },
     { title: "Explanatory Notes", width: 70 },
+  ];
+  const hardSkills = [
+    { HardSkills: "Hardworking", Frequency: 20 },
+    { HardSkills: "Hardworking", Frequency: 20 },
+    { HardSkills: "Hardworking", Frequency: 20 },
+    { HardSkills: "Hardworking", Frequency: 20 },
+    { HardSkills: "Hardworking", Frequency: 20 },
+    { HardSkills: "Hardworking", Frequency: 20 },
+    { HardSkills: "Hardworking", Frequency: 20 },
+    { HardSkills: "Hardworking", Frequency: 20 },
+  ];
+
+  const softSkills = [
+    { SoftSkills: "Hardworking", Frequency: 20 },
+    { SoftSkills: "Hardworking", Frequency: 20 },
+    { SoftSkills: "Hardworking", Frequency: 20 },
+    { SoftSkills: "Hardworking", Frequency: 20 },
+    { SoftSkills: "Hardworking", Frequency: 20 },
+    { SoftSkills: "Hardworking", Frequency: 20 },
+    { SoftSkills: "Hardworking", Frequency: 20 },
+    { SoftSkills: "Hardworking", Frequency: 20 },
   ];
   const dummyTabs4 = [
     { title: "Skills", width: 15 },
@@ -137,7 +159,12 @@ const Analyzer: React.FC = () => {
         if (showingShare) setShowingShare(false);
       }}
     >
-
+      <ResumeSkills
+        hardTitles={hardTitles}
+        softTitles={softTitles}
+        hardSkills={hardSkills}
+        softSkills={softSkills}
+      />
       <div className="my-10 relative">
         <div className="flex justify-between ">
           <div></div>
@@ -154,9 +181,9 @@ const Analyzer: React.FC = () => {
             JOB DESCRIPTION
           </p>
         </div>
-        <Table tabs={dummyTabs} data={dummyData} />
+        {/* <Table tabs={dummyTabs} data={dummyData} />
         <div className="h-[40px]"></div>
-        <Table tabs={dummyTabs2} data={dummyData} />
+        <Table tabs={dummyTabs2} data={dummyData} /> */}
       </div>
       <div className="flex flex-col gap-2 items-center my-10">
         <p className="text-black transition-all duration-150  text-[16px]  md:text-[20px] lg:text-2xl text-center">
@@ -217,14 +244,16 @@ const Analyzer: React.FC = () => {
             className=" bg-white border border-[#E06B42] text-[#E06B42] w-fit flex items-center gap-3 p-2 rounded-full"
           >
             <SkillGapIcon />
-            <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg: pr-5">SKILLS GAP IDENTIFIED</p>
+            <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg: pr-5">
+              SKILLS GAP IDENTIFIED
+            </p>
           </div>
         </div>
         <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px] my-5">
           Let's compare the hard skills from the resume and the job description
           to identify the skill gaps:
         </p>
-        <div className="my-10 overflow-x-scroll" >
+        <div className="my-10 overflow-x-scroll">
           <div className="flex justify-between">
             <div></div>
             <p className="uppercase transition-all duration-150  text-[18px]  md:text-[24px] lg:text-3xl">
@@ -308,7 +337,9 @@ const Analyzer: React.FC = () => {
           <div className="flex gap-2 items-start">
             <ResultPresentationIcon />
             <div className="w-full md:w-[70%]">
-              <p className="text-xl md:text-2xl lg:text-3xl mb-3">Results Presentation</p>
+              <p className="text-xl md:text-2xl lg:text-3xl mb-3">
+                Results Presentation
+              </p>
               <p className="text-[13px] md:text-base lg:text-lg my-3">
                 Let's Scan Your Resume Now! Instructions: It's time to revamp
                 your resume with our advanced recommendations scanner. The live
