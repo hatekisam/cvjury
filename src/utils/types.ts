@@ -19,3 +19,9 @@ interface ResumeSkillsProps {
   hardSkills: DataToTabs[];
   softSkills: DataToTabs[];
 }
+interface JobSkillsProps {
+  hardTitles: Tab[];
+  softTitles: Tab[];
+  hardSkills: DataToTabs[];
+  softSkills: DataToTabs[];
+}
