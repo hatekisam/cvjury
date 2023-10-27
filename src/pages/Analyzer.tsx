@@ -383,7 +383,7 @@ const Analyzer: React.FC = () => {
             <LinearProgressBar score={70} />
           </div>
         </div>
-        <p className="text-[24px] my-5">
+        <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px] my-5">
           Maximize your chances of getting hired by ensuring your resume passes
           the 10 ATS best practices factors assessment. To stand a better
           chance, your resume must score 80% or higher and include crucial
