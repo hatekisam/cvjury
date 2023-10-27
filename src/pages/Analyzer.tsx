@@ -244,8 +244,8 @@ const Analyzer: React.FC = () => {
         </button>
       </div>
       <div className="my-10">
-        <div className="flex gap-3 items-center">
-          <p className="uppercase text-[26px]">
+        <div className="flex flex-col sm:flex-row gap-3 items-center">
+          <p className="uppercase transition-all duration-150  text-[22px]  md:text-[32px] lg:text-[40px]">
             Job Description and Resume Compared:{" "}
           </p>
           <div
@@ -253,10 +253,10 @@ const Analyzer: React.FC = () => {
             className=" bg-white border border-[#E06B42] text-[#E06B42] w-fit flex items-center gap-3 p-2 rounded-full"
           >
             <SkillGapIcon />
-            <p className="text-[26px] pr-5">SKILLS GAP IDENTIFIED</p>
+            <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg: pr-5">SKILLS GAP IDENTIFIED</p>
           </div>
         </div>
-        <p className="text-[20px] my-5">
+        <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px] my-5">
           Let's compare the hard skills from the resume and the job description
           to identify the skill gaps:
         </p>
@@ -271,10 +271,10 @@ const Analyzer: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col gap-2 items-center my-10">
-        <p className="text-black text-2xl text-center">
+        <p className="text-black transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px] text-center">
           Finally, click to see your resume’s overall ‘Similarity Score’:
         </p>
-        <button className="flex gap-2 items-center text-[#E06B42] text-2xl">
+        <button className="flex gap-2 items-center text-[#E06B42] transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px]">
           <p>See Similarity Score</p>
           <UploadRescan />
         </button>
