@@ -30,3 +30,8 @@ interface DesirableSkills {
   tableTitles: Tab[];
   tableData: DataToTabs[];
 }
+
+interface JobResumeProps {
+    tableTitles: Tab[];
+    tableData: DataToTabs[];
+  }
