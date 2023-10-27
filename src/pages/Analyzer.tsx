@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import Table from "../components/core/Table";
 import {
+  CopyLink,
   DesirableIcon,
   Done,
   Edit,
   JobIcon,
+  MailLinkIcon,
   PrintIcon,
   Rescan,
   ResultPresentationIcon,
@@ -269,9 +271,16 @@ const Analyzer: React.FC = () => {
               <div
                 className={`${
                   showingShare ? "block" : "hidden"
-                } absolute -left-1 top-[110%] bg-white rounded-xl p-2 duration-1000 transition-all`}
+                } absolute right-[110%] top-[110%] bg-white rounded-xl duration-1000 transition-all text-[#6A6A6A] text-xs w-[200%]`}
               >
-                <p>By EMail</p>
+                <button className="flex px-5 py-2.5 hover:bg-[#FDEFEB] items-center gap-5  rounded-t-xl w-full">
+                  <CopyLink />
+                  <p>Copy the link</p>
+                </button>
+                <button className="flex px-5 py-2.5 hover:bg-[#FDEFEB] items-center gap-5 rounded-b-xl w-full">
+                  <MailLinkIcon />
+                  <p>Email the link</p>
+                </button>
               </div>
               <button
                 onClick={() => setShowingShare(true)}
