@@ -24,8 +24,8 @@ const Main: React.FC = () => {
       <button className="my-5  z-20 text-white bg-[#E06B42] px-4 py-2 rounded-full  border-[#C7CCD2] border">
         Scan for free
       </button>
-	  <div className="bg-white opacity-50 shadow-md w-[60vw] p-5 rounded-t-3xl">
-		<p className="text-black text-3xl">The 5 sets of results (from your resume and job description scan):</p>
+	  <div className="bg-white opacity-50 shadow-md w-full mx-3 md:w-[80vw] lg:w-[60vw] p-5 rounded-t-3xl">
+		<p className="text-black text-xl md:text-2xl lg:text-3xl">The 5 sets of results (from your resume and job description scan):</p>
 		<ul className="list-decimal pl-6 my-2">
 			<li>Table 1: Resume hard and soft skills (Frequencies)</li>
 			<li>Table 2: Job description hard and soft skills (Frequencies)</li>
