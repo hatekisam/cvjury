@@ -21,7 +21,7 @@ const Table: React.FC<Props> = ({ tabs, data, headBg }) => {
             <thead style={{ background: headBg }}>
                 <tr className='rounded-t-3xl'>
                     {tabs.map((tab, i) => (
-                        <th key={i} style={{ width: `${tab.width}%` }} className={`text-left px-5 pt-12 pb-3  border border-[#E2DFDF] ${i == 0 && "rounded-tl-3xl"} ${i == tabs.length - 1 && "rounded-tr-3xl"}`}>{tab.title}</th>
+                        <th key={i} style={{ width: `${tab.width}%` }} className={`text-left px-5 pt-16 pb-3  border border-[#E2DFDF] ${i == 0 && "rounded-tl-3xl"} ${i == tabs.length - 1 && "rounded-tr-3xl"}`}>{tab.title}</th>
                     ))}
                 </tr>
             </thead>
