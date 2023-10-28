@@ -2,17 +2,13 @@ import React, { useState } from "react";
 import Table from "../components/core/Table";
 import {
   CopyLink,
-  DesirableIcon,
   Done,
   Edit,
-  JobIcon,
   MailLinkIcon,
   PrintIcon,
   Rescan,
   ResultPresentationIcon,
-  ResumeIcon,
   ShareIcon,
-  SkillGapIcon,
   Upload,
   UploadRescan,
 } from "../components/core/icons";
@@ -33,10 +29,6 @@ const Analyzer: React.FC = () => {
   const softTitles = [
     { title: "SoftSkills", width: 80 },
     { title: "Frequency", width: 20 },
-  ];
-  const dummyTabs3 = [
-    { title: "Desirable Skills", width: 30 },
-    { title: "Explanatory Notes", width: 70 },
   ];
   const hardSkills = [
     { HardSkills: "Hardworking", Frequency: 20 },
