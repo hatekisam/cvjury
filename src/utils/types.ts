@@ -1,10 +1,11 @@
 interface Tab {
   title: string;
   width: number;
+  background?:string
 }
 
 interface DataToTabs {
-  [key: string]: string | number;
+  [key: string]: string | number | boolean;
 }
 
 interface TableProps {
@@ -49,12 +50,10 @@ interface SalesData {
 }
 
 interface AllMatchesProps {
-  atsTabsTypes: string[];
-  atsTabWidth: number[];
-  atsData: ATSData[];
-  salesTabWidth: number[];
-  salesTabsType: string[];
-  salesData: SalesData[];
+  atsTabs: Tab[];
+  atsData: DataToTabs[];
+  salesTabs: Tab[];
+  salesData: DataToTabs[];
   hardSkillsTabs: Tab[];
   hardSkillsData: DataToTabs[];
   softSkillsTabs: Tab[];

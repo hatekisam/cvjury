@@ -1,14 +1,5 @@
 import React from "react";
 
-interface Tab {
-  title: string;
-  width: number;
-  background?: string;
-}
-
-interface DataToTabs {
-  [key: string]: string | number;
-}
 
 interface Props {
   tabs: Tab[];

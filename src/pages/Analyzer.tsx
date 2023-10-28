@@ -114,48 +114,135 @@ const Analyzer: React.FC = () => {
       "Skills Gap (Skills Missing from Resume)": "10",
     },
   ];
-  const dummyTabs5 = [
-    { title: "Skills", width: 15, background: "rgba(224,107,66,0.20)" },
+  const atsTabs = [
+    { title: "Titles", width: 30, background: "rgba(224,107,66,0.20)" },
     {
-      title: `Found in Resume
-         (Frequency)`,
-      width: 25,
+      title: `Notification`,
+      width: 5,
     },
     {
-      title: `Found in Job Description 
-        (Frequency)`,
-      width: 30,
+      title: `Confirmed`,
+      width: 5,
     },
     {
-      title: `Skills Gap 
-         (Skills Missing from Resume)`,
-      width: 30,
+      title: `Description`,
+      width: 60,
     },
   ];
-  const dummyTabs6 = [
-    { title: "Skills", width: 15, background: "rgba(41,171,130,0.10)" },
+  const atsData = [
     {
-      title: `Found in Resume
-         (Frequency)`,
-      width: 25,
+      Titles: "Resume File Type",
+      Notification: true,
+      Confirmed: true,
+      Description: "Hello World Testing Dummy Text",
     },
     {
-      title: `Found in Job Description 
-        (Frequency)`,
-      width: 30,
+      Titles: "Resume File Type",
+      Notification: true,
+      Confirmed: true,
+      Description: "Hello World Testing Dummy Text",
     },
     {
-      title: `Skills Gap 
-         (Skills Missing from Resume)`,
-      width: 30,
+      Titles: "Resume File Type",
+      Notification: true,
+      Confirmed: true,
+      Description: "Hello World Testing Dummy Text",
+    },
+    {
+      Titles: "Resume File Type",
+      Notification: true,
+      Confirmed: true,
+      Description: "Hello World Testing Dummy Text",
+    },
+    {
+      Titles: "Resume File Type",
+      Notification: true,
+      Confirmed: true,
+      Description: "Hello World Testing Dummy Text",
+    },
+    {
+      Titles: "Resume File Type",
+      Notification: true,
+      Confirmed: true,
+      Description: "Hello World Testing Dummy Text",
+    },
+    {
+      Titles: "Resume File Type",
+      Notification: true,
+      Confirmed: true,
+      Description: "Hello World Testing Dummy Text",
     },
   ];
 
-  const dummyData = [
-    { HardSkills: "Typing Fast", Frequency: 20 },
-    { HardSkills: "Typing Fast", Frequency: 20 },
-    { HardSkills: "Typing Fast", Frequency: 20 },
-    { HardSkills: "Typing Fast", Frequency: 20 },
+  const salesTabs = [
+    { title: "Title", width: 30, background: "rgba(41,171,130,0.10)" },
+    {
+      title: `Notification`,
+      width: 5,
+    },
+    {
+      title: `Confirmed`,
+      width: 5,
+    },
+    {
+      title: `Description`,
+      width: 60,
+    },
+  ];
+  const salesData = [
+    {
+      Titles: "Resume File Type",
+      Notification: true,
+      Confirmed: true,
+      Description: "Hello World Testing Dummy Text",
+    },
+    {
+      Titles: "Resume File Type",
+      Notification: true,
+      Confirmed: true,
+      Description: "Hello World Testing Dummy Text",
+    },
+    {
+      Titles: "Resume File Type",
+      Notification: true,
+      Confirmed: true,
+      Description: "Hello World Testing Dummy Text",
+    },
+    {
+      Titles: "Resume File Type",
+      Notification: true,
+      Confirmed: true,
+      Description: "Hello World Testing Dummy Text",
+    },
+    {
+      Titles: "Resume File Type",
+      Notification: true,
+      Confirmed: true,
+      Description: "Hello World Testing Dummy Text",
+    },
+  ];
+
+  const hardSkillsMatchesTabs = [
+    { title: "Skills", width: 25 },
+    { title: "Resume", width: 25 },
+    { title: "JobDescription", width: 25 },
+    { title: "SkillsGap", width: 25 },
+  ];
+  const hardSkillsMatchesData = [
+    { Skills: "Carpenting", Resume: 1, JobDescription: 1, SkillsGap: 2 },
+    { Skills: "Carpenting", Resume: 1, JobDescription: 1, SkillsGap: 2 },
+    { Skills: "Carpenting", Resume: 1, JobDescription: 1, SkillsGap: 2 },
+  ];
+  const softSkillsMatchesTabs = [
+    { title: "Skills", width: 25 },
+    { title: "Resume", width: 25 },
+    { title: "JobDescription", width: 25 },
+    { title: "SkillsGap", width: 25 },
+  ];
+  const softSkillsMatchesData = [
+    { Skills: "Carpenting", Resume: 1, JobDescription: 1, SkillsGap: 2 },
+    { Skills: "Carpenting", Resume: 1, JobDescription: 1, SkillsGap: 2 },
+    { Skills: "Carpenting", Resume: 1, JobDescription: 1, SkillsGap: 2 },
   ];
   const similarityLinearData = [
     {
@@ -312,7 +399,17 @@ const Analyzer: React.FC = () => {
           </div>
         </div>
       </div>
-      <AllMatches softSkillsList={ssmList} />
+      <AllMatches
+        softSkillsList={ssmList}
+        atsTabs={atsTabs}
+        atsData={atsData}
+        salesData={salesData}
+        salesTabs={salesTabs}
+        hardSkillsTabs={hardSkillsMatchesTabs}
+        hardSkillsData={hardSkillsMatchesData}
+        softSkillsData={softSkillsMatchesData}
+        softSkillsTabs={softSkillsMatchesTabs}
+      />
       <div className="flex items-center justify-center my-10">
         <button className="flex gap-2 items-center text-[#E06B42] text-base md:text-[20px]  lg:text-2xl">
           <p>Edit Resume on our Resume Editor</p>

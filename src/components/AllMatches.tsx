@@ -5,13 +5,11 @@ import ColouredTable from "./core/ColouredTable";
 
 const AllMatches: React.FC<AllMatchesProps> = ({
   atsData,
-  atsTabsTypes,
-  atsTabWidth,
+  atsTabs,
   hardSkillsData,
   hardSkillsTabs,
   salesData,
-  salesTabsType,
-  salesTabWidth,
+  salesTabs,
   softSkillsData,
   softSkillsTabs,
   softSkillsList,
@@ -40,9 +38,8 @@ const AllMatches: React.FC<AllMatchesProps> = ({
         </p>
         <div className="my-10 overflow-x-scroll">
           <ColouredTable
-            tabs={atsTabsTypes}
+            tabs={atsTabs}
             data={atsData}
-            tabWidths={atsTabWidth}
           />
         </div>
       </div>
@@ -63,9 +60,8 @@ const AllMatches: React.FC<AllMatchesProps> = ({
         </p>
         <div className="my-10 overflow-x-scroll">
           <ColouredTable
-            tabs={salesTabsType}
+            tabs={salesTabs}
             data={salesData}
-            tabWidths={salesTabWidth}
           />
         </div>
       </div>
