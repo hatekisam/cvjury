@@ -36,3 +36,22 @@ interface JobResumeProps {
   tableData: DataToTabs[];
 }
 
+
+interface ATSData{
+  title:string
+  confirmed:boolean
+  body:string;
+}
+
+interface SalesData{
+  title:string
+  confirmed:boolean
+  body:string;
+}
+
+interface AllMatchesProps {
+  atsTabWidth: number[];
+  atsData:ATSData[]
+  salesTabWidth:number[];
+  salesData:SalesData[]
+}
