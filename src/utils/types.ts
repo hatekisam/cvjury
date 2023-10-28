@@ -36,22 +36,25 @@ interface JobResumeProps {
   tableData: DataToTabs[];
 }
 
-
-interface ATSData{
-  title:string
-  confirmed:boolean
-  body:string;
+interface ATSData {
+  title: string;
+  confirmed: boolean;
+  body: string;
 }
 
-interface SalesData{
-  title:string
-  confirmed:boolean
-  body:string;
+interface SalesData {
+  title: string;
+  confirmed: boolean;
+  body: string;
 }
 
 interface AllMatchesProps {
   atsTabWidth: number[];
-  atsData:ATSData[]
-  salesTabWidth:number[];
-  salesData:SalesData[]
+  atsData: ATSData[];
+  salesTabWidth: number[];
+  salesData: SalesData[];
+  hardSkillsTabs: Tab[];
+  hardSkillsData: DataToTabs[];
+  softSkillsTabs: Tab[];
+  softSkillsData: DataToTabs[];
 }

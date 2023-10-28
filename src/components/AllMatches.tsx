@@ -3,7 +3,16 @@ import Table from "./core/Table";
 import LinearProgressBar from "./core/LinearProgressBar";
 import ColouredTable from "./core/ColouredTable";
 
-const AllMatches = () => {
+const AllMatches: React.FC<AllMatchesProps> = ({
+  atsData,
+  atsTabWidth,
+  hardSkillsData,
+  hardSkillsTabs,
+  salesData,
+  salesTabWidth,
+  softSkillsData,
+  softSkillsTabs,
+}) => {
   return (
     <>
       <div className="my-20">
@@ -26,7 +35,7 @@ const AllMatches = () => {
           your resume based on the scanner’s recommendations.
         </p>
         <div className="my-10 overflow-x-scroll">
-          <ColouredTable tabs={dummyTabs5} data={dummyData} />
+          <ColouredTable tabs={dummyTabs5} data={atsData} />
         </div>
       </div>
       <div className="my-20">

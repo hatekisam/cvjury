@@ -20,6 +20,7 @@ import ResumeSkills from "../components/ResumeSkills";
 import JobSkills from "../components/JobSkills";
 import DesirableSkills from "../components/DesirableSkills";
 import JobResumeComparison from "../components/JobResumeComparison";
+import AllMatches from "../components/AllMatches";
 
 const Analyzer: React.FC = () => {
   const hardTitles = [
