@@ -1,5 +1,5 @@
 import React from "react";
-import { JobIcon, ResumeIcon, UploadRescan } from "./core/icons";
+import { JobIcon, UploadRescan } from "./core/icons";
 import Table from "./core/Table";
 
 const JobSkills: React.FC<JobSkillsProps> = ({
