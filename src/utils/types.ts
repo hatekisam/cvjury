@@ -57,4 +57,5 @@ interface AllMatchesProps {
   hardSkillsData: DataToTabs[];
   softSkillsTabs: Tab[];
   softSkillsData: DataToTabs[];
+  softSkillsList: string[];
 }

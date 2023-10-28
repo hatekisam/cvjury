@@ -12,9 +12,11 @@ const AllMatches: React.FC<AllMatchesProps> = ({
   salesTabWidth,
   softSkillsData,
   softSkillsTabs,
+  softSkillsList,
 }) => {
   return (
-    <>
+    <div className="relative">
+      <div className="fixed left-5 top-5 bg-red-500 ">This is fixed</div>
       <div className="my-20">
         <div className="flex flex-col md:flex-row justify-between">
           <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
@@ -95,7 +97,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           top ten in-demand soft skills:
         </p>
         <ul className="list-disc text-base pl-10 my-3">
-          {ssmList.map((el, i) => (
+          {softSkillsList.map((el, i) => (
             <li key={i}>{el}</li>
           ))}
         </ul>
@@ -104,10 +106,10 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           classifications
         </p>
         <div className="my-20 overflow-x-scroll">
-          <Table tabs={dummyTabs5} data={dummyData} headBg="#EBEBEB" />
+          <Table tabs={softSkillsTabs} data={softSkillsData} headBg="#EBEBEB" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
