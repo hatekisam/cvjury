@@ -312,7 +312,7 @@ const Analyzer: React.FC = () => {
           </div>
         </div>
       </div>
-      <AllMatches />
+      <AllMatches softSkillsList={ssmList} />
       <div className="flex items-center justify-center my-10">
         <button className="flex gap-2 items-center text-[#E06B42] text-base md:text-[20px]  lg:text-2xl">
           <p>Edit Resume on our Resume Editor</p>
