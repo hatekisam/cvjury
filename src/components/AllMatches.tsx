@@ -5,10 +5,12 @@ import ColouredTable from "./core/ColouredTable";
 
 const AllMatches: React.FC<AllMatchesProps> = ({
   atsData,
+  atsTabsTypes,
   atsTabWidth,
   hardSkillsData,
   hardSkillsTabs,
   salesData,
+  salesTabsType,
   salesTabWidth,
   softSkillsData,
   softSkillsTabs,
@@ -37,7 +39,11 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           your resume based on the scanner’s recommendations.
         </p>
         <div className="my-10 overflow-x-scroll">
-          <ColouredTable tabs={dummyTabs5} data={atsData} />
+          <ColouredTable
+            tabs={atsTabsTypes}
+            data={atsData}
+            tabWidths={atsTabWidth}
+          />
         </div>
       </div>
       <div className="my-20">
@@ -56,7 +62,11 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           buzzwords.
         </p>
         <div className="my-10 overflow-x-scroll">
-          <ColouredTable tabs={dummyTabs6} data={dummyData} />
+          <ColouredTable
+            tabs={salesTabsType}
+            data={salesData}
+            tabWidths={salesTabWidth}
+          />
         </div>
       </div>
       <div className="my-20">
@@ -78,7 +88,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           apply for the role in the first place.
         </p>
         <div className="my-20 overflow-x-scroll">
-          <Table tabs={dummyTabs5} data={dummyData} headBg="#E1ECF6" />
+          <Table tabs={hardSkillsTabs} data={hardSkillsData} headBg="#E1ECF6" />
         </div>
       </div>
       <div className="my-20">

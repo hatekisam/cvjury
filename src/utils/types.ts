@@ -49,9 +49,11 @@ interface SalesData {
 }
 
 interface AllMatchesProps {
+  atsTabsTypes: string[];
   atsTabWidth: number[];
   atsData: ATSData[];
   salesTabWidth: number[];
+  salesTabsType: string[];
   salesData: SalesData[];
   hardSkillsTabs: Tab[];
   hardSkillsData: DataToTabs[];
