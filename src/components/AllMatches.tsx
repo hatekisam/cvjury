@@ -16,7 +16,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
 }) => {
   return (
     <div className="relative">
-      <div className="fixed left-5 top-5 bg-red-500 ">This is fixed</div>
+      <div className="sticky  -left-20 top-5 bg-red-500 z-30 ">This is fixed</div>
       <div className="my-20">
         <div className="flex flex-col md:flex-row justify-between">
           <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
