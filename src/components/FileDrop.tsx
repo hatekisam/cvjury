@@ -46,7 +46,9 @@ const FileDropZone: FC<{
         ) : (
           <div className=" flex items-center justify-between rounded-md border-dashed border-2  p-2 text-[#3D4D64] text-xs relative">
             <div
-              className="absolute h-full w-full top-0 left-0 rounded-md py-5 bg-red-500 opacity-25 transition-all duration-300"
+              className={`absolute h-full w-full top-0 left-0 rounded-md py-5 ${
+                load > 95 ? "bg-white" : "bg-red-500"
+              } opacity-25 transition-all duration-300`}
               style={{ width: `${load}%` }}
             ></div>
             <FileIcon />
