@@ -7,7 +7,7 @@ const JobResumeComparison: React.FC<JobResumeProps> = ({
   tableData,
 }) => {
   return (
-    <>
+    <div className="px-5 md:px-12 lg:px-24">
       <div className="my-10">
         <div className="flex flex-col sm:flex-row gap-3 items-center">
           <p className="uppercase transition-all duration-150  text-[22px]  md:text-[32px] lg:text-[40px]">
@@ -46,7 +46,7 @@ const JobResumeComparison: React.FC<JobResumeProps> = ({
           <UploadRescan />
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

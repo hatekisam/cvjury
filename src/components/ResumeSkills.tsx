@@ -9,7 +9,7 @@ const ResumeSkills: React.FC<ResumeSkillsProps> = ({
   softTitles,
 }) => {
   return (
-    <div>
+    <div className="px-5 md:px-12 lg:px-24">
       <p className="transition-all duration-150  text-[22px]  md:text-[32px] lg:text-[40px] my-2">
         Hard and Soft Skills (Frequencies)
       </p>

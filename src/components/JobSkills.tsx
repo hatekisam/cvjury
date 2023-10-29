@@ -9,7 +9,7 @@ const JobSkills: React.FC<JobSkillsProps> = ({
   softTitles,
 }) => {
   return (
-    <>
+    <div className="px-5 md:px-12 lg:px-24">
       <div className="my-10 relative">
         <div className="flex justify-between ">
           <div></div>
@@ -39,7 +39,7 @@ const JobSkills: React.FC<JobSkillsProps> = ({
           <UploadRescan />
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

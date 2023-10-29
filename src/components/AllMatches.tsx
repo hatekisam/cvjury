@@ -15,9 +15,8 @@ const AllMatches: React.FC<AllMatchesProps> = ({
   softSkillsList,
 }) => {
   return (
-    <div className="relative">
-      <div className="sticky  -left-20 top-5 bg-red-500 z-30 ">This is fixed</div>
-      <div className="my-20">
+    <div className="relative ">
+      <div className="my-20 px-5 md:px-12 lg:px-24">
         <div className="flex flex-col md:flex-row justify-between">
           <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
             ATS Best Practices Match (ATS)
@@ -37,13 +36,13 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           your resume based on the scanner’s recommendations.
         </p>
         <div className="my-10 overflow-x-scroll">
-          <ColouredTable
-            tabs={atsTabs}
-            data={atsData}
-          />
+          <ColouredTable tabs={atsTabs} data={atsData} />
         </div>
       </div>
-      <div className="my-20">
+      <div className="sticky   top-5 bg-red-500 z-30 ">
+        This is fixed
+      </div>
+      <div className="my-20 px-5 md:px-12 lg:px-24">
         <div className="flex flex-col md:flex-row justify-between">
           <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
             Sales Index Match (SIM)
@@ -59,13 +58,10 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           buzzwords.
         </p>
         <div className="my-10 overflow-x-scroll">
-          <ColouredTable
-            tabs={salesTabs}
-            data={salesData}
-          />
+          <ColouredTable tabs={salesTabs} data={salesData} />
         </div>
       </div>
-      <div className="my-20">
+      <div className="my-20 px-5 md:px-12 lg:px-24">
         <div className="flex flex-col md:flex-row justify-between">
           <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
             Hard Skills Match (HSM)
@@ -87,7 +83,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           <Table tabs={hardSkillsTabs} data={hardSkillsData} headBg="#E1ECF6" />
         </div>
       </div>
-      <div className="my-20">
+      <div className="my-20 px-5 md:px-12 lg:px-24">
         <div className="flex flex-col md:flex-row justify-between">
           <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
             Soft Skills Match (SSM)

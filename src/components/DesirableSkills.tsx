@@ -7,7 +7,7 @@ const DesirableSkills: React.FC<DesirableSkills> = ({
   tableData,
 }) => {
   return (
-    <>
+    <div className="px-5 md:px-12 lg:px-24">
       <div className="my-10">
         <div
           style={{ boxShadow: "0px 13px 50px 0px rgba(0, 0, 0, 0.15)" }}
@@ -48,7 +48,7 @@ const DesirableSkills: React.FC<DesirableSkills> = ({
           <UploadRescan />
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

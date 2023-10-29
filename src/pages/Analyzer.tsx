@@ -281,7 +281,7 @@ const Analyzer: React.FC = () => {
   ];
   return (
     <div
-      className="w-screen bg-[#F1F1F1] px-5 md:px-12 lg:px-24 py-20 h-full overflow-y-auto overflow-x-hidden"
+      className="w-screen bg-[#F1F1F1]  py-20 h-full overflow-y-auto overflow-x-hidden"
       onClick={() => {
         if (showingShare) setShowingShare(false);
       }}
@@ -303,7 +303,7 @@ const Analyzer: React.FC = () => {
         tableTitles={jobResumeComparison}
         tableData={jobResumeComparisonData}
       />
-      <div className="mt-28">
+      <div className="mt-28 px-5 md:px-12 lg:px-24">
         <div className="flex justify-between items-center">
           <div></div>
           <div className="flex items-center gap-5">
@@ -363,7 +363,7 @@ const Analyzer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="my-10 md:my-16 lg:my-36 relative mx-2 md:mx-12 lg:mx-20 sm:border-4 border-dashed h-[300px] rounded-3xl">
+      <div className="px-5 md:px-12 lg:px-24 my-10 md:my-16 lg:my-36 relative mx-2 md:mx-12 lg:mx-20 sm:border-4 border-dashed h-[300px] rounded-3xl">
         <div className="sm:absolute bg-white rounded-3xl p-3 md:p-5 left-[10%] -top-[20%] w-full">
           <div className="flex gap-2 items-start">
             <ResultPresentationIcon />
