@@ -3,6 +3,7 @@ import Table from "./core/Table";
 import LinearProgressBar from "./core/LinearProgressBar";
 import ColouredTable from "./core/ColouredTable";
 
+
 const AllMatches: React.FC<AllMatchesProps> = ({
   atsData,
   atsTabs,
@@ -16,7 +17,22 @@ const AllMatches: React.FC<AllMatchesProps> = ({
 }) => {
   return (
     <div className="relative ">
-      <div className="my-20 px-5 md:px-12 lg:px-24">
+      <div className="sticky top-0 left-0 w-[70px] z-30">
+        {/* This is fixed */}
+        <a href={'#ats'} className="side-item bg-red-500 rounded-tr-md">
+          ATM
+        </a>
+        <a href={'#sim'} className="side-item bg-green-500">
+          SIM
+        </a>
+        <a href={'#hsm'} className="side-item bg-blue-500">
+          HSM
+        </a>
+        <a href={'#ssm'} className="side-item bg-gray-500   rounded-br-md">
+          SSM
+        </a>
+      </div>
+      <div className="my-20 px-5 md:px-12 lg:px-24" id="ats">
         <div className="flex flex-col md:flex-row justify-between">
           <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
             ATS Best Practices Match (ATS)
@@ -39,10 +55,8 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           <ColouredTable tabs={atsTabs} data={atsData} />
         </div>
       </div>
-      <div className="sticky   top-5 bg-red-500 z-30 ">
-        This is fixed
-      </div>
-      <div className="my-20 px-5 md:px-12 lg:px-24">
+
+      <div className="my-20 px-5 md:px-12 lg:px-24" id="sim">
         <div className="flex flex-col md:flex-row justify-between">
           <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
             Sales Index Match (SIM)
@@ -61,7 +75,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           <ColouredTable tabs={salesTabs} data={salesData} />
         </div>
       </div>
-      <div className="my-20 px-5 md:px-12 lg:px-24">
+      <div className="my-20 px-5 md:px-12 lg:px-24" id="hsm">
         <div className="flex flex-col md:flex-row justify-between">
           <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
             Hard Skills Match (HSM)
@@ -83,7 +97,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           <Table tabs={hardSkillsTabs} data={hardSkillsData} headBg="#E1ECF6" />
         </div>
       </div>
-      <div className="my-20 px-5 md:px-12 lg:px-24">
+      <div className="my-20 px-5 md:px-12 lg:px-24" id="ssm">
         <div className="flex flex-col md:flex-row justify-between">
           <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
             Soft Skills Match (SSM)
