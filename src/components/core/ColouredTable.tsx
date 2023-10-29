@@ -36,7 +36,7 @@ const ColouredTable: React.FC<Props> = ({ tabs, data }) => {
                     : i === tabs.length - 1 && "rounded-bl-[20px]"
                 }  px-4 py-2`}
               >
-                {rowData[tab.title] == true && tab.title == "Confirmed" ? (<div></div>)  rowData[tab.title] ? rowData[tab.title] : "10"}
+                {rowData[tab.title] == true && tab.title == "Confirmed" ? (<div></div>):rowData[tab.title] ? rowData[tab.title] : "10"}
               </td>
             ))}
           </tr>
