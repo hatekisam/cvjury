@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import FileDropZone from "./FileDrop";
-import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 import { DeleteIcon } from "./core/icons";
 
 const ResumeUpload: React.FC = () => {
