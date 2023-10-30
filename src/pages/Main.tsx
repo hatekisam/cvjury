@@ -42,9 +42,15 @@ const Main: React.FC = () => {
       </div>
       <div className="hidden sm:block fixed bg-white w-[50%] h-full left-0 top-0"></div>
       <div className="hidden sm:block fixed bg-[rgba(224,107,66,0.2)]  w-[50%] h-screen right-0 top-0"></div>
-      <p className="font-medium text-3xl sm:text-4xl z-20 ">
-        CVJury ATS Resume Checker at Work
-      </p>
+      <div className="flex items-center justify-center gap-2">
+        <p className="w-[50vw] text-right  font-medium text-3xl sm:text-4xl z-20 ">
+          CVJury ATS Resume
+        </p>
+        <p className="w-[50vw] text-left font-medium text-3xl sm:text-4xl z-20 ">
+          Checker at Work
+        </p>
+      </div>
+
       <div className="flex flex-col sm:flex-row gap-10 items-center z-20  w-full justify-center mt-20 ">
         <ResumeUpload />
         <JobDesc />
