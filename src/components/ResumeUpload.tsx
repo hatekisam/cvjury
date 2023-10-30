@@ -1,13 +1,23 @@
 import React, { useState } from "react";
 import FileDropZone from "./FileDrop";
-import DocViewer from "react-doc-viewer";
+import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 import { DeleteIcon } from "./core/icons";
 
 const ResumeUpload: React.FC = () => {
   const [file, setFile] = useState<any | undefined>();
   const handleFiles = (files: File[]) => {
     console.log(files);
-    setFile(files[0].webkitRelativePath);
+    // const reader = new FileReader();
+    // reader.onload = () => {
+    //   const dataURL = reader.result;
+    //   console.log(dataURL);
+    //   setFile(dataURL);
+    // };
+    const reader = new FileReader();
+    reader.onload = () => {
+      setFile(reader.result as string);
+    };
+    reader.readAsDataURL(files[0]);
   };
 
   return (
@@ -19,14 +29,8 @@ const ResumeUpload: React.FC = () => {
           <FileDropZone onFilesSelected={handleFiles} />
           <div className="mt-5">
             {file ? (
-              <div>
-                <DocViewer
-                  documents={[
-                    {
-                      uri: "https://docs.google.com/document/d/10na3SqNSJsZ0VPZkz4YYw1w2kJGSKp3WYuvVhIOaekY/edit",
-                    },
-                  ]}
-                />
+              <div className="h-[200px] overflow-auto">
+                <iframe src={file} className="w-full h-full"></iframe>
               </div>
             ) : (
               <textarea

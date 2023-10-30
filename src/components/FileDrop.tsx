@@ -45,12 +45,12 @@ const FileDropZone: FC<{
           </div>
         ) : (
           <div className=" flex items-center justify-between rounded-md border-dashed border-2  p-2 text-[#3D4D64] text-xs relative">
-            <div
+            {/* <div
               className={`absolute h-full w-full top-0 left-0 rounded-md py-5 ${
                 load > 95 ? "bg-white" : "bg-red-500"
               } opacity-25 transition-all duration-300`}
               style={{ width: `${load}%` }}
-            ></div>
+            ></div> */}
             <FileIcon />
             <p className="   ">Click or drag file to this area to upload.</p>
             <button className="px-4 py-1.5 bg-[#F9F9F9] border-2 border-[#C7CCD2] rounded-full ">
