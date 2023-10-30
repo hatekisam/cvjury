@@ -45,7 +45,7 @@ const Main: React.FC = () => {
       <p className="font-medium text-3xl sm:text-4xl z-20 ">
         CVJury ATS Resume Checker at Work
       </p>
-      <div className="flex flex-col sm:flex-row gap-5 items-center z-20  w-full justify-center mt-20">
+      <div className="flex flex-col sm:flex-row gap-20 items-center z-20  w-full justify-center mt-20 ">
         <ResumeUpload />
         <JobDesc />
       </div>
@@ -55,8 +55,8 @@ const Main: React.FC = () => {
       >
         Scan for free
       </button>
-      <div className="bg-white opacity-50 shadow-md w-full mx-3 md:w-[80vw] lg:w-[60vw] p-5 rounded-t-3xl">
-        <p className="text-black text-xl md:text-2xl lg:text-3xl">
+      <div className="bg-[rgba(255,255,255,0.5)] z-20 shadow-md w-full mx-3 md:w-[80vw] lg:w-[60vw] p-5 rounded-t-3xl">
+        <p className="text-black opacity-100 text-xl md:text-2xl lg:text-3xl">
           The 5 sets of results (from your resume and job description scan):
         </p>
         <ul className="list-decimal pl-6 my-2">
