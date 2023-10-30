@@ -3,10 +3,10 @@ import { DeleteIcon } from "./core/icons";
 
 const JobDesc: React.FC = () => {
   return (
-    <div className="w-full  sm:w-[50%] flex flex-col md:flex-row justify-between">
+    <div className="w-full h-full  sm:w-[50%] flex flex-col md:flex-row justify-between">
       <div className="w-full md:w-[80%] lg:w-[65%] text-center">
         <p className="text-[#6A6A6A] text-3xl">Job Description</p>
-        <div className="p-5 border-dashed border border-black rounded-3xl ">
+        <div className="h-[90%] p-5 border-dashed border border-black rounded-3xl ">
           <input
             type="text"
             placeholder="Enter Job Title"
