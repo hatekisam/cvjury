@@ -45,7 +45,7 @@ const Main: React.FC = () => {
       <p className="font-medium text-3xl sm:text-4xl z-20 ">
         CVJury ATS Resume Checker at Work
       </p>
-      <div className="flex flex-col sm:flex-row gap-20 items-center z-20  w-full justify-center mt-20 ">
+      <div className="flex flex-col sm:flex-row gap-10 items-center z-20  w-full justify-center mt-20 ">
         <ResumeUpload />
         <JobDesc />
       </div>
