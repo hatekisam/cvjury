@@ -44,7 +44,7 @@ const FileDropZone: FC<{
             </p>
           </div>
         ) : (
-          <div className=" flex items-center justify-between rounded-md border-dashed border-2  p-2 text-[#3D4D64] text-xs relative">
+          <div className=" flex items-center justify-between rounded-md border-dashed border-2  p-2 text-[#3D4D64] text-xs relative h-[100px] px-5">
             {/* <div
               className={`absolute h-full w-full top-0 left-0 rounded-md py-5 ${
                 load > 95 ? "bg-white" : "bg-red-500"
