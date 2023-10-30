@@ -33,7 +33,7 @@ const Main: React.FC = () => {
     );
   }
   return (
-    <div className="relative flex flex-col items-center pt-16 w-screen h-screen overflow-y-auto  px-5 ">
+    <div className="relative flex flex-col items-center pt-16 w-screen h-screen overflow-y-auto  overflow-x-hidden px-5 ">
       <Helmet>
         <title>CV Jury</title>
       </Helmet>
@@ -61,7 +61,7 @@ const Main: React.FC = () => {
       >
         Scan for free
       </button>
-      <div className="bg-[rgba(255,255,255,0.5)] z-20 shadow-md w-full mx-3 md:w-[80vw] lg:w-[60vw] p-5 rounded-t-3xl">
+      <div className="bg-[rgba(255,255,255,0.5)] z-20 shadow-md w-full mx-3 md:w-[80vw] lg:w-[60vw] px-16 py-8 rounded-t-3xl">
         <p className="text-black opacity-100 text-xl md:text-2xl lg:text-3xl">
           The 5 sets of results (from your resume and job description scan):
         </p>
