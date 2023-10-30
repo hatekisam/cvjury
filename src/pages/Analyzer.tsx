@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Table from "../components/core/Table";
+// import Table from "../components/core/Table";
 import {
   CopyLink,
   Done,
@@ -14,8 +14,8 @@ import {
 } from "../components/core/icons";
 import SimilarityBar from "../components/Similarity";
 import SimilarityLinearBar from "../components/SimilarityBars";
-import LinearProgressBar from "../components/core/LinearProgressBar";
-import ColouredTable from "../components/core/ColouredTable";
+// import LinearProgressBar from "../components/core/LinearProgressBar";
+// import ColouredTable from "../components/core/ColouredTable";
 import ResumeSkills from "../components/ResumeSkills";
 import JobSkills from "../components/JobSkills";
 import DesirableSkills from "../components/DesirableSkills";
@@ -169,7 +169,7 @@ const Analyzer: React.FC = () => {
     {
       Titles: "Resume File Type",
       Notification: true,
-      Confirmed: true,
+      Confirmed: false,
       Description: "Hello World Testing Dummy Text",
     },
   ];
