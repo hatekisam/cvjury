@@ -50,6 +50,9 @@ const Main: React.FC = () => {
           Checker at Work
         </p>
       </div>
+      <p className=" font-medium text-2xl sm:text-3xl z-20 ">
+        Displaying 5 Sets of Results
+      </p>
 
       <div className="flex flex-col sm:flex-row gap-10 items-center z-20  w-full justify-center mt-20 ">
         <ResumeUpload />
