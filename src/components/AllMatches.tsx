@@ -44,10 +44,10 @@ const AllMatches: React.FC<AllMatchesProps> = ({
         </div>
         <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px] my-5">
           Maximize your chances of getting hired by ensuring your resume passes
-          the 10 ATS best practices factors assessment. To stand a better
+          the 10 ATS best practices factors assessment.<br /> To stand a better
           chance, your resume must score 80% or higher and include crucial
           elements such as biodata, job title, contact information, a LinkedIn
-          profile, relevant subheadings, and an optimized file type. Make the
+          profile, relevant subheadings, and an optimized file type. <br />Make the
           process simple and efficient using our LIVE editor dashboard to revise
           your resume based on the scanner’s recommendations.
         </p>
@@ -87,10 +87,10 @@ const AllMatches: React.FC<AllMatchesProps> = ({
         </div>
         <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px]my-5">
           Most resumes include only 60% of the necessary hard skills compared to
-          the target job description. Examples of hard skills are Excel, NodeJS,
+          the target job description. <br />Examples of hard skills are Excel, NodeJS,
           SQL, JavaScript, accounting, engineering, medicine, teaching, etc.
-          They are generally technical, software mastery, and professional
-          skills learned to qualify for a job. They determine whether you should
+          <br />They are generally technical, software mastery, and professional
+          skills learned to qualify for a job. <br />They determine whether you should
           apply for the role in the first place.
         </p>
         <div className="my-20 overflow-x-scroll">
@@ -108,8 +108,8 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           </div>
         </div>
         <p className="text-lg mt-5">
-          Only 28% of resumes contain the necessary soft skills. These are
-          essential soft skills everyone needs to succeed at work. Here are the
+          Only 28% of resumes contain the necessary soft skills. <br />These are
+          essential soft skills everyone needs to succeed at work.<br /> Here are the
           top ten in-demand soft skills:
         </p>
         <ul className="list-disc text-base pl-10 my-3">
@@ -118,7 +118,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           ))}
         </ul>
         <p className="text-lg">
-          And CVJury's 24 <span className="underline">soft skill</span>{" "}
+          And CVJury's 24 <span className="underline text-[#E06B42]">soft skill</span>{" "}
           classifications
         </p>
         <div className="my-20 overflow-x-scroll">

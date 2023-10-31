@@ -69,11 +69,21 @@ const Main: React.FC = () => {
           The 5 sets of results (from your resume and job description scan):
         </p>
         <ul className="list-decimal pl-6 my-2">
-          <li>Table 1: Resume hard and soft skills (Frequencies)</li>
-          <li>Table 2: Job description hard and soft skills (Frequencies)</li>
-          <li>Table 3: Suggested desirable skills</li>
           <li>
-            Table 4: Job description and resume compared — Skills Gap Identified
+            <span className="font-bold">Table 1:</span> Resume hard and soft
+            skills (Frequencies)
+          </li>
+          <li>
+            <span className="font-bold">Table 2:</span> Job description hard and
+            soft skills (Frequencies)
+          </li>
+          <li>
+            <span className="font-bold">Table 3:</span> Suggested desirable
+            skills
+          </li>
+          <li>
+            <span className="font-bold">Table 4:</span> Job description and
+            resume compared — Skills Gap Identified
           </li>
           <li>Similarity Score</li>
         </ul>

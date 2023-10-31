@@ -43,7 +43,7 @@ const ResumeSkills: React.FC<ResumeSkillsProps> = ({
           and soft skills (their frequencies):
         </p>
         <button className="flex gap-2 items-center text-[#E06B42] transition-all duration-150  text-[16px]  md:text-[20px] lg:text-2xl">
-          <p>See Hard & Soft Skills Job Description</p>
+          <p>See Job Description's  Hard & Soft Skills</p>
           <UploadRescan />
         </button>
       </div>

@@ -22,11 +22,12 @@ const DesirableSkills: React.FC<DesirableSkills> = ({
           P.S.− While explicit mentions are a straightforward way to identify
           skills, there are often implied or contextual skills that
           professionals might possess based on the nature of their work, even if
-          these skills aren't directly mentioned. Using the provided resume and
-          job description, some potential desirable skills and attributes can be
-          inferred.When presenting these skills, especially in an interview or
-          in a more detailed resume, it's essential to provide specific examples
-          or experiences that demonstrate these attributes:
+          these skills aren't directly mentioned. <br />
+          Using the provided resume and job description, some potential
+          desirable skills and attributes can be inferred.<br /> When presenting these
+          skills, especially in an interview or in a more detailed resume, it's
+          essential to provide specific examples or experiences that demonstrate
+          these attributes:
         </p>
         <div className="my-10">
           <div className="flex justify-between">
