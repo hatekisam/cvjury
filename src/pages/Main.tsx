@@ -11,13 +11,17 @@ const Main: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const [load, setLoad] = useState(0);
+  const [finishedLoading, setFinished] = useState(false);
   useEffect(() => {
     if (loading) {
       const intervalId = setInterval(() => {
         if (load < 100) setLoad(load + 10);
         else {
           clearInterval(intervalId);
-          navigate("/analyzer");
+          setFinished(true);
+          setTimeout(() => {
+            navigate("/analyzer");
+          }, 2000); // 2 seconds delay
         }
       }, 500);
     }
@@ -45,9 +49,11 @@ const Main: React.FC = () => {
             ></div>
           </div>
           <div
-            className={clsx(load >= 100 ? "text-green-500" : "text-gray-700")}
+            className={clsx(
+              finishedLoading ? "text-green-500" : "text-gray-700"
+            )}
           >
-            {load >= 95 ? <FaCheckCircle /> : <AiOutlineCheckCircle />}
+            {finishedLoading ? <FaCheckCircle /> : <AiOutlineCheckCircle />}
           </div>
         </div>
         <button className="px-5 py-2 rounded-md border  mt-10">Cancel</button>
