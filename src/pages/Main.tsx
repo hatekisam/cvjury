@@ -8,20 +8,20 @@ import { FaCheckCircle } from "react-icons/fa";
 import { AiFillCheckCircle, AiOutlineCheckCircle } from "react-icons/ai";
 import clsx from "clsx";
 const Main: React.FC = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const [load, setLoad] = useState(0);
-  // useEffect(() => {
-  //   if (loading) {
-  //     const intervalId = setInterval(() => {
-  //       if (load < 100) setLoad(load + 10);
-  //       else {
-  //         clearInterval(intervalId);
-  //         navigate("/analyzer");
-  //       }
-  //     }, 500);
-  //   }
-  // }, [loading, load, navigate]);
+  useEffect(() => {
+    if (loading) {
+      const intervalId = setInterval(() => {
+        if (load < 100) setLoad(load + 10);
+        else {
+          clearInterval(intervalId);
+          navigate("/analyzer");
+        }
+      }, 500);
+    }
+  }, [loading, load, navigate]);
 
   if (loading) {
     return (
@@ -40,7 +40,7 @@ const Main: React.FC = () => {
         <div className="flex gap-2">
           <div className="bg-[#D6D6D6] rounded-full w-[50vw]">
             <div
-              className="py-1 bg-[#E06B42]  rounded-full transition-all duration-700"
+              className="py-1 bg-[#E06B42]  rounded-full transition-all h-full duration-700"
               style={{ width: `${load}%` }}
             ></div>
           </div>
