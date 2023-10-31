@@ -11,7 +11,7 @@ const Table: React.FC<TableProps> = ({ tabs, data, headBg }) => {
               <th
                 key={i}
                 style={{ width: `${tab.width}%` }}
-                className={`text-left px-5 pt-20 pl-10 pb-3  border border-[#E2DFDF] ${
+                className={`text-left px-5 pt-20 pl-10 pb-3  border border-[#E2DFDF] border-t-0 ${
                   i == 0 && "rounded-tl-3xl border-none"
                 } ${
                   i == tabs.length - 1 && "rounded-tr-3xl border-t-0 border-r-0"
@@ -41,6 +41,7 @@ const Table: React.FC<TableProps> = ({ tabs, data, headBg }) => {
                       "border-b-0 border-r-0 rounded-br-3xl",
                    colIndex === 0 && "border-l-0",
                    colIndex === tabs.length-1 && "border-r-0",
+                 rowIndex === data.length - 1 && "border-b-0"
                   )}
                 >
                   {rowData[tab.title] ? rowData[tab.title] : "10"}
