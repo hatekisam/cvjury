@@ -55,7 +55,7 @@ const Main: React.FC = () => {
     );
   }
   return (
-    <div className="relative flex flex-col items-center pt-16 w-screen h-screen overflow-y-auto  overflow-x-hidden px-5 ">
+    <div className="relative flex flex-col items-center pt-16 w-screen h-screen overflow-y-auto z-20 overflow-x-hidden px-5 ">
       <Helmet>
         <title>CV Jury</title>
       </Helmet>
