@@ -40,7 +40,7 @@ const Table: React.FC<TableProps> = ({ tabs, data, headBg }) => {
                 <td
                   key={colIndex}
                   className={clsx(
-                    "border border-[#E2DFDF] pl-10 px-4 py-2",
+                    "border border-[#E2DFDF] pl-10 px-4 py-4",
                     rowIndex === data.length - 1 &&
                       colIndex === 0 &&
                       "border-b-0 border-l-0 rounded-bl-3xl",
