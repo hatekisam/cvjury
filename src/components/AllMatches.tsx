@@ -53,7 +53,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
                 href={"#ats"}
                 className="side-item bg-red-500 rounded-tr-md w-[80%]"
               >
-                ATM
+                ATS
               </a>
               <div className="pl-2 text-red-500">
                 <button onClick={() => setModal({ status: true, err: true })}>
