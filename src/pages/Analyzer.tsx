@@ -341,11 +341,9 @@ const Analyzer: React.FC = () => {
         <p className="text-4xl text-[#6A6A6A] font-semibold my-4">
           Similarity Score
         </p>
-        <div className="flex flex-col gap-4 md:gap-0 sm:flex-row items-center justify-between my-10">
-          <div className="w-full md:w-[60%] flex flex-col md:flex-row  items-center gap-5">
-            <div className="w-[90vw] sm:w-[50%]">
-              <SimilarityBar score={20} />
-            </div>
+        <div className="flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between my-10">
+          <div className="w-full md:w-[60%] flex flex-col lg:flex-row  items-center  gap-5">
+            <SimilarityBar score={20} />
             <button className="flex gap-2 items-center text-[#E06B42] text-2xl">
               <p>Upload and Rescan</p>
               <UploadRescan />
@@ -365,7 +363,7 @@ const Analyzer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="px-5 md:px-12 lg:px-24 my-10 md:my-16 lg:my-36 relative mx-2 md:mx-12 lg:mx-20 sm:border-4 border-dashed h-[300px] rounded-3xl w-[80%]">
+      <div className="hidden md:block px-5 md:px-12 lg:px-24 my-10 md:my-16 lg:my-36 relative mx-2 md:mx-12 lg:mx-20 sm:border-4 border-dashed h-[300px] rounded-3xl w-[80%]">
         <div className="sm:absolute bg-white rounded-3xl p-3 md:p-5 left-[8%] -top-[20%] w-full">
           <div className="flex gap-2 items-start">
             <ResultPresentationIcon />
@@ -400,6 +398,41 @@ const Analyzer: React.FC = () => {
               <p>Done!</p>
             </button>
           </div>
+        </div>
+      </div>
+      <div className="block md:hidden mx-auto bg-white rounded-3xl p-3 md:p-5 left-[8%] -top-[20%] w-[90%]">
+        <div className="flex gap-2 items-start">
+          <ResultPresentationIcon />
+          <div className="w-full md:w-[70%]">
+            <p className="text-xl md:text-2xl lg:text-3xl mb-3">
+              Results Presentation
+            </p>
+            <p className="text-[13px] md:text-base lg:text-lg my-3">
+              Let's Scan Your Resume Now!{" "}
+              <span className="font-bold">Instructions</span>: It's time to
+              revamp your resume with our advanced recommendations scanner. The
+              live editor makes the editing process quick, effortless, and
+              seamless.
+            </p>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[13px] md:text-base lg:text-lg my-3">
+          <button className="w-[50%]  sm:w-full flex items-center gap-2">
+            <Upload />
+            <p>Upload</p>
+          </button>
+          <button className="w-[50%]  sm:w-full flex items-center gap-2">
+            <Edit />
+            <p>Edit</p>
+          </button>
+          <button className="w-[50%]  sm:w-full flex items-center gap-2">
+            <Rescan />
+            <p>Rescan</p>
+          </button>
+          <button className="w-[50%]  sm:w-full flex items-center gap-2">
+            <Done />
+            <p>Done!</p>
+          </button>
         </div>
       </div>
       <AllMatches
