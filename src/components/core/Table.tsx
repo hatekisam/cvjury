@@ -3,7 +3,12 @@ import React from "react";
 
 const Table: React.FC<TableProps> = ({ tabs, data, headBg }) => {
   return (
-    <div>
+    <div
+      style={
+        !headBg ? { boxShadow: "0px 13px 50px 0px rgba(0, 0, 0, 0.15) " } : {boxShadow:"none"}
+      }
+      className="rounded-3xl bg-red-500"
+    >
       <table className="w-full overflow-x-scroll bg-white rounded-3xl ">
         <thead style={{ background: headBg }}>
           <tr className="rounded-t-3xl">
@@ -26,7 +31,10 @@ const Table: React.FC<TableProps> = ({ tabs, data, headBg }) => {
           {data.map((rowData, rowIndex) => (
             <tr
               key={rowIndex}
-              className={clsx("bg-white  ",rowIndex === data.length - 1  && "border-none")}
+              className={clsx(
+                "bg-white  ",
+                rowIndex === data.length - 1 && "border-none"
+              )}
             >
               {tabs.map((tab, colIndex) => (
                 <td
@@ -39,9 +47,9 @@ const Table: React.FC<TableProps> = ({ tabs, data, headBg }) => {
                     rowIndex === data.length - 1 &&
                       colIndex === tabs.length - 1 &&
                       "border-b-0 border-r-0 rounded-br-3xl",
-                   colIndex === 0 && "border-l-0",
-                   colIndex === tabs.length-1 && "border-r-0",
-                 rowIndex === data.length - 1 && "border-b-0"
+                    colIndex === 0 && "border-l-0",
+                    colIndex === tabs.length - 1 && "border-r-0",
+                    rowIndex === data.length - 1 && "border-b-0"
                   )}
                 >
                   {rowData[tab.title] ? rowData[tab.title] : "10"}
