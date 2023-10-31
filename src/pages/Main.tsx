@@ -5,7 +5,7 @@ import JobDesc from "../components/JobDesc";
 import { Logo, Star } from "../components/core/icons";
 import { useNavigate } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
-import {  AiOutlineCheckCircle } from "react-icons/ai";
+import { AiOutlineCheckCircle } from "react-icons/ai";
 import clsx from "clsx";
 const Main: React.FC = () => {
   const [loading, setLoading] = useState(false);
@@ -86,7 +86,7 @@ const Main: React.FC = () => {
       </div>
       <button
         onClick={() => setLoading(true)}
-        className="my-5  z-20 text-white bg-[#E06B42] hover px-4 py-2 rounded-full  border-[#C7CCD2] border"
+        className="my-5 z-20 text-white bg-[#E06B42] px-4 py-2 rounded-full border-[#C7CCD2] border transform transition-transform hover:scale-105"
       >
         Scan for free
       </button>
