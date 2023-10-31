@@ -55,8 +55,8 @@ const Analyzer: React.FC = () => {
   const jobResumeComparison = [
     { title: "Skills", name: "Skills", width: 15 },
     {
-      title: `Found in Resume
-         (Frequency)`,
+      title: `<p>Found in Resume <br />
+         (Frequency)</p>`,
       name: `Found in Resume
       (Frequency)`,
       width: 25,

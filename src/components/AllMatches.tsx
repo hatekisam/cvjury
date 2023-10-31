@@ -191,7 +191,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               ))}
             </ul>
             <p className="text-lg">
-              And CVJury's 24{" "}
+              And CVJury's {" "}
               <span className="underline text-[#E06B42]">soft skill</span>{" "}
               classifications
             </p>
