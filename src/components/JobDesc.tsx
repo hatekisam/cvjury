@@ -10,11 +10,11 @@ const JobDesc: React.FC = () => {
           <input
             type="text"
             placeholder="Enter Job Title"
-            className="border-[#BCBCBC] border rounded-lg p-3 text-[13px] w-full  outline-none "
+            className="border-[#BCBCBC] border rounded-lg p-3 text-[13px] w-full  outline-none placeholder:text-gray-700 "
           />
           <div className="mt-5">
             <textarea
-              className="border-[#BCBCBC] border rounded-lg p-3 text-[13px] w-full resize-none outline-none h-[260px]"
+              className="border-[#BCBCBC] border rounded-lg p-3 text-[13px] w-full resize-none outline-none h-[260px] placeholder:text-gray-700"
               placeholder="Paste your Job Description (Don't include the 'About our company' texts)"
             ></textarea>
           </div>

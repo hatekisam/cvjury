@@ -33,7 +33,7 @@ const ResumeUpload: React.FC = () => {
               </div>
             ) : (
               <textarea
-                className="border-[#BCBCBC] border rounded-lg p-3 text-[13px] w-full resize-none outline-none h-[200px]"
+                className="border-[#BCBCBC] placeholder:text-gray-700 border rounded-lg p-3 text-[13px] w-full resize-none outline-none h-[200px]"
                 placeholder="Or paste your resume here"
               ></textarea>
             )}
