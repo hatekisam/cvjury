@@ -49,7 +49,7 @@ const Table: React.FC<TableProps> = ({ tabs, data, headBg }) => {
                       "border-b-0 border-r-0 rounded-br-3xl",
                     colIndex === 0 && "border-l-0",
                     colIndex === tabs.length - 1 && "border-r-0",
-                    rowIndex === data.length - 1 && "border-b-0"
+                    rowIndex === data.length - 1 && "border-b-0 pb-10"
                   )}
                 >
                   {rowData[tab.title] ? rowData[tab.title] : "10"}
