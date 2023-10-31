@@ -24,12 +24,12 @@ import AllMatches from "../components/AllMatches";
 
 const Analyzer: React.FC = () => {
   const hardTitles = [
-    { title: "HardSkills", width: 80 },
-    { title: "Frequency", width: 20 },
+    { title: "HardSkills", name: "Hard Skills", width: 80 },
+    { title: "Frequency", name: "Frequency", width: 20 },
   ];
   const softTitles = [
-    { title: "SoftSkills", width: 80 },
-    { title: "Frequency", width: 20 },
+    { title: "SoftSkills", name: "Soft Skills", width: 80 },
+    { title: "Frequency", name: "Frequency", width: 20 },
   ];
   const hardSkills = [
     { HardSkills: "Hardworking", Frequency: 20 },
@@ -53,20 +53,26 @@ const Analyzer: React.FC = () => {
     { SoftSkills: "Hardworking", Frequency: 20 },
   ];
   const jobResumeComparison = [
-    { title: "Skills", width: 15 },
+    { title: "Skills", name: "Skills", width: 15 },
     {
       title: `Found in Resume
          (Frequency)`,
+      name: `Found in Resume
+      (Frequency)`,
       width: 25,
     },
     {
       title: `Found in Job Description 
         (Frequency)`,
+      name: `Found in Job Description 
+      (Frequency)`,
       width: 30,
     },
     {
       title: `Skills Gap 
          (Skills Missing from Resume)`,
+      name: `Skills Gap 
+      (Skills Missing from Resume)`,
       width: 30,
     },
   ];
@@ -115,17 +121,25 @@ const Analyzer: React.FC = () => {
     },
   ];
   const atsTabs = [
-    { title: "Titles", width: 30, background: "rgba(224,107,66,0.20)" },
+    {
+      title: "Titles",
+      name: "Titles",
+      width: 30,
+      background: "rgba(224,107,66,0.20)",
+    },
     {
       title: `Notification`,
+      name: "Notification",
       width: 5,
     },
     {
       title: `Confirmed`,
+      name: "Confirmed",
       width: 5,
     },
     {
       title: `Description`,
+      name: "Description",
       width: 60,
     },
   ];
@@ -175,17 +189,25 @@ const Analyzer: React.FC = () => {
   ];
 
   const salesTabs = [
-    { title: "Title", width: 30, background: "rgba(41,171,130,0.10)" },
+    {
+      title: "Title",
+      width: 30,
+      name: "Title",
+      background: "rgba(41,171,130,0.10)",
+    },
     {
       title: `Notification`,
+      name: "Notification",
       width: 5,
     },
     {
       title: `Confirmed`,
+      name: "Confirmed",
       width: 5,
     },
     {
       title: `Description`,
+      name: "Description",
       width: 60,
     },
   ];
@@ -223,10 +245,10 @@ const Analyzer: React.FC = () => {
   ];
 
   const hardSkillsMatchesTabs = [
-    { title: "Skills", width: 25 },
-    { title: "Resume", width: 25 },
-    { title: "JobDescription", width: 25 },
-    { title: "SkillsGap", width: 25 },
+    { title: "Skills", name: "Skills", width: 25 },
+    { title: "Resume", name: "Resume", width: 25 },
+    { title: "JobDescription", name: "Job Descpription", width: 25 },
+    { title: "SkillsGap", name: "Skills Gap", width: 25 },
   ];
   const hardSkillsMatchesData = [
     { Skills: "Carpenting", Resume: 1, JobDescription: 1, SkillsGap: 2 },
@@ -234,10 +256,10 @@ const Analyzer: React.FC = () => {
     { Skills: "Carpenting", Resume: 1, JobDescription: 1, SkillsGap: 2 },
   ];
   const softSkillsMatchesTabs = [
-    { title: "Skills", width: 25 },
-    { title: "Resume", width: 25 },
-    { title: "JobDescription", width: 25 },
-    { title: "SkillsGap", width: 25 },
+    { title: "Skills", name: "Skills", width: 25 },
+    { title: "Resume", name: "Resume", width: 25 },
+    { title: "JobDescription", name: "Job Descpription", width: 25 },
+    { title: "SkillsGap", name: "Skills Gap", width: 25 },
   ];
   const softSkillsMatchesData = [
     { Skills: "Carpenting", Resume: 1, JobDescription: 1, SkillsGap: 2 },

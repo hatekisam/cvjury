@@ -1,7 +1,8 @@
 interface Tab {
   title: string;
+  name: string;
   width: number;
-  background?:string
+  background?: string;
 }
 
 interface DataToTabs {
