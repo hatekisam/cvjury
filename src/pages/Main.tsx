@@ -5,7 +5,7 @@ import JobDesc from "../components/JobDesc";
 import { Logo, Star } from "../components/core/icons";
 import { useNavigate } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
-import { AiFillCheckCircle, AiOutlineCheckCircle } from "react-icons/ai";
+import {  AiOutlineCheckCircle } from "react-icons/ai";
 import clsx from "clsx";
 const Main: React.FC = () => {
   const [loading, setLoading] = useState(false);
@@ -72,17 +72,21 @@ const Main: React.FC = () => {
           Checker at Work
         </p>
       </div>
-      <p className=" font-medium text-2xl sm:text-3xl z-20 ">
-        Displaying 5 Sets of Results
-      </p>
-
+      <div className="flex items-center justify-center gap-4">
+        <p className="w-[50vw] text-right  font-medium text-3xl sm:text-4xl z-20 ">
+          Displaying
+        </p>
+        <p className="w-[50vw] text-left font-medium text-3xl sm:text-4xl z-20 ">
+          5 Sets of Results
+        </p>
+      </div>
       <div className="flex flex-col sm:flex-row gap-10 items-center z-20  w-full justify-center mt-20 ">
         <ResumeUpload />
         <JobDesc />
       </div>
       <button
         onClick={() => setLoading(true)}
-        className="my-5  z-20 text-white bg-[#E06B42] px-4 py-2 rounded-full  border-[#C7CCD2] border"
+        className="my-5  z-20 text-white bg-[#E06B42] hover px-4 py-2 rounded-full  border-[#C7CCD2] border"
       >
         Scan for free
       </button>

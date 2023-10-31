@@ -15,7 +15,7 @@ const DesirableSkills: React.FC<DesirableSkills> = ({
         >
           <DesirableIcon />
           <p className="transition-all duration-150  text-[18px]  md:text-[24px] lg:text-[28px] pr-5">
-            SEE DESIRABLE SKILLS
+            DESIRABLE SKILLS
           </p>
         </div>
         <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px] my-5">

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Table from "./core/Table";
 import LinearProgressBar from "./core/LinearProgressBar";
 import ColouredTable from "./core/ColouredTable";
-import { AiOutlineQuestionCircle } from "react-icons/ai";
+import { AiOutlineCheckCircle, AiOutlineQuestionCircle } from "react-icons/ai";
+import { FaCheckCircle } from "react-icons/fa";
 
 const AllMatches: React.FC<AllMatchesProps> = ({
   atsData,
@@ -15,11 +16,38 @@ const AllMatches: React.FC<AllMatchesProps> = ({
   softSkillsTabs,
   softSkillsList,
 }) => {
+  const [modal, setModal] = useState({ status: false, err: false });
   return (
-    <div className="relative ">
-      <div className="flex ">
-        <div className="pt-40">
+    <div
+      className="relative "
+      onClick={() => {
+        if (modal.status) setModal({ status: false, err: false });
+      }}
+    >
+      <div className="flex flex-col md:flex-row ">
+        <div className="hidden md:block relative pt-40">
           <div className="sticky top-0 left-0 w-[100px] z-30">
+            {modal.status && (
+              <div className="absolute h-[250px] w-[250px]  left-[130%] top-[50%] bg-white rounded-md shadow-md ">
+                {modal.err ? (
+                  <div className="bg-[#FDEFEB] h-full w-full rounded-b-md">
+                    <div className="w-full bg-orange-500 py-1.5 text-center rounded-t-md text-white">
+                      Organisation name and website
+                    </div>
+                    <div className="p-4 text-sm">
+                      Actually there are 2, one is the one you saw, this is the
+                      other! When there's ZERO errors found. Pls, not all these
+                      tiny details and pay attention and finish 1 time! 
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex items-center flex-col gap-3 text-green-500 justify-center h-full  p-4">
+                    <AiOutlineCheckCircle size={50} />
+                    <p className="text-black">No error(s) found</p>
+                  </div>
+                )}
+              </div>
+            )}
             <div className="flex items-center">
               <a
                 href={"#ats"}
@@ -28,15 +56,19 @@ const AllMatches: React.FC<AllMatchesProps> = ({
                 ATM
               </a>
               <div className="pl-2 text-red-500">
-                <AiOutlineQuestionCircle />
+                <button onClick={() => setModal({ status: true, err: true })}>
+                  <AiOutlineQuestionCircle />
+                </button>
               </div>
             </div>
             <div className="flex items-center">
               <a href={"#ats"} className="side-item bg-green-500  w-[80%]">
                 SIM
               </a>
-              <div className="pl-2 text-red-500">
-                <AiOutlineQuestionCircle />
+              <div className="pl-2 text-green-500">
+                <button onClick={() => setModal({ status: true, err: false })}>
+                  <FaCheckCircle />
+                </button>
               </div>
             </div>
             <div className="flex items-center">
@@ -44,7 +76,9 @@ const AllMatches: React.FC<AllMatchesProps> = ({
                 HSM
               </a>
               <div className="pl-2 text-red-500">
-                <AiOutlineQuestionCircle />
+                <button onClick={() => setModal({ status: true, err: true })}>
+                  <AiOutlineQuestionCircle />
+                </button>
               </div>
             </div>
             <div className="flex items-center">
@@ -55,7 +89,9 @@ const AllMatches: React.FC<AllMatchesProps> = ({
                 SSM
               </a>
               <div className="pl-2 text-red-500">
-                <AiOutlineQuestionCircle />
+                <button onClick={() => setModal({ status: true, err: true })}>
+                  <AiOutlineQuestionCircle />
+                </button>
               </div>
             </div>
           </div>

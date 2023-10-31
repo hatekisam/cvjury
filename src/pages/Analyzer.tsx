@@ -341,9 +341,11 @@ const Analyzer: React.FC = () => {
         <p className="text-4xl text-[#6A6A6A] font-semibold my-4">
           Similarity Score
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-between my-10">
+        <div className="flex flex-col gap-4 md:gap-0 sm:flex-row items-center justify-between my-10">
           <div className="w-full md:w-[60%] flex flex-col md:flex-row  items-center gap-5">
-            <SimilarityBar score={20} />
+            <div className="w-[90vw] sm:w-[50%]">
+              <SimilarityBar score={20} />
+            </div>
             <button className="flex gap-2 items-center text-[#E06B42] text-2xl">
               <p>Upload and Rescan</p>
               <UploadRescan />
@@ -372,9 +374,10 @@ const Analyzer: React.FC = () => {
                 Results Presentation
               </p>
               <p className="text-[13px] md:text-base lg:text-lg my-3">
-                Let's Scan Your Resume Now! <span className="font-bold">Instructions</span>: It's time to revamp
-                your resume with our advanced recommendations scanner. The live
-                editor makes the editing process quick, effortless, and
+                Let's Scan Your Resume Now!{" "}
+                <span className="font-bold">Instructions</span>: It's time to
+                revamp your resume with our advanced recommendations scanner.
+                The live editor makes the editing process quick, effortless, and
                 seamless.
               </p>
             </div>
