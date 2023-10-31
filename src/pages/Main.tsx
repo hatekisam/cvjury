@@ -45,7 +45,7 @@ const Main: React.FC = () => {
             ></div>
           </div>
           <div
-            className={clsx(load >= 95 ? "text-green-500" : "text-gray-700")}
+            className={clsx(load >= 100 ? "text-green-500" : "text-gray-700")}
           >
             {load >= 95 ? <FaCheckCircle /> : <AiOutlineCheckCircle />}
           </div>
@@ -64,7 +64,7 @@ const Main: React.FC = () => {
       </div>
       <div className="hidden sm:block fixed bg-white w-[50%] h-full left-0 top-0"></div>
       <div className="hidden sm:block fixed bg-[rgba(224,107,66,0.2)]  w-[50%] h-screen right-0 top-0"></div>
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center justify-center gap-1 ml-1">
         <p className="w-[50vw] text-right  font-medium text-3xl sm:text-4xl z-20 ">
           CVJury ATS Resume
         </p>
@@ -72,7 +72,7 @@ const Main: React.FC = () => {
           Checker at Work
         </p>
       </div>
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center justify-center gap-1 ml-1">
         <p className="w-[50vw] text-right  font-medium text-3xl sm:text-4xl z-20 ">
           Displaying
         </p>
@@ -80,7 +80,7 @@ const Main: React.FC = () => {
           5 Sets of Results
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row gap-10 items-center z-20  w-full justify-center mt-20 ">
+      <div className="flex flex-col sm:flex-row gap-10 items-center z-20  w-full justify-center mt-20 ml-1 ">
         <ResumeUpload />
         <JobDesc />
       </div>
