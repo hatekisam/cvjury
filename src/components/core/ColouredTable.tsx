@@ -18,20 +18,20 @@ const ColouredTable: React.FC<Props> = ({ tabs, data }) => {
                 i == 0
                   ? "border-top-0 rounded-tl-[20px]"
                   : i == data.length - 1
-                  ? "border-b-0 "
+                  ? "border-none "
                   : "border-none"
               }`}
             >
               {tabs.map((tab, colIndex) => (
                 <td
-                  style={{ background: tab.background }}
+                  style={{ background: tab.background,width:`${tab.width}%` }}
                   key={colIndex}
                   className={`${
                     !tab.background
                       ? "border  border-[#E2DFDF]"
                       : i == 0
                       ? "rounded-tl-[20px] "
-                      : i === data.length - 1 && "rounded-bl-[20px] "
+                      : i === data.length - 1 && "rounded-bl-[20px]  bg-red-500"
                   }  px-4 py-2`}
                 >
                   {rowData[tab.title] == true && tab.title == "Confirmed" ? (
