@@ -72,11 +72,11 @@ const Main: React.FC = () => {
           Checker at Work
         </p>
       </div>
-      <div className="flex items-center justify-center gap-1 ml-1">
-        <p className="w-[50vw] text-right  font-medium text-3xl sm:text-4xl z-20 ">
+      <div className="flex items-center justify-center gap-1 ml-1 text-xl sm:text-2xl">
+        <p className="w-[50vw] text-right  font-medium  z-20 ">
           Displaying
         </p>
-        <p className="w-[50vw] text-left font-medium text-3xl sm:text-4xl z-20 ">
+        <p className="w-[50vw] text-left font-medium  z-20 ">
           5 Sets of Results
         </p>
       </div>
