@@ -363,8 +363,8 @@ const Analyzer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="px-5 md:px-12 lg:px-24 my-10 md:my-16 lg:my-36 relative mx-2 md:mx-12 lg:mx-20 sm:border-4 border-dashed h-[300px] rounded-3xl">
-        <div className="sm:absolute bg-white rounded-3xl p-3 md:p-5 left-[10%] -top-[20%] w-full">
+      <div className="px-5 md:px-12 lg:px-24 my-10 md:my-16 lg:my-36 relative mx-2 md:mx-12 lg:mx-20 sm:border-4 border-dashed h-[300px] rounded-3xl w-[80%]">
+        <div className="sm:absolute bg-white rounded-3xl p-3 md:p-5 left-[8%] -top-[20%] w-full">
           <div className="flex gap-2 items-start">
             <ResultPresentationIcon />
             <div className="w-full md:w-[70%]">
@@ -372,7 +372,7 @@ const Analyzer: React.FC = () => {
                 Results Presentation
               </p>
               <p className="text-[13px] md:text-base lg:text-lg my-3">
-                Let's Scan Your Resume Now! Instructions: It's time to revamp
+                Let's Scan Your Resume Now! <span className="font-bold">Instructions</span>: It's time to revamp
                 your resume with our advanced recommendations scanner. The live
                 editor makes the editing process quick, effortless, and
                 seamless.
