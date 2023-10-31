@@ -64,7 +64,13 @@ const Main: React.FC = () => {
       </div>
       <div className="hidden sm:block fixed bg-white w-[50%] h-full left-0 top-0"></div>
       <div className="hidden sm:block fixed bg-[rgba(224,107,66,0.2)]  w-[50%] h-screen right-0 top-0"></div>
-      <div className="flex items-center justify-center gap-1 ml-1">
+      <p className="block md:hidden text-center mx-3 font-medium text-3xl sm:text-4xl z-20 ">
+        CVJury ATS Resume Checker at Work
+      </p>
+      <p className="block md:hidden text-center mx-3 font-medium text-xl sm:text-2xl z-20 ">
+        Displaying 5 Sets of Results
+      </p>
+      <div className="hidden md:flex  items-center justify-center gap-1 ml-1">
         <p className="w-[50vw] text-right  font-medium text-3xl sm:text-4xl z-20 ">
           CVJury ATS Resume
         </p>
@@ -72,10 +78,8 @@ const Main: React.FC = () => {
           Checker at Work
         </p>
       </div>
-      <div className="flex items-center justify-center gap-1 ml-1 text-xl sm:text-2xl">
-        <p className="w-[50vw] text-right  font-medium  z-20 ">
-          Displaying
-        </p>
+      <div className="hidden md:flex  items-center justify-center gap-1 ml-1 text-xl sm:text-2xl">
+        <p className="w-[50vw] text-right  font-medium  z-20 ">Displaying</p>
         <p className="w-[50vw] text-left font-medium  z-20 ">
           5 Sets of Results
         </p>
