@@ -25,7 +25,7 @@ interface Props {
 
 const ColouredTable: React.FC<Props> = ({ tabs, data }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
-  const [activeRow, setActiveRow] = useState();
+  const [activeRow, setActiveRow] = useState<any>();
 
   function openModal() {
     setIsOpen(true);
