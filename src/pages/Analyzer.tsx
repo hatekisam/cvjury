@@ -149,42 +149,79 @@ const Analyzer: React.FC = () => {
       Notification: true,
       Confirmed: true,
       Description: "Hello World Testing Dummy Text",
+      message:
+        "The .docx, PDF, and TXT file formats are the best for your resume, especially if you're uploading it to companies' portals. Some file types can cause errors in Applicant Tracking System; for example, avoid JPEG, PNG, GIF, and SVG file formats.",
     },
     {
-      Titles: "Resume File Type",
+      Titles: "Email Address",
       Notification: true,
       Confirmed: true,
       Description: "Hello World Testing Dummy Text",
+      message:
+        "Your resume should contain complete and accurate contact information so recruiters can reach you. Recruiters tend to use email as their primary method of communication. Add an active email address.",
     },
     {
-      Titles: "Resume File Type",
+      Titles: "Phone Number",
       Notification: true,
       Confirmed: true,
       Description: "Hello World Testing Dummy Text",
+      message:
+        "Add your telephone number, preferably a mobile number, so recruiters can reach you anytime.",
     },
     {
-      Titles: "Resume File Type",
+      Titles: "LinkedIn Profile",
       Notification: true,
       Confirmed: true,
       Description: "Hello World Testing Dummy Text",
+      message:
+        "If recruiters cannot find you on LinkedIn, you do not exist. Add a link to your optimised LinkedIn profile with a professional headshot, circa 220-character headline, and a summary in the About section. Complete all the other LinkedIn profile sections as well.      ",
     },
     {
-      Titles: "Resume File Type",
+      Titles: "Matching Job Title",
       Notification: true,
       Confirmed: true,
       Description: "Hello World Testing Dummy Text",
+      message:
+        "The job title plays a significant role in your match rate. Most ATS will match applicants with suitable job titles for the open position. If you held a similar job before, add that job title so it matches the one you are applying for. This tactic doesn't deceive as long the roles are similar. Include similar job titles in your summary statement.",
     },
     {
-      Titles: "Resume File Type",
+      Titles: "Education Requirements",
       Notification: true,
       Confirmed: true,
       Description: "Hello World Testing Dummy Text",
+      message:
+        "If the advertiser requires a degree for the job, ensure your resume includes your relevant qualifications. If you don't have the exact degree, explain your qualifications using the language from the job description. Always include the full title of your degree. Example: Bachelor of Arts, Political Science      ",
     },
     {
-      Titles: "Resume File Type",
+      Titles: "Sections Headings",
       Notification: true,
       Confirmed: false,
       Description: "Hello World Testing Dummy Text",
+      message:
+        "Format your resume sections correctly. The ATS breaks down your resume into sections. For example, Work Experience, Education, Skills, Interests, and Awards/Achievements. Ensure the ATS reads your information correctly using section headings consistent with industry standards. Avoid saying ‘Places I've Been’ instead of ‘Work Experience.’",
+    },
+    {
+      Titles: "Date Formatting",
+      Notification: true,
+      Confirmed: false,
+      Description: "Hello World Testing Dummy Text",
+      message:
+        "Follow standard formats for dates when listing work experience and education: M/YY or MM/YY or M/YYYY or MM/YYYY or Month YYYY [e.g., 3/21 or 03/21 or 03/2021 or Mar 2021 or March 2021].      ",
+    },
+    {
+      Titles: "Special Characters",
+      Notification: true,
+      Confirmed: false,
+      Description: "Hello World Testing Dummy Text",
+      message:
+        "Avoid using special characters in your resume, as the ATS may not recognise them. For example, Latin words, ampersands, asterisks, less common bullet points, arrows, etc. Most ATS systems only recognise the basic symbols on your standard computer keyboard [e.g., ~, @, #, %, &, (,), _, +,        ",
+    },
+    {
+      Titles: "Organisation's Name & Website",
+      Notification: true,
+      Confirmed: false,
+      Description: "Hello World Testing Dummy Text",
+      message:"The organisation you're applying to for the job or the job advertiser. Add their website address. You can add these as the last sentence in your professional summary. For example, `Seeking a career adviser role at the City University of London (www.city.ac.uk) to offer greater opportunities to reach and impact wider audiences.`"
     },
   ];
 
