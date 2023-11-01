@@ -7,8 +7,8 @@ const JobResumeComparison: React.FC<JobResumeProps> = ({
   tableData,
 }) => {
   return (
-    <div className="px-5 md:px-12 lg:px-24">
-      <div className="my-10">
+    <div className="">
+      <div className="my-10 px-5 md:px-12 lg:px-24">
         <div className="flex flex-col sm:flex-row gap-3 items-center">
           <p className="uppercase transition-all duration-150  text-[22px]  md:text-[32px] lg:text-[40px]">
             Job Description and Resume Compared:{" "}
@@ -37,7 +37,7 @@ const JobResumeComparison: React.FC<JobResumeProps> = ({
           <Table tabs={tableTitles} data={tableData} />
         </div>
       </div>
-      <div className="flex flex-col gap-2 items-center my-10">
+      <div className="flex flex-col gap-2 items-center my-10 px-5 md:px-12 lg:px-24">
         <p className="text-black transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px] text-center">
           Finally, click to see your resume’s overall ‘Similarity Score’:
         </p>

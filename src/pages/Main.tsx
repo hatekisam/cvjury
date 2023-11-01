@@ -34,7 +34,7 @@ const Main: React.FC = () => {
           <div className="absolute bg-[#99D2C0] -top-5 left-[45%] p-2 rounded-full">
             <Star />
           </div>
-          <p className="mt-3 font-bold mb-2 text-lg">Resume</p>
+          <p className="mt-3 font-bold mb-2 text-lg">Resume Tip</p>
           <p>
             <span className="font-semibold">Optimizing</span> your resume for
             applicant tracking software (ATS) increases your interview
@@ -56,7 +56,12 @@ const Main: React.FC = () => {
             {finishedLoading ? <FaCheckCircle /> : <AiOutlineCheckCircle />}
           </div>
         </div>
-        <button className="px-5 py-2 rounded-md border  mt-10">Cancel</button>
+        <button
+          onClick={() => setLoading(false)}
+          className="px-5 py-2 rounded-md border  mt-10"
+        >
+          Cancel
+        </button>
       </div>
     );
   }
