@@ -96,6 +96,77 @@ const AllMatches: React.FC<AllMatchesProps> = ({
             </div>
           </div>
         </div>
+        <div className="block md:hidden relative pt-40">
+          <div className=" w-[100px] z-30">
+            {modal.status && (
+              <div className="hidden md:block absolute h-[250px] w-[250px]  left-[110%] top-[50%] bg-white rounded-md shadow-md ">
+                {modal.err ? (
+                  <div className="bg-[#FDEFEB] h-full w-full rounded-b-md">
+                    <div className="w-full bg-orange-500 py-1.5 text-center rounded-t-md text-white">
+                      Organisation name and website
+                    </div>
+                    <div className="p-4 text-sm">
+                      Actually there are 2, one is the one you saw, this is the
+                      other! When there's ZERO errors found. Pls, not all these
+                      tiny details and pay attention and finish 1 time! 
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex items-center flex-col gap-3 text-green-500 justify-center h-full  p-4">
+                    <AiOutlineCheckCircle size={50} />
+                    <p className="text-black">No error(s) found</p>
+                  </div>
+                )}
+              </div>
+            )}
+            <div className="flex items-center">
+              <a
+                href={"#ats"}
+                className="side-item bg-red-500 rounded-tr-md w-[80%]"
+              >
+                ATS
+              </a>
+              <div className="pl-2 text-red-500">
+                <button onClick={() => setModal({ status: true, err: true })}>
+                  <AiOutlineQuestionCircle />
+                </button>
+              </div>
+            </div>
+            <div className="flex items-center">
+              <a href={"#ats"} className="side-item bg-green-500  w-[80%]">
+                SIM
+              </a>
+              <div className="pl-2 text-green-500">
+                <button onClick={() => setModal({ status: true, err: false })}>
+                  <FaCheckCircle />
+                </button>
+              </div>
+            </div>
+            <div className="flex items-center">
+              <a href={"#ats"} className="side-item bg-blue-500  w-[80%]">
+                HSM
+              </a>
+              <div className="pl-2 text-red-500">
+                <button onClick={() => setModal({ status: true, err: true })}>
+                  <AiOutlineQuestionCircle />
+                </button>
+              </div>
+            </div>
+            <div className="flex items-center">
+              <a
+                href={"#ats"}
+                className="side-item bg-gray-500 rounded-br-md w-[80%]"
+              >
+                SSM
+              </a>
+              <div className="pl-2 text-red-500">
+                <button onClick={() => setModal({ status: true, err: true })}>
+                  <AiOutlineQuestionCircle />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div>
           <div className="my-20 px-5 md:px-12 lg:px-24" id="ats">
             <div className="flex flex-col md:flex-row justify-between">
