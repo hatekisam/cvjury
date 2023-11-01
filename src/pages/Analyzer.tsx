@@ -429,7 +429,7 @@ const Analyzer: React.FC = () => {
             <p className="text-xl md:text-2xl lg:text-3xl mb-3">
               Results Presentation
             </p>
-            <p className="text-[13px] md:text-base lg:text-lg my-3">
+            <p className="text-base lg:text-lg my-3">
               Let's Scan Your Resume Now!{" "}
               <span className="font-bold">Instructions</span>: It's time to
               revamp your resume with our advanced recommendations scanner. The
@@ -438,7 +438,7 @@ const Analyzer: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[13px] md:text-base lg:text-lg my-3">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-base lg:text-lg my-3">
           <button className="w-[50%]  sm:w-full flex items-center gap-2">
             <Upload />
             <p>Upload</p>
