@@ -4,6 +4,7 @@ import LinearProgressBar from "./core/LinearProgressBar";
 import ColouredTable from "./core/ColouredTable";
 import { AiOutlineCheckCircle, AiOutlineQuestionCircle } from "react-icons/ai";
 import { FaCheckCircle } from "react-icons/fa";
+import { CloseModal, CopyLink } from "./core/icons";
 
 const AllMatches: React.FC<AllMatchesProps> = ({
   atsData,
@@ -28,16 +29,31 @@ const AllMatches: React.FC<AllMatchesProps> = ({
         <div className="hidden md:block relative pt-40">
           <div className="sticky top-0 left-0 w-[100px] z-30">
             {modal.status && (
-              <div className="hidden md:block absolute h-[250px] w-[250px]  left-[110%] top-[50%] bg-white rounded-md shadow-md ">
+              <div className="hidden md:block absolute h-[250px] w-[250px]  left-[110%] top-[50%]  rounded-md  ">
                 {modal.err ? (
-                  <div className="bg-[#FDEFEB] h-full w-full rounded-b-md">
-                    <div className="w-full bg-orange-500 py-1.5 text-center rounded-t-md text-white">
-                      Organisation name and website
-                    </div>
-                    <div className="p-4 text-sm">
-                      Actually there are 2, one is the one you saw, this is the
-                      other! When there's ZERO errors found. Pls, not all these
-                      tiny details and pay attention and finish 1 time! 
+                  <div>
+                    <div className="relative bg-[#FDEFEB] h-full w-full rounded-lg rounded-br-none shadow-md">
+                      <div className="absolute top-[100%] right-0  bg-white rounded-b-md ">
+                        <button className="flex px-5 py-2.5 hover:bg-[#FDEFEB] items-center gap-5 rounded-b-md w-full">
+                          <CopyLink />
+                          <p>Copy the link</p>
+                        </button>
+                      </div>
+                      <div className="flex items-center justify-end px-4 pt-2 bg-none">
+                        <button
+                          onClick={() =>
+                            setModal({ status: false, err: false })
+                          }
+                        >
+                          <CloseModal />
+                        </button>
+                      </div>
+                      <div className="p-4 text-sm">
+                        Actually there are 2, one is the one you saw, this is
+                        the other! <br />
+                        <br /> When there's ZERO errors found. Pls, not all
+                        these tiny details and pay attention and finish 1 time!
+                      </div>
                     </div>
                   </div>
                 ) : (
@@ -101,14 +117,18 @@ const AllMatches: React.FC<AllMatchesProps> = ({
             {modal.status && (
               <div className="hidden md:block absolute h-[250px] w-[250px]  left-[110%] top-[50%] bg-white rounded-md shadow-md ">
                 {modal.err ? (
-                  <div className="bg-[#FDEFEB] h-full w-full rounded-b-md">
+                  <div className="relative bg-[#FDEFEB] h-full w-full rounded-b-md">
+                    <div className="absolute top-[100%] right-0 px-4 py-1.5 bg-red-500 rounded-b-md ">
+                      Copy Link
+                    </div>
                     <div className="w-full bg-orange-500 py-1.5 text-center rounded-t-md text-white">
                       Organisation name and website
                     </div>
                     <div className="p-4 text-sm">
                       Actually there are 2, one is the one you saw, this is the
-                      other! When there's ZERO errors found. Pls, not all these
-                      tiny details and pay attention and finish 1 time! 
+                      other! <br />
+                      <br /> When there's ZERO errors found. Pls, not all these
+                      tiny details and pay attention and finish 1 time!
                     </div>
                   </div>
                 ) : (
@@ -181,10 +201,12 @@ const AllMatches: React.FC<AllMatchesProps> = ({
             <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px] my-5">
               Maximize your chances of getting hired by ensuring your resume
               passes the 10 ATS best practices factors assessment.
-              <br /><br /> To stand a better chance, your resume must score 80% or
+              <br />
+              <br /> To stand a better chance, your resume must score 80% or
               higher and include crucial elements such as biodata, job title,
               contact information, a LinkedIn profile, relevant subheadings, and
-              an optimized file type. <br /><br />
+              an optimized file type. <br />
+              <br />
               Make the process simple and efficient using our LIVE editor
               dashboard to revise your resume based on the scanner’s
               recommendations.
@@ -224,12 +246,15 @@ const AllMatches: React.FC<AllMatchesProps> = ({
             </div>
             <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px]my-5">
               Most resumes include only 60% of the necessary hard skills
-              compared to the target job description. <br /><br />
+              compared to the target job description. <br />
+              <br />
               Examples of hard skills are Excel, NodeJS, SQL, JavaScript,
               accounting, engineering, medicine, teaching, etc.
-              <br /><br />
+              <br />
+              <br />
               They are generally technical, software mastery, and professional
-              skills learned to qualify for a job. <br /><br />
+              skills learned to qualify for a job. <br />
+              <br />
               They determine whether you should apply for the role in the first
               place.
             </p>
@@ -252,9 +277,11 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             </div>
             <p className="text-lg mt-5">
-              Only 28% of resumes contain the necessary soft skills. <br /><br />
+              Only 28% of resumes contain the necessary soft skills. <br />
+              <br />
               These are essential soft skills everyone needs to succeed at work.
-              <br /><br /> Here are the top ten in-demand soft skills:
+              <br />
+              <br /> Here are the top ten in-demand soft skills:
             </p>
             <ul className="list-disc text-base pl-10 my-3">
               {softSkillsList.map((el, i) => (
@@ -262,7 +289,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               ))}
             </ul>
             <p className="text-lg">
-              And CVJury's {" "}
+              And CVJury's{" "}
               <span className="underline text-[#E06B42]">soft skill</span>{" "}
               classifications
             </p>
