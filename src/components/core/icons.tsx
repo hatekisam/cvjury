@@ -355,21 +355,21 @@ export const CopyLink = () => (
   >
     <path
       d="M7.22222 4.09091H2.88889V2.72727H7.22222V4.09091Z"
-      fill="#616161"
+      fill="currentColor"
     />
     <path
       d="M7.22222 6.81818H2.88889V5.45455H7.22222V6.81818Z"
-      fill="#616161"
+      fill="currentColor"
     />
     <path
       d="M2.88889 9.54545H7.22222V8.18182H2.88889V9.54545Z"
-      fill="#616161"
+      fill="currentColor"
     />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
       d="M0 12.2727V0H10.1111V2.72727H13V15H2.88889V12.2727H0ZM8.66667 10.9091V1.36364H1.44444V10.9091H8.66667ZM10.1111 4.09091V12.2727H4.33333V13.6364H11.5556V4.09091H10.1111Z"
-      fill="#616161"
+      fill="currentColor"
     />
   </svg>
 );
