@@ -33,8 +33,8 @@ const AllMatches: React.FC<AllMatchesProps> = ({
                 {modal.err ? (
                   <div>
                     <div className="relative bg-white border border-[#E06B42]  h-full w-full rounded-lg rounded-br-none shadow-md">
-                      <div className="absolute top-[100%] -right-0.5  bg-white rounded-b-md border-[#E06B42] border-t-0 border">
-                        <button className="flex px-5 py-2.5 hover:bg-[#FDEFEB] items-center gap-5 rounded-b-md w-full text-sm text-[#E06B42]">
+                      <div className="absolute top-[100%] -right-0  bg-white rounded-b-md border-[#E06B42] border-t-0 border">
+                        <button className="flex px-2 py-1.5 hover:bg-[#FDEFEB] items-center gap-2 rounded-b-md w-full text-sm text-[#E06B42]">
                           <CopyLink />
                           <p className="text-[#E06B42]">Copy the link</p>
                         </button>
