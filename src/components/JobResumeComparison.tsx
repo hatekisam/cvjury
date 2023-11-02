@@ -8,8 +8,8 @@ const JobResumeComparison: React.FC<JobResumeProps> = ({
 }) => {
   return (
     <div className="">
-      <div className="my-10 px-5 md:px-12 lg:px-24">
-        <div className="flex flex-col sm:flex-row gap-3 items-center">
+      <div className="my-10 ">
+        <div className="flex flex-col sm:flex-row gap-3 items-center px-5 md:px-12 lg:px-24">
           <p className="uppercase transition-all duration-150  text-[22px]  md:text-[32px] lg:text-[40px]">
             Job Description and Resume Compared:{" "}
           </p>
@@ -23,11 +23,11 @@ const JobResumeComparison: React.FC<JobResumeProps> = ({
             </p>
           </div>
         </div>
-        <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px] my-5">
+        <p className="transition-all duration-150  text-[16px]  md:text-[20px] lg:text-[24px] my-5 px-5 md:px-12 lg:px-24">
           Let's compare the hard skills from the resume and the job description
           to identify the skill gaps:
         </p>
-        <div className="my-10 overflow-x-scroll">
+        <div className="my-10 overflow-x-scroll px-5 md:px-12 lg:px-24 pb-20">
           <div className="flex justify-between">
             <div></div>
             <p className="uppercase transition-all duration-150  text-[18px]  md:text-[24px] lg:text-3xl">
