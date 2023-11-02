@@ -72,11 +72,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             )}
             <div className="flex items-center">
-              <p
-                className="side-item bg-red-500 rounded-tr-md w-[80%]"
-              >
-                ATS
-              </p>
+              <p className="side-item bg-red-500 rounded-tr-md w-[80%]">ATS</p>
               <div className="pl-2 text-red-500">
                 <button onClick={() => setModal({ status: true, err: true })}>
                   <AiOutlineQuestionCircle />
@@ -84,9 +80,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             </div>
             <div className="flex items-center">
-              <p className="side-item bg-green-500  w-[80%]">
-                SIM
-              </p>
+              <p className="side-item bg-green-500  w-[80%]">SIM</p>
               <div className="pl-2 text-green-500">
                 <button onClick={() => setModal({ status: true, err: false })}>
                   <FaCheckCircle />
@@ -94,9 +88,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             </div>
             <div className="flex items-center">
-              <p className="side-item bg-blue-500  w-[80%]">
-                HSM
-              </p>
+              <p className="side-item bg-blue-500  w-[80%]">HSM</p>
               <div className="pl-2 text-red-500">
                 <button onClick={() => setModal({ status: true, err: true })}>
                   <AiOutlineQuestionCircle />
@@ -104,11 +96,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             </div>
             <div className="flex items-center">
-              <p
-                className="side-item bg-gray-500 rounded-br-md w-[80%]"
-              >
-                SSM
-              </p>
+              <p className="side-item bg-gray-500 rounded-br-md w-[80%]">SSM</p>
               <div className="pl-2 text-red-500">
                 <button onClick={() => setModal({ status: true, err: true })}>
                   <AiOutlineQuestionCircle />
@@ -117,17 +105,24 @@ const AllMatches: React.FC<AllMatchesProps> = ({
             </div>
           </div>
         </div>
-        <div className="block md:hidden relative pt-20">
-          <div className=" w-[100px] z-30">
-            {modal.status && (
-              <div className="absolute h-[250px] w-[250px]  left-[110%] top-[50%] bg-white rounded-md shadow-md ">
-                {modal.err ? (
-                  <div className="relative bg-[#FDEFEB] h-full w-full rounded-b-md">
-                    <div className="absolute top-[100%] right-0 px-4 py-1.5 bg-red-500 rounded-b-md ">
-                      Copy Link
+        <div className="block md:hidden relative pt-10 ">
+          {modal.status && (
+            <div className="absolute h-[250px] w-[250px]  left-[120px] top-[50%]  rounded-md  ">
+              {modal.err ? (
+                <div className="h-full">
+                  <div className="relative bg-white border border-[#E06B42]  h-full w-full rounded-lg rounded-br-none shadow-md">
+                    <div className="absolute top-[100%] -right-0  bg-white rounded-b-md border-[#E06B42] border-t-0 border">
+                      <button className="flex px-2 py-1.5 hover:bg-[#FDEFEB] items-center gap-2 rounded-b-md w-full text-sm text-[#E06B42]">
+                        <CopyLink />
+                        <p className="text-[#E06B42]">Copy the link</p>
+                      </button>
                     </div>
-                    <div className="w-full bg-orange-500 py-1.5 text-center rounded-t-md text-white">
-                      Organisation name and website
+                    <div className="flex items-center justify-end px-4 pt-2 bg-none ">
+                      <button
+                        onClick={() => setModal({ status: false, err: false })}
+                      >
+                        <CloseModal />
+                      </button>
                     </div>
                     <div className="p-4 text-sm">
                       Actually there are 2, one is the one you saw, this is the
@@ -136,30 +131,38 @@ const AllMatches: React.FC<AllMatchesProps> = ({
                       tiny details and pay attention and finish 1 time!
                     </div>
                   </div>
-                ) : (
-                  <div className="flex items-center flex-col gap-3 text-green-500 justify-center h-full  p-4">
-                    <AiOutlineCheckCircle size={50} />
-                    <p className="text-black">No error(s) found</p>
+                </div>
+              ) : (
+                <div className="flex items-center flex-col gap-3 text-green-500 justify-center h-full  p-4 bg-white rounded-md relative border border-[#E06B42]">
+                  <div className="absolute right-1 top-1 flex items-center justify-end px-4 pt-2 bg-none">
+                    <button
+                      onClick={() => setModal({ status: false, err: false })}
+                    >
+                      <CloseModal />
+                    </button>
                   </div>
-                )}
-              </div>
-            )}
+                  <AiOutlineCheckCircle size={50} />
+                  <p className="text-black">No error(s) found</p>
+                </div>
+              )}
+            </div>
+          )}
+          <div className=" w-[100px] z-20 ">
             <div className="flex items-center">
-              <p
-                className="side-item bg-red-500 rounded-tr-md w-[80%]"
-              >
-                ATS
-              </p>
+              <p className="side-item bg-red-500 rounded-tr-md w-[80%]">ATS</p>
               <div className="pl-2 text-red-500">
-                <button onClick={() => setModal({ status: true, err: true })}>
+                <button
+                  onClick={() => {
+                    setModal({ status: true, err: true });
+                    console.log("Clicked");
+                  }}
+                >
                   <AiOutlineQuestionCircle />
                 </button>
               </div>
             </div>
             <div className="flex items-center">
-              <p className="side-item bg-green-500  w-[80%]">
-                SIM
-              </p>
+              <p className="side-item bg-green-500  w-[80%]">SIM</p>
               <div className="pl-2 text-green-500">
                 <button onClick={() => setModal({ status: true, err: false })}>
                   <FaCheckCircle />
@@ -167,9 +170,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             </div>
             <div className="flex items-center">
-              <p className="side-item bg-blue-500  w-[80%]">
-                HSM
-              </p>
+              <p className="side-item bg-blue-500  w-[80%]">HSM</p>
               <div className="pl-2 text-red-500">
                 <button onClick={() => setModal({ status: true, err: true })}>
                   <AiOutlineQuestionCircle />
@@ -177,11 +178,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             </div>
             <div className="flex items-center">
-              <p
-                className="side-item bg-gray-500 rounded-br-md w-[80%]"
-              >
-                SSM
-              </p>
+              <p className="side-item bg-gray-500 rounded-br-md w-[80%]">SSM</p>
               <div className="pl-2 text-red-500">
                 <button onClick={() => setModal({ status: true, err: true })}>
                   <AiOutlineQuestionCircle />
@@ -293,7 +290,12 @@ const AllMatches: React.FC<AllMatchesProps> = ({
             </ul>
             <p className="text-lg">
               And CVJury's{" "}
-              <a href="https://cvjury.com/292-soft-skills-essential-workplace-skills/" className="underline text-[#E06B42]">soft skill</a>{" "}
+              <a
+                href="https://cvjury.com/292-soft-skills-essential-workplace-skills/"
+                className="underline text-[#E06B42]"
+              >
+                soft skill
+              </a>{" "}
               classifications
             </p>
             <div className="my-20 overflow-x-scroll">

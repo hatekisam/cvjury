@@ -107,7 +107,7 @@ const Main: React.FC = () => {
       >
         Scan
       </button>
-      <div className="bg-[rgba(255,255,255,0.5)] z-20 shadow-md w-full mx-3 md:w-[80vw] lg:w-[60vw] px-16 py-8 rounded-t-3xl">
+      <div className="bg-[rgba(255,255,255,0.5)] z-20 shadow-md w-full mx-3 md:w-[80vw] lg:w-[60vw] px-5 md:px-10 lg:px-16 py-8 rounded-t-3xl">
         <p className="text-black opacity-100 text-xl md:text-2xl lg:text-3xl">
           The 5 sets of results (from your resume and job description scan):
         </p>
