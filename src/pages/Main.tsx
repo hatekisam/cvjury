@@ -60,7 +60,7 @@ const Main: React.FC = () => {
         </div>
         <button
           onClick={() => setLoading(false)}
-          className="px-5 py-2 rounded-md border  mt-10"
+          className="px-5 py-2 rounded-md border  mt-10 transform transition-transform hover:scale-105"
         >
           Cancel
         </button>
@@ -81,7 +81,7 @@ const Main: React.FC = () => {
         CVJury ATS Resume Checker at Work
       </p>
       <p className="block md:hidden text-center mx-3 font-medium text-xl sm:text-2xl z-20 ">
-        {"("+"Displaying 5 Sets of Results" + `)`}
+        {"(" + "Displaying 5 Sets of Results" + `)`}
       </p>
       <div className="hidden md:flex  items-center justify-center gap-1 ml-1 my-1">
         <p className="w-[50vw] text-right  font-medium text-3xl sm:text-4xl z-20 ">
