@@ -4,7 +4,7 @@ import LinearProgressBar from "./core/LinearProgressBar";
 import ColouredTable from "./core/ColouredTable";
 import { AiOutlineCheckCircle, AiOutlineQuestionCircle } from "react-icons/ai";
 import { FaCheckCircle } from "react-icons/fa";
-import { CloseModal } from "./core/icons";
+import { CloseModal, CopyLink } from "./core/icons";
 
 const AllMatches: React.FC<AllMatchesProps> = ({
   atsData,
@@ -26,19 +26,19 @@ const AllMatches: React.FC<AllMatchesProps> = ({
       }}
     >
       <div className="flex flex-col md:flex-row ">
-        <div className="hidden md:block relative pt-40">
+        <div className="hidden md:block relative pt-20">
           <div className="sticky top-0 left-0 w-[100px] z-30">
             {modal.status && (
               <div className="hidden md:block absolute h-[350px] w-[350px]  left-[110%] top-[50%]  rounded-md  ">
                 {modal.err ? (
                   <div className="h-full">
                     <div className="relative bg-white border border-[#E06B42]  h-full w-full rounded-lg rounded-br-none shadow-md">
-                      {/* <div className="absolute top-[100%] -right-0  bg-white rounded-b-md border-[#E06B42] border-t-0 border">
+                      <div className="absolute top-[100%] -right-0  bg-white rounded-b-md border-[#E06B42] border-t-0 border">
                         <button className="flex px-2 py-1.5 hover:bg-[#FDEFEB] items-center gap-2 rounded-b-md w-full text-sm text-[#E06B42]">
                           <CopyLink />
                           <p className="text-[#E06B42]">Copy the link</p>
                         </button>
-                      </div> */}
+                      </div>
                       <div className="flex items-center justify-end px-4 pt-2 bg-none ">
                         <button
                           onClick={() =>
@@ -117,7 +117,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
             </div>
           </div>
         </div>
-        <div className="block md:hidden relative pt-40">
+        <div className="block md:hidden relative pt-20">
           <div className=" w-[100px] z-30">
             {modal.status && (
               <div className="absolute h-[250px] w-[250px]  left-[110%] top-[50%] bg-white rounded-md shadow-md ">
@@ -191,7 +191,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
           </div>
         </div>
         <div>
-          <div className="my-20 px-5 md:px-12 lg:px-24" id="ats">
+          <div className=" px-5 md:px-12 lg:px-24" id="ats">
             <div className="flex flex-col md:flex-row justify-between">
               <p className="text-xl md:text-3xl lg:text-4xl text-[#6A6A6A] font-semibold my-4">
                 ATS Best Practices Match (ATS)
