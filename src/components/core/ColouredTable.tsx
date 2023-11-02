@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { AiOutlineBell } from "react-icons/ai";
 import { FaRegCheckCircle, FaRegTimesCircle } from "react-icons/fa";
 import Modal from "react-modal";
+import { CloseModalWhite } from "./icons";
 
 const customStyles = {
   content: {
@@ -45,8 +46,15 @@ const ColouredTable: React.FC<Props> = ({ tabs, data }) => {
         style={customStyles}
         contentLabel="Table Modal"
       >
-        <div className="bg-[#FDEFEB]  rounded-b-md w-[75vw]  sm:w-[50vw]  md:w-[45vw] lg:w-[35vw] h-[40vh]">
-          <div className="w-full bg-orange-500 py-1.5 text-center rounded-t-md text-white text-lg">{activeRow?.Titles}</div>
+        <div className="relative bg-[#FDEFEB]  rounded-b-md w-[75vw]  sm:w-[50vw]  md:w-[45vw] lg:w-[35vw] h-[40vh]">
+          <div className="absolute right-2 top-2">
+            <button onClick={closeModal}>
+              <CloseModalWhite />
+            </button>
+          </div>
+          <div className="w-full bg-orange-500 py-1.5 text-center rounded-t-md text-white text-lg">
+            {activeRow?.Titles}
+          </div>
           <div className="p-4 text-base text-center ">{activeRow?.message}</div>
         </div>
       </Modal>

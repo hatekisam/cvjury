@@ -32,14 +32,14 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               <div className="hidden md:block absolute h-[250px] w-[250px]  left-[110%] top-[50%]  rounded-md  ">
                 {modal.err ? (
                   <div>
-                    <div className="relative bg-[#FDEFEB] h-full w-full rounded-lg rounded-br-none shadow-md">
-                      <div className="absolute top-[100%] right-0  bg-white rounded-b-md ">
+                    <div className="relative bg-white border border-[#E06B42]  h-full w-full rounded-lg rounded-br-none shadow-md">
+                      <div className="absolute top-[100%] -right-0.5  bg-white rounded-b-md border-[#E06B42] border-t-0 border">
                         <button className="flex px-5 py-2.5 hover:bg-[#FDEFEB] items-center gap-5 rounded-b-md w-full">
                           <CopyLink />
                           <p>Copy the link</p>
                         </button>
                       </div>
-                      <div className="flex items-center justify-end px-4 pt-2 bg-none">
+                      <div className="flex items-center justify-end px-4 pt-2 bg-none ">
                         <button
                           onClick={() =>
                             setModal({ status: false, err: false })
@@ -57,7 +57,14 @@ const AllMatches: React.FC<AllMatchesProps> = ({
                     </div>
                   </div>
                 ) : (
-                  <div className="flex items-center flex-col gap-3 text-green-500 justify-center h-full  p-4">
+                  <div className="flex items-center flex-col gap-3 text-green-500 justify-center h-full  p-4 bg-white rounded-md relative border border-[#E06B42]">
+                    <div className="absolute right-1 top-1 flex items-center justify-end px-4 pt-2 bg-none">
+                      <button
+                        onClick={() => setModal({ status: false, err: false })}
+                      >
+                        <CloseModal />
+                      </button>
+                    </div>
                     <AiOutlineCheckCircle size={50} />
                     <p className="text-black">No error(s) found</p>
                   </div>
