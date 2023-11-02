@@ -81,9 +81,9 @@ const Main: React.FC = () => {
         CVJury ATS Resume Checker at Work
       </p>
       <p className="block md:hidden text-center mx-3 font-medium text-xl sm:text-2xl z-20 ">
-        Displaying 5 Sets of Results
+        {"("+"Displaying 5 Sets of Results" + `)`}
       </p>
-      <div className="hidden md:flex  items-center justify-center gap-1 ml-1">
+      <div className="hidden md:flex  items-center justify-center gap-1 ml-1 my-1">
         <p className="w-[50vw] text-right  font-medium text-3xl sm:text-4xl z-20 ">
           CVJury ATS Resume
         </p>
@@ -91,10 +91,10 @@ const Main: React.FC = () => {
           Checker at Work
         </p>
       </div>
-      <div className="hidden md:flex  items-center justify-center gap-1 ml-1 text-xl sm:text-2xl">
-        <p className="w-[50vw] text-right  font-medium  z-20 ">Displaying</p>
+      <div className="hidden md:flex  items-center justify-center gap-1 ml-1 text-xl sm:text-2xl my-1">
+        <p className="w-[50vw] text-right  font-medium  z-20 ">(Displaying</p>
         <p className="w-[50vw] text-left font-medium  z-20 ">
-          5 Sets of Results
+          5 Sets of Results)
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-10 items-center z-20  w-full justify-center mt-20 ml-1 ">

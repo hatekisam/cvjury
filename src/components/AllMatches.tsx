@@ -122,7 +122,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
         <div className="block md:hidden relative pt-40">
           <div className=" w-[100px] z-30">
             {modal.status && (
-              <div className="hidden md:block absolute h-[250px] w-[250px]  left-[110%] top-[50%] bg-white rounded-md shadow-md ">
+              <div className="absolute h-[250px] w-[250px]  left-[110%] top-[50%] bg-white rounded-md shadow-md ">
                 {modal.err ? (
                   <div className="relative bg-[#FDEFEB] h-full w-full rounded-b-md">
                     <div className="absolute top-[100%] right-0 px-4 py-1.5 bg-red-500 rounded-b-md ">
