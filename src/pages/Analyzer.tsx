@@ -21,6 +21,7 @@ import JobSkills from "../components/JobSkills";
 import DesirableSkills from "../components/DesirableSkills";
 import JobResumeComparison from "../components/JobResumeComparison";
 import AllMatches from "../components/AllMatches";
+import { Link } from "react-router-dom";
 
 const Analyzer: React.FC = () => {
   const hardTitles = [
@@ -57,22 +58,22 @@ const Analyzer: React.FC = () => {
     {
       title: `<p>Found in Resume <br /><br />
          (Frequency)</p>`,
-      name: `Found in Resume
-      (Frequency)`,
+      name: `<p>Found in Resume<br />
+      (Frequency)</p>`,
       width: 25,
     },
     {
       title: `Found in Job Description 
         (Frequency)`,
-      name: `Found in Job Description 
-      (Frequency)`,
+      name: `<p>Found in Job Description <br />
+      (Frequency)</p>`,
       width: 30,
     },
     {
       title: `Skills Gap 
          (Skills Missing from Resume)`,
-      name: `Skills Gap 
-      (Skills Missing from Resume)`,
+      name: `<p>Skills Gap<br /> 
+      (Skills Missing from Resume)</p>`,
       width: 30,
     },
   ];
@@ -221,7 +222,8 @@ const Analyzer: React.FC = () => {
       Notification: true,
       Confirmed: false,
       Description: "Hello World Testing Dummy Text",
-      message:"The organisation you're applying to for the job or the job advertiser. Add their website address. You can add these as the last sentence in your professional summary. For example, `Seeking a career adviser role at the City University of London (www.city.ac.uk) to offer greater opportunities to reach and impact wider audiences.`"
+      message:
+        "The organisation you're applying to for the job or the job advertiser. Add their website address. You can add these as the last sentence in your professional summary. For example, `Seeking a career adviser role at the City University of London (www.city.ac.uk) to offer greater opportunities to reach and impact wider audiences.`",
     },
   ];
 
@@ -403,10 +405,13 @@ const Analyzer: React.FC = () => {
         <div className="flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between my-10">
           <div className="w-full md:w-[60%] flex flex-col lg:flex-row  items-center  gap-5">
             <SimilarityBar score={20} />
-            <button className="flex gap-2 items-center text-[#E06B42] text-2xl">
+            <Link
+              to={"/"}
+              className="flex gap-2 items-center text-[#E06B42] text-2xl"
+            >
               <p>Upload and Rescan</p>
               <UploadRescan />
-            </button>
+            </Link>
           </div>
           <div className="w-full md:w-[40%] flex flex-col items-center gap-5">
             {similarityLinearData.map((info, i) => {

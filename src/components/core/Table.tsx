@@ -5,7 +5,9 @@ const Table: React.FC<TableProps> = ({ tabs, data, headBg }) => {
   return (
     <div
       style={
-        !headBg ? { boxShadow: "0px 13px 50px 0px rgba(0, 0, 0, 0.15) " } : {boxShadow:"none"}
+        !headBg
+          ? { boxShadow: "0px 13px 50px 0px rgba(0, 0, 0, 0.15) " }
+          : { boxShadow: "none" }
       }
       className="rounded-3xl bg-red-500"
     >
@@ -21,9 +23,8 @@ const Table: React.FC<TableProps> = ({ tabs, data, headBg }) => {
                 } ${
                   i == tabs.length - 1 && "rounded-tr-3xl border-t-0 border-r-0"
                 }`}
-              >
-                {tab.name}
-              </th>
+                dangerouslySetInnerHTML={{ __html: tab.name }}
+              ></th>
             ))}
           </tr>
         </thead>

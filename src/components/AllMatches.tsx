@@ -297,7 +297,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
             </ul>
             <p className="text-lg">
               And CVJury's{" "}
-              <span className="underline text-[#E06B42]">soft skill</span>{" "}
+              <a href="https://cvjury.com/292-soft-skills-essential-workplace-skills/" className="underline text-[#E06B42]">soft skill</a>{" "}
               classifications
             </p>
             <div className="my-20 overflow-x-scroll">
