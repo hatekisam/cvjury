@@ -544,11 +544,11 @@ const Analyzer: React.FC = () => {
         softSkillsData={softSkillsMatchesData}
         softSkillsTabs={softSkillsMatchesTabs}
       />
-      <div className="flex items-center justify-center my-10">
-        <button className="flex gap-2 items-center text-[#E06B42] text-base md:text-[20px]  lg:text-2xl">
+      <div className="flex items-center justify-center">
+        <a href="https://cvjury.com/account/" className="flex gap-2 items-center text-[#E06B42] text-base md:text-[20px]  lg:text-2xl">
           <p>Edit Resume on our Resume Editor</p>
           <UploadRescan />
-        </button>
+        </a>
       </div>
     </div>
   );
