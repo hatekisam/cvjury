@@ -4,7 +4,7 @@ import LinearProgressBar from "./core/LinearProgressBar";
 import ColouredTable from "./core/ColouredTable";
 import { AiOutlineCheckCircle, AiOutlineQuestionCircle } from "react-icons/ai";
 import { FaCheckCircle } from "react-icons/fa";
-import { CloseModal, CopyLink } from "./core/icons";
+import { CloseModal } from "./core/icons";
 
 const AllMatches: React.FC<AllMatchesProps> = ({
   atsData,
