@@ -22,7 +22,7 @@ const JobDesc: React.FC = () => {
               onChange={(e) => setJob(e.target.value)}
               className="border-[#BCBCBC] border rounded-lg p-3 text-[13px] w-full resize-none outline-none h-[260px] placeholder:text-gray-700"
               placeholder="Paste your Job Description (Don't include the 'About our company' texts)"
-            ></textarea>
+            >fjlasdf;lasdjflkasjdklfjaslkdjflkasdjflkajsdlfja;slkd</textarea>
           </div>
           <div className="flex mt-1 justify-between">
             <div></div>
