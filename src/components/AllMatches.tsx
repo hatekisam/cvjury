@@ -29,16 +29,16 @@ const AllMatches: React.FC<AllMatchesProps> = ({
         <div className="hidden md:block relative pt-40">
           <div className="sticky top-0 left-0 w-[100px] z-30">
             {modal.status && (
-              <div className="hidden md:block absolute h-[250px] w-[250px]  left-[110%] top-[50%]  rounded-md  ">
+              <div className="hidden md:block absolute h-[350px] w-[350px]  left-[110%] top-[50%]  rounded-md  ">
                 {modal.err ? (
-                  <div>
+                  <div className="h-full">
                     <div className="relative bg-white border border-[#E06B42]  h-full w-full rounded-lg rounded-br-none shadow-md">
-                      <div className="absolute top-[100%] -right-0  bg-white rounded-b-md border-[#E06B42] border-t-0 border">
+                      {/* <div className="absolute top-[100%] -right-0  bg-white rounded-b-md border-[#E06B42] border-t-0 border">
                         <button className="flex px-2 py-1.5 hover:bg-[#FDEFEB] items-center gap-2 rounded-b-md w-full text-sm text-[#E06B42]">
                           <CopyLink />
                           <p className="text-[#E06B42]">Copy the link</p>
                         </button>
-                      </div>
+                      </div> */}
                       <div className="flex items-center justify-end px-4 pt-2 bg-none ">
                         <button
                           onClick={() =>
