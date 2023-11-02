@@ -72,12 +72,11 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             )}
             <div className="flex items-center">
-              <a
-                href={"#ats"}
+              <p
                 className="side-item bg-red-500 rounded-tr-md w-[80%]"
               >
                 ATS
-              </a>
+              </p>
               <div className="pl-2 text-red-500">
                 <button onClick={() => setModal({ status: true, err: true })}>
                   <AiOutlineQuestionCircle />
@@ -85,9 +84,9 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             </div>
             <div className="flex items-center">
-              <a href={"#ats"} className="side-item bg-green-500  w-[80%]">
+              <p className="side-item bg-green-500  w-[80%]">
                 SIM
-              </a>
+              </p>
               <div className="pl-2 text-green-500">
                 <button onClick={() => setModal({ status: true, err: false })}>
                   <FaCheckCircle />
@@ -95,9 +94,9 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             </div>
             <div className="flex items-center">
-              <a href={"#ats"} className="side-item bg-blue-500  w-[80%]">
+              <p className="side-item bg-blue-500  w-[80%]">
                 HSM
-              </a>
+              </p>
               <div className="pl-2 text-red-500">
                 <button onClick={() => setModal({ status: true, err: true })}>
                   <AiOutlineQuestionCircle />
@@ -105,12 +104,11 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             </div>
             <div className="flex items-center">
-              <a
-                href={"#ats"}
+              <p
                 className="side-item bg-gray-500 rounded-br-md w-[80%]"
               >
                 SSM
-              </a>
+              </p>
               <div className="pl-2 text-red-500">
                 <button onClick={() => setModal({ status: true, err: true })}>
                   <AiOutlineQuestionCircle />
@@ -147,12 +145,11 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             )}
             <div className="flex items-center">
-              <a
-                href={"#ats"}
+              <p
                 className="side-item bg-red-500 rounded-tr-md w-[80%]"
               >
                 ATS
-              </a>
+              </p>
               <div className="pl-2 text-red-500">
                 <button onClick={() => setModal({ status: true, err: true })}>
                   <AiOutlineQuestionCircle />
@@ -160,9 +157,9 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             </div>
             <div className="flex items-center">
-              <a href={"#ats"} className="side-item bg-green-500  w-[80%]">
+              <p className="side-item bg-green-500  w-[80%]">
                 SIM
-              </a>
+              </p>
               <div className="pl-2 text-green-500">
                 <button onClick={() => setModal({ status: true, err: false })}>
                   <FaCheckCircle />
@@ -170,9 +167,9 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             </div>
             <div className="flex items-center">
-              <a href={"#ats"} className="side-item bg-blue-500  w-[80%]">
+              <p className="side-item bg-blue-500  w-[80%]">
                 HSM
-              </a>
+              </p>
               <div className="pl-2 text-red-500">
                 <button onClick={() => setModal({ status: true, err: true })}>
                   <AiOutlineQuestionCircle />
@@ -180,12 +177,11 @@ const AllMatches: React.FC<AllMatchesProps> = ({
               </div>
             </div>
             <div className="flex items-center">
-              <a
-                href={"#ats"}
+              <p
                 className="side-item bg-gray-500 rounded-br-md w-[80%]"
               >
                 SSM
-              </a>
+              </p>
               <div className="pl-2 text-red-500">
                 <button onClick={() => setModal({ status: true, err: true })}>
                   <AiOutlineQuestionCircle />

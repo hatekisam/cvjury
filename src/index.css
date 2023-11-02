@@ -28,5 +28,5 @@
 
 
 .side-item{
-  @apply p-2 text-center text-white font-bold text-[1.1rem] pt-5  cursor-pointer pb-5 block 
+  @apply p-2 text-center text-white font-bold text-[1.1rem] pt-5   pb-5 block 
 }

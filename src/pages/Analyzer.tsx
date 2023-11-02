@@ -461,7 +461,7 @@ const Analyzer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="hidden md:block px-5 md:px-12 lg:px-24 my-10 md:my-16 lg:my-36 relative mx-2 md:mx-12 lg:mx-20 sm:border-4 border-dashed h-[300px] rounded-3xl w-[80%]">
+      <div className="hidden  md:block px-5 md:px-12 lg:px-24 my-10 md:my-16 lg:mt-36 relative mx-2 md:mx-12 lg:mx-20 sm:border-4 border-dashed h-[300px] rounded-3xl w-[80%]">
         <div className="sm:absolute bg-white rounded-3xl p-3 md:p-5 left-[8%] -top-[20%] w-full shadow-2xl">
           <div className="flex gap-2 items-start">
             <ResultPresentationIcon />
