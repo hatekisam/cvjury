@@ -30,16 +30,18 @@ const Main: React.FC = () => {
   if (loading) {
     return (
       <div className="w-full h-full flex flex-col gap-3 items-center justify-center bg-white">
-        <div className="rounded-xl bg-[rgba(224,107,66,0.1)] p-4 relative w-[80vw] sm:w-[70vw] md:w-[60vw] lg:w-[40vw] text-center mb-3">
-          <div className="absolute bg-[#99D2C0] -top-5 left-[45%] p-2 rounded-full">
+        <div className="w-[80vw] sm:w-[70vw] md:w-[60vw] lg:w-[40vw] flex items-center justify-center flex-col -space-y-5">
+          <div className=" bg-[#99D2C0]  p-2 rounded-full z-20">
             <Star />
           </div>
-          <p className="mt-3 font-bold mb-2 text-lg">Resume Tip</p>
-          <p>
-            <span className="font-semibold">Optimizing</span> your resume for
-            applicant tracking software (ATS) increases your interview
-            invitation chances by a whopping 88%
-          </p>
+          <div className="rounded-xl bg-[rgba(224,107,66,0.1)] p-4 relative w-full text-center mb-3">
+            <p className="mt-3 font-bold mb-2 text-lg">Resume Tip</p>
+            <p>
+              <span className="font-semibold">Optimizing</span> your resume for
+              applicant tracking software (ATS) increases your interview
+              invitation chances by a whopping 88%
+            </p>
+          </div>
         </div>
         <div className="flex gap-2">
           <div className="bg-[#D6D6D6] rounded-full w-[50vw]">
