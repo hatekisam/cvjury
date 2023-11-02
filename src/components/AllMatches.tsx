@@ -34,7 +34,7 @@ const AllMatches: React.FC<AllMatchesProps> = ({
                   <div>
                     <div className="relative bg-white border border-[#E06B42]  h-full w-full rounded-lg rounded-br-none shadow-md">
                       <div className="absolute top-[100%] -right-0.5  bg-white rounded-b-md border-[#E06B42] border-t-0 border">
-                        <button className="flex px-5 py-2.5 hover:bg-[#FDEFEB] items-center gap-5 rounded-b-md w-full">
+                        <button className="flex px-5 py-2.5 hover:bg-[#FDEFEB] items-center gap-5 rounded-b-md w-full text-sm"  >
                           <CopyLink />
                           <p>Copy the link</p>
                         </button>

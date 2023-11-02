@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { AiOutlineBell } from "react-icons/ai";
 import { FaRegCheckCircle, FaRegTimesCircle } from "react-icons/fa";
 import Modal from "react-modal";
-import { CloseModalWhite } from "./icons";
+import { CloseModalWhite, CopyLink } from "./icons";
 
 const customStyles = {
   content: {
@@ -46,7 +46,7 @@ const ColouredTable: React.FC<Props> = ({ tabs, data }) => {
         style={customStyles}
         contentLabel="Table Modal"
       >
-        <div className="relative bg-[#FDEFEB]  rounded-b-md w-[75vw]  sm:w-[50vw]  md:w-[45vw] lg:w-[35vw] h-[40vh]">
+        <div className="relative bg-[#FDEFEB]  rounded-b-md w-[75vw]  sm:w-[50vw]  md:w-[45vw] lg:w-[35vw]">
           <div className="absolute right-2 top-2">
             <button onClick={closeModal}>
               <CloseModalWhite />
@@ -56,6 +56,15 @@ const ColouredTable: React.FC<Props> = ({ tabs, data }) => {
             {activeRow?.Titles}
           </div>
           <div className="p-4 text-base text-center ">{activeRow?.message}</div>
+          <div className="flex justify-end   rounded-b-md border-[#E06B42] border-t-0 border p-2">
+            <button
+              onClick={closeModal}
+              className="flex px-5 py-2.5 hover:bg-[#FDEFEB] bg-white items-center gap-5 rounded-md w-fit text-sm"
+            >
+              <CopyLink />
+              <p>Copy the link</p>
+            </button>
+          </div>
         </div>
       </Modal>
       <table className="w-full bg-white rounded-[20px] border-none ">
