@@ -55,14 +55,17 @@ const ColouredTable: React.FC<Props> = ({ tabs, data }) => {
           <div className="w-full bg-orange-500 py-1.5 text-center rounded-t-md text-white text-lg">
             {activeRow?.Titles}
           </div>
-          <div className="p-4 text-base text-center " dangerouslySetInnerHTML={{__html:activeRow?.message}}></div>
+          <div
+            className="p-4 text-base "
+            dangerouslySetInnerHTML={{ __html: activeRow?.message }}
+          ></div>
           <div className="flex justify-end   rounded-b-md border-[#E06B42] border-t-0 border p-2">
             <button
               onClick={closeModal}
               className="flex px-5 py-2.5 hover:bg-[#FDEFEB] bg-white items-center gap-5 rounded-md w-fit text-sm"
             >
               <CopyLink />
-              <p>Copy the link</p>
+              <p>Copy the texts</p>
             </button>
           </div>
         </div>

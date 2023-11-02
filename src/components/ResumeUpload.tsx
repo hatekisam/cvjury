@@ -4,6 +4,7 @@ import { DeleteIcon } from "./core/icons";
 
 const ResumeUpload: React.FC = () => {
   const [file, setFile] = useState<any | undefined>();
+  const [input, setInput] = useState("");
   const handleFiles = (files: File[]) => {
     console.log(files);
     // const reader = new FileReader();
@@ -33,6 +34,8 @@ const ResumeUpload: React.FC = () => {
               </div>
             ) : (
               <textarea
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
                 className="border-[#BCBCBC] placeholder:text-gray-700 border rounded-lg p-3 text-[13px] w-full resize-none outline-none h-[200px]"
                 placeholder="Or paste your resume here"
               ></textarea>
@@ -43,6 +46,7 @@ const ResumeUpload: React.FC = () => {
             <button
               onClick={() => {
                 setFile(undefined);
+                setInput("");
               }}
             >
               <DeleteIcon />
