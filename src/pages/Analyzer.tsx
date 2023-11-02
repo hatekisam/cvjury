@@ -42,6 +42,40 @@ const Analyzer: React.FC = () => {
     { HardSkills: "Hardworking", Frequency: 20 },
     { HardSkills: "Hardworking", Frequency: 20 },
   ];
+  const desireTitles = [
+    { title: "DesirableSkills", name: "Desirable Skills", width: 25 },
+    { title: "ExplanatoryNotes", name: "Explanatory Notes", width: 75 },
+  ];
+  const desireSkills = [
+    {
+      DesirableSkills: "Hard Working",
+      ExplanatoryNotes: "This is a dummy text",
+    },
+    {
+      DesirableSkills: "Hard Working",
+      ExplanatoryNotes: "This is a dummy text",
+    },
+    {
+      DesirableSkills: "Hard Working",
+      ExplanatoryNotes: "This is a dummy text",
+    },
+    {
+      DesirableSkills: "Hard Working",
+      ExplanatoryNotes: "This is a dummy text",
+    },
+    {
+      DesirableSkills: "Hard Working",
+      ExplanatoryNotes: "This is a dummy text",
+    },
+    {
+      DesirableSkills: "Hard Working",
+      ExplanatoryNotes: "This is a dummy text",
+    },
+    {
+      DesirableSkills: "Hard Working",
+      ExplanatoryNotes: "This is a dummy text",
+    },
+  ];
 
   const softSkills = [
     { SoftSkills: "Hardworking", Frequency: 20 },
@@ -359,7 +393,7 @@ const Analyzer: React.FC = () => {
         hardSkills={hardSkills}
         softSkills={softSkills}
       />
-      <DesirableSkills tableTitles={softTitles} tableData={softSkills} />
+      <DesirableSkills tableTitles={desireTitles} tableData={desireSkills} />
       <JobResumeComparison
         tableTitles={jobResumeComparison}
         tableData={jobResumeComparisonData}

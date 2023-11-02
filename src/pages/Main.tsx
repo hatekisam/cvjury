@@ -60,7 +60,7 @@ const Main: React.FC = () => {
         </div>
         <button
           onClick={() => setLoading(false)}
-          className="px-5 py-2 rounded-md border  mt-10 transform transition-transform hover:scale-105"
+          className="px-5 py-2 rounded-md border  mt-10 transform transition-transform hover:scale-105 hover:bg-[rgba(224,107,66,0.1)]"
         >
           Cancel
         </button>
