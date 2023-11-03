@@ -56,7 +56,7 @@ const ColouredTable: React.FC<Props> = ({ tabs, data }) => {
             {activeRow?.Titles}
           </div>
           <div
-            className="p-4 text-base "
+            className="p-4 text-base  "
             dangerouslySetInnerHTML={{ __html: activeRow?.message }}
           ></div>
           <div className="flex justify-end   rounded-b-md  border-t-0 border p-2">
