@@ -33,12 +33,6 @@ const AllMatches: React.FC<AllMatchesProps> = ({
                 {modal.err ? (
                   <div className="h-full">
                     <div className="relative bg-white border border-[#E06B42]  h-full w-full rounded-lg rounded-br-none shadow-md">
-                      <div className="absolute top-[100%] -right-0  bg-white rounded-b-md border-[#E06B42] border-t-0 border">
-                        <button className="flex px-2 py-1.5 hover:bg-[#FDEFEB] items-center gap-2 rounded-b-md w-full text-sm text-[#E06B42]">
-                          <CopyLink />
-                          <p className="text-[#E06B42]">Copy the link</p>
-                        </button>
-                      </div>
                       <div className="flex items-center justify-end px-4 pt-2 bg-none ">
                         <button
                           onClick={() =>
@@ -53,6 +47,13 @@ const AllMatches: React.FC<AllMatchesProps> = ({
                         the other! <br />
                         <br /> When there's ZERO errors found. Pls, not all
                         these tiny details and pay attention and finish 1 time!
+                      </div>
+                      <div className="flex justify-between px-5">
+                        <div></div>
+                        <button className="flex px-2 py-1.5 hover:bg-[#FDEFEB] items-center gap-2 rounded-md w-fit text-sm text-[#E06B42]   border">
+                          <CopyLink />
+                          <p className="text-[#E06B42]">Copy the link</p>
+                        </button>
                       </div>
                     </div>
                   </div>

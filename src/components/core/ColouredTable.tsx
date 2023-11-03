@@ -59,7 +59,7 @@ const ColouredTable: React.FC<Props> = ({ tabs, data }) => {
             className="p-4 text-base "
             dangerouslySetInnerHTML={{ __html: activeRow?.message }}
           ></div>
-          <div className="flex justify-end   rounded-b-md border-[#E06B42] border-t-0 border p-2">
+          <div className="flex justify-end   rounded-b-md  border-t-0 border p-2">
             <button
               onClick={closeModal}
               className="flex px-5 py-2.5 hover:bg-[#FDEFEB] bg-white items-center gap-5 rounded-md w-fit text-sm"
